@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/logo-1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Pagos y Devoluciones</title>
 </head>
 <body id="grid-container-payments">
     <header class="header">
         <section class="header__section1">
-            <img src="./imagenes/logo-1.jpg" alt="logo-1" class="header__section1--img-1">
+            <img src="./imagenes/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
         </section>
         <section class="header__section2">
             <nav class="header__section2--nav">
@@ -45,11 +47,11 @@
     <section id="section1-payments">
         <article class="section1-payments__article">
             <h1 class="section1-payments__article1--h1">Medios de Pagos</h1>
-            <img src="./imagenes/medios de pago.png" alt="medios-de-pagos" class="section1-payments__article1--img">
+            <img src="./imagenes/medios de pago.png" alt="medios-de-pagos" class="section1-payments__article1--img" data-aos="fade-zoom-in">
         </article>
         <article class="section1-payments__article">
             <h2 class="section1-payments__article2--h2">Promociones Bancarias</h2>
-            <img src="./imagenes/promociones-tarjetas.jpg" alt="promociones-tarjetas" class="section1-payments__article2--img">
+            <img src="./imagenes/promociones-tarjetas.jpg" alt="promociones-tarjetas" class="section1-payments__article2--img" data-aos="fade-zoom-in">
         </article>
     </section>
     <section id="section2-payments-text">
@@ -93,5 +95,9 @@
             </picture>
         </section>
 	</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

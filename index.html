@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/logo-1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>IMITATION OF WEAPON</title>
 </head>
 <body id="grid-container-index">
     <header class="header">
         <section class="header__section1">
-                <img src="./imagenes/logo-1.jpg" alt="logo-1" class="header__section1--img-1">
+                <img src="./imagenes/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
         </section>
         <section class="header__section2">
             <nav class="header__section2--nav">
@@ -43,23 +45,23 @@
         </section>
     </header>
         <section id="section0">
-            <img src="./imagenes/imagen 1.jpg" alt="imagen" class="section0__img-0">
+            <img src="./imagenes/imagen 1.jpg" alt="imagen" class="section0__img-0"  data-aos="fade-up" data-aos-duration="3000">
         </section>
         <section id="section1">
             <h1 class="section1__h1">DESTACADOS</h1>
-            <article class="section1__article">
+            <article class="section1__article" data-aos="flip-left">
                 <img src="./imagenes/HK-USP.jpg" alt="HK-USP" class="section1__img1">
                 <span class="section1__article--span">
                     <p><a href="./catalogo.html" class="section1__precio-1--text"> PISTOLA HK-USP - $ 6.899,99 o 12 cuotas de $ 574,99</a></p>
                 </span>
             </article>
-            <article class="section1__article">
+            <article class="section1__article" data-aos="flip-up">
                 <img src="./imagenes/escopeta.jpg" alt="escopeta" class="section1__img2">
                 <span class="section1__article--span">
                     <p><a href="./catalogo.html" class="section1__precio-2--text">ESCOPETA ITHACA - $ 5.499,99 o 12 cuotas de $ 457,29</a></p>
                 </span>
             </article>
-            <article class="section1__article">
+            <article class="section1__article" data-aos="flip-right">
                 <img src="./imagenes/AR15.jpg" alt="AR15" class="section1__img3">
                 <span class="section1__article--span">
                     <p><a href="./catalogo.html" class="section1__precio-3--text"> FUSIL AR-15 - $ 7.799,99 o 12 cuotas de $ 649,00</a></p>
@@ -67,14 +69,14 @@
             </article>
         </section>
         <section id="section2">
-            <h2 class="section2__h2">OFERTAS...</h2> 
-            <article class="section2__article">
+            <h2 class="section2__h2">OFERTAS</h2> 
+            <article class="section2__article" data-aos="zoom-in">
                 <img src="./imagenes/oferta-1.jpg" alt="oferta-1" class="section2__article-img1">
                 <span class="section2__article--span">
                     <p><a href="./catalogo.html"> MINI-UZI - $ 6.899,99 o 12 cuotas de $ 574,99</a></p> 
                 </span>
             </article>
-            <article class="section2__article">
+            <article class="section2__article" data-aos="zoom-in">
                 <img src="./imagenes/oferta-2.jpg" alt="oferta-2" class="section2__article-img2">
                 <span class="section2__article--span">
                     <p><a href=""> RIFLE + ARMA - $ 11.499,99 o 12 cuotas de $ 958,99</a></p> 
@@ -128,5 +130,9 @@
             </picture>
         </section>
 	</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
