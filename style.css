@@ -72,7 +72,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    align-items: center; 
+    gap: 10px;
+    align-items: end;
     justify-content: space-around;   
     background: linear-gradient(30deg, rgba(223,223,223,1) 0%, rgba(157,157,157,1) 24%, rgba(124,124,128,1) 49%, rgba(48,48,49,1) 79%, rgba(0,0,0,1) 100%);
     border: 1px;
@@ -128,6 +129,9 @@ header{
 
 header section div{
     display: flex;
+}
+header section div a img{
+    background-color: white;
 }
 .header__section3--div--img2, .header__section3--div--img3, .header__section3--div--img4{
     border-style: solid;
@@ -244,12 +248,14 @@ header section div{
     border-style: solid;
     flex-wrap: wrap;
     flex-basis: 100%;
+    gap: 40px;
     border-radius: 8px;
     background-color: rgb(237, 237, 237);
 }
 .section3__article{
     display: flex;
     margin: 10px;
+    align-items: center;
 }
 .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
     display: flex;
@@ -262,7 +268,7 @@ header section div{
 }
 section article h4{
     display: flex;
-    margin: 15px 0px 0px 25px;
+    margin-left: 25px;
     text-align: center;
     flex-direction: row;
 }
@@ -271,7 +277,7 @@ footer{
     display: flex;
     border-style: solid;
     padding: 30px 0px;
-    margin: 0px 50px;
+    margin: 20px 50px;
     border-radius: 10px;
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
@@ -325,6 +331,7 @@ footer{
 /*---------------MEDIOS DE PAGO---------------*/
 .section3__content-article{
     justify-content: center;
+    gap: 0;
 } 
 section article h4{
     margin-left: 10px
@@ -363,9 +370,12 @@ section article h4{
         flex-basis: 330px;
     }
 /*----------MEDIOS DE PAGO - INDEX------------*/
+    .section3__content-article{
+        gap: 10px
+    }
     .section3__content-article {
         justify-content: flex-start;
-        margin: 12px;
+        gap: 15px;
         }   
     .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4 {
     max-width: 50px;
@@ -377,7 +387,7 @@ section article h4{
         align-items: center;
         font-size: smaller;  
         padding: 20px 0px;  
-        margin: 0px 50px;
+        margin: 20px 50px;
     }
 }
 
@@ -485,7 +495,10 @@ section article h4{
         height: auto;
     }
 /*-----------------MEDIOS DE PAGO----------------*/
-    .section3__content-article{
+    #medios-de-pagos {
+        margin: 0px;
+    }
+        .section3__content-article{
         flex-basis: 100%;
         font-size: small;
     }
@@ -500,6 +513,7 @@ section article h4{
     footer {
         font-size: x-small;
         padding: 15px;
+        margin-bottom: 20px
     }
     .footer__section2-container--title{
         margin: 10px 15px;
@@ -546,18 +560,23 @@ header{
 }
 #section1-catalogo{
     grid-area: section1-catalogo;
+    padding: 25px 75px 0px 75px; 
 }
 #section2-catalogo{
     grid-area: section2-catalogo;
+    padding: 25px 75px 0px 75px; 
 }
 #section3-catalogo{
     grid-area: section3-catalogo;
+    padding: 25px 75px 0px 75px; 
 }
 #section4-catalogo{
     grid-area: section4-catalogo;
+    padding: 25px 75px 0px 75px; 
 }
 #section5-catalogo{
     grid-area: section5-catalogo;
+    padding: 25px 75px 0px 75px; 
 }
 #medios-de-pagos{
     grid-area: medios-de-pagos;
@@ -571,7 +590,11 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+}
+.div-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 20px;
 }
 /*------------SECTION 1------------------*/
 .catalogo-h1, .catalogo__h2-1{
@@ -579,22 +602,10 @@ ul{
     justify-content: center;
     padding: 10px;
 }
-#section1-catalogo{
-    display: flex;
-    margin: 25px 75px 0px 75px; 
-    flex-direction: column;
-
-}
 .section1-catalogo__h3{
     justify-content: flex-start;
     padding-bottom: 20px;
     flex-grow: 1;
-}
-.container-article-section1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;  
 }
 .section1-catalogo__article1, .section1-catalogo__article2, .section1-catalogo__article3, .section1-catalogo__article4{
     margin-top: 5px;
@@ -610,6 +621,7 @@ ul{
 }
 .section1-catalogo__article1--div2, .section1-catalogo__article2--div2, .section1-catalogo__article3--div2, .section1-catalogo__article4--div2{
     display: flex;
+    padding-bottom: 10px;
     flex-direction: column;
     border-radius: 10px;
     border-style: solid;
@@ -626,7 +638,6 @@ ul{
 /*--------------SECTION 2-----------*/
 #section2-catalogo{
     display: flex;
-    margin: 25px 75px 0px 75px; 
     flex-direction: column;
 }
 .catalogo__h2-2{
@@ -638,12 +649,6 @@ ul{
     display: flex;
     padding: 10px;
     flex-grow: 1;
-}
-.container-article-section2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;  
 }
 .section2-catalogo__article1, .section2-catalogo__article2, .section2-catalogo__article3, .section2-catalogo__article4{
     margin-top: 5px;
@@ -665,6 +670,7 @@ ul{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    padding-bottom: 10px;
     border-style: solid;
     align-items: stretch;
     align-items: center;
@@ -674,7 +680,6 @@ ul{
 
 /*--------------SECTION 3-----------*/
 #section3-catalogo{
-    margin: 25px 75px 0px 75px; 
     display: flex;
     flex-direction: column;
 }
@@ -682,12 +687,6 @@ ul{
     display: flex;
     padding: 10px;
     flex-grow: 1;
-}
-.container-article-section3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;   
 }
 .section3-catalogo__article1, .section3-catalogo__article2, .section3-catalogo__article3, .section3-catalogo__article4{
     margin-top: 5px;
@@ -708,6 +707,7 @@ ul{
 .section3-catalogo__article1--div2, .section3-catalogo__article2--div2, .section3-catalogo__article3--div2, .section3-catalogo__article4--div2{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
     border-radius: 10px;
     border-style: solid;
     align-items: stretch;
@@ -716,10 +716,8 @@ ul{
     box-shadow: 2px 2px 4px black; 
 }
 
-
 /*--------------SECTION 4-----------*/
-#section4-catalogo{
-    margin: 25px 75px 0px 75px; 
+#section4-catalogo{ 
     display: flex;
     flex-direction: column;
 }
@@ -727,13 +725,6 @@ ul{
     display: flex;
     padding: 10px;
     flex-grow: 1;
-}
-.container-article-section4{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items:stretch;
-    justify-content: space-around;  
 }
 .section4-catalogo__article1, .section4-catalogo__article2, .section4-catalogo__article3, .section4-catalogo__article4{
     margin-top: 5px;
@@ -754,6 +745,7 @@ ul{
 .section4-catalogo__article1--div2, .section4-catalogo__article2--div2, .section4-catalogo__article3--div2, .section4-catalogo__article4--div2{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
     border-radius: 10px;
     border-style: solid;
     align-items: stretch;
@@ -764,7 +756,6 @@ ul{
 
 /*--------------SECTION 5-----------*/
 #section5-catalogo{
-    margin: 25px 75px 0px 75px; 
     display: flex;
     flex-direction: column;
 }
@@ -772,13 +763,6 @@ ul{
     display: flex;
     padding: 10px;
     flex-grow: 1;
-}
-.container-article-section5{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items:stretch;
-    justify-content: space-around;  
 }
 .section5-catalogo__article1, .section5-catalogo__article2, .section5-catalogo__article3, .section5-catalogo__article4{
     margin-top: 5px;
@@ -799,6 +783,7 @@ ul{
 .section5-catalogo__article1--div2, .section5-catalogo__article2--div2, .section5-catalogo__article3--div2, .section5-catalogo__article4--div2{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
     border-radius: 10px;
     border-style: solid;
     align-items: stretch;
@@ -807,51 +792,12 @@ ul{
     box-shadow: 2px 2px 4px black; 
 }
 /*--------------------MEDIA QUERIES-------------------*/
-@media (max-width: 1024px){
-
-/*---------------SECTION 1-------------*/
-    .section1-catalogo__article1, .section1-catalogo__article2, .section1-catalogo__article3, .section1-catalogo__article4 {
-        flex: 1 1 200px;
-    }
-/*---------------SECTION 2-------------*/
-    .section2-catalogo__article1, .section2-catalogo__article2, .section2-catalogo__article3, .section2-catalogo__article4 {
-        flex: 1 1 200px;
-    }
-/*---------------SECTION 3-------------*/
-    .section3-catalogo__article1, .section3-catalogo__article2, .section3-catalogo__article3, .section3-catalogo__article4 {
-        flex: 1 1 200px;
-    }
-/*---------------SECTION 4-------------*/
-    .section4-catalogo__article1, .section4-catalogo__article2, .section4-catalogo__article3, .section4-catalogo__article4 {
-        flex: 1 1 200px;   
-    }
-    .section4-catalogo__article1--div2, .section4-catalogo__article2--div2, .section4-catalogo__article3--div2, .section4-catalogo__article4--div2 {
-        flex-basis: 100%;
-        align-items: center;
-    }
-/*---------------SECTION 5-------------*/
-.section5-catalogo__article1, .section5-catalogo__article2, .section5-catalogo__article3, .section5-catalogo__article4 {
-        flex: 1 1 200px;
+@media (max-width: 320px){
+    #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
+        padding: 0px 10px;
     }
 }
 
-@media (max-width: 768px){
-    .section1-catalogo__article1, .section1-catalogo__article2, .section1-catalogo__article3, .section1-catalogo__article4 {
-        margin: 20px;
-    }
-    .section2-catalogo__article1, .section2-catalogo__article2, .section2-catalogo__article3, .section2-catalogo__article4 {
-        margin: 20px;
-    }
-    .section3-catalogo__article1, .section3-catalogo__article2, .section3-catalogo__article3, .section3-catalogo__article4 {
-        margin: 20px;
-    }
-    .section4-catalogo__article1, .section4-catalogo__article2, .section4-catalogo__article3, .section4-catalogo__article4 {
-        margin: 20px;
-    }
-    .section5-catalogo__article1, .section5-catalogo__article2, .section5-catalogo__article3, .section5-catalogo__article4 {
-        margin: 20px;
-    }
-}
 
 /*-----------------------CONTACTO HTML-----------------------*/
 /*---------------GRID AREA--------------*/
@@ -962,6 +908,9 @@ footer{
 
 @media (max-width: 768px){
 /*------------SECTION 2------------------*/    
+    header section nav ul{
+        justify-content: center;
+    }
     .section1__texto{
         text-align: justify;
     }
