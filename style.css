@@ -119,24 +119,24 @@ header{
 .menu__link:hover{
     background-color: rgb(205, 204, 204);
     color: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 .menu__link--active{
     background-color: rgb(205, 204, 204);
     color: rgb(225, 225, 225);
     border: 2px solid black;
     box-shadow: 2px 2px 4px black;
+    transform: scale(1.05);
 }
 
 header section div{
     display: flex;
 }
-header section div a img{
-    background-color: white;
-}
 .header__section3--div--img2, .header__section3--div--img3, .header__section3--div--img4{
     border-style: solid;
+    background-color: white;
     border-radius: 10px;
-    margin: 2px;
+    width: 90%;
     border-color: rgb(170, 168, 168);
     box-shadow: 2px 2px 4px black;
 }
@@ -629,6 +629,10 @@ ul{
     align-items: center;
     background-color: rgb(205, 204, 204);
     box-shadow: 2px 2px 4px black; 
+}
+.div-article__active:hover{
+    transition: .5s;
+    transform: scale(1.2);
 }
 .section1-catalogo__article1--div2--text--h4, .section1-catalogo__article2--div2--text--h4, .section1-catalogo__article3--div2--text--h4, .section1-catalogo__article4--div2--text--h4{
         justify-content: center;
