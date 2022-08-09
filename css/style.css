@@ -7,13 +7,16 @@
 }
 img{
     width: 100%;
+    vertical-align: initial;
 }
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: rgb(150, 150, 150);
-    background-image:url(./imagenes/grunge.jpg)
+    background-image:url(../img/grunge.jpg)
 }
 p {
     color: rgb(255, 255, 255);
@@ -162,8 +165,7 @@ header section div{
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    justify-content: space-around
 }
 .section1__h1{
     flex-basis: 1250px;
@@ -232,7 +234,7 @@ header section div{
 }
 /*------MEDIOS DE PAGOS-HTML--------*/
 #medios-de-pagos{
-    margin: 30px 75px; 
+    margin: 30px 20px; 
     padding: 20px 25px 20px 25px;
     display: flex;
     align-items: center;
@@ -248,7 +250,7 @@ header section div{
     border-style: solid;
     flex-wrap: wrap;
     flex-basis: 100%;
-    gap: 40px;
+    gap: 20px;
     border-radius: 8px;
     background-color: rgb(237, 237, 237);
 }
@@ -498,7 +500,10 @@ section article h4{
     #medios-de-pagos {
         margin: 0px;
     }
-        .section3__content-article{
+    section article h4 {
+        font-size: small;
+    }
+    .section3__content-article{
         flex-basis: 100%;
         font-size: small;
     }
@@ -517,6 +522,7 @@ section article h4{
     }
     .footer__section2-container--title{
         margin: 10px 15px;
+        font-size: small;
     }
     .footer__section2-container--text{
         margin: 0px 5px;
