@@ -9,9 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>IMITATION OF WEAPON</title>
+    <title>Carrito de Compra</title>
 </head>
-<body>
+<body id="container-shopping">
     <header class="header">
         <section class="header__section1">
                 <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
@@ -21,7 +21,7 @@
             <nav class="header__section2--nav">
                 <ul class="nav nav-pills text-white d-flex flex-row">
                     <li class="nav-item"> 
-                      <a class="nav-link active bg-secondary border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                      <a class="nav-link bg-light link-dark bg-secondary border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
@@ -42,7 +42,7 @@
         <section class="header__section3">
             <div class="header__section3--div d-flex flex-row align-items-end mb-1">
                 <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
-                <a href="./catalogo.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
+                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
             </div>
         </section>
@@ -51,48 +51,41 @@
         <div class="row g-5 m-4 p-4 bg-light text-dark border border-dark rounded-2">
             <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-primary">Your cart</span>
-                <span class="badge bg-primary rounded-pill">3</span>
+                <span class="text-dark">Productos</span>
+                <span class="badge bg-secondary text-white rounded-pill">3</span>
             </h4>
             <ul class="list-group mb-3">
-                <li class="list-group-item d-flex justify-content-between lh-sm">
+                <li class="list-group-item d-flex justify-content-between lh-sm w-75">
                     <div>
-                        <h6 class="my-0">Product name</h6>
-                        <small class="text-muted">Brief description</small>
+                        <h6 class="my-0">HK-USP</h6>
+                        <small class="text-muted">Arma corta</small>
                     </div>
-                    <span class="text-muted">$12</span>
+                    <span class="text-muted">$3.500</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                        <h6 class="my-0">Second product</h6>
-                        <small class="text-muted">Brief description</small>
-                </div>
-                    <span class="text-muted">$8</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
+                <li class="list-group-item d-flex justify-content-between lh-sm w-75">
                     <div>
-                        <h6 class="my-0">Third item</h6>
-                        <small class="text-muted">Brief description</small>
+                            <h6 class="my-0">AR-15</h6>
+                            <small class="text-muted">Fusil</small>
                     </div>
-                    <span class="text-muted">$5</span>
+                    <span class="text-muted">$7.800</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between bg-light">
-                    <div class="text-success">
-                        <h6 class="my-0">Promo code</h6>
-                        <small>EXAMPLECODE</small>
+                <li class="list-group-item d-flex justify-content-between lh-sm w-75">
+                    <div>
+                        <h6 class="my-0">AK-47</h6>
+                        <small class="text-muted">Fusil</small>
                     </div>
-                    <span class="text-success">−$5</span>
+                    <span class="text-muted">$7.800</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (USD)</span>
-                    <strong>$20</strong>
+                <li class="list-group-item d-flex justify-content-between w-75">
+                    <span>Total</span>
+                    <strong>$18.150</strong>
                 </li>
             </ul>
 
             <form class="card p-2">
                 <div class="input-group">
-                <input type="text" class="form-control" placeholder="Promo code">
-                <button type="submit" class="btn btn-secondary">Redeem</button>
+                <input type="text" class="form-control" placeholder="codigo de promo">
+                <button type="submit" class="btn btn-secondary">APLICAR</button>
                 </div>
             </form>
             </div>
@@ -101,18 +94,18 @@
             <form class="needs-validation" novalidate="">
                 <div class="row g-3">
                     <div class="col-sm-6">
-                        <label for="firstName" class="form-label">Nombres</label>
+                        <label for="firstName" class="form-label">Nombre/s</label>
                         <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                        Valid first name is required.
+                        Nombre requerido
                         </div>
                     </div>
 
                     <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Apellidos</label>
+                        <label for="lastName" class="form-label">Apellido/s</label>
                         <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                        Valid last name is required.
+                        Apellido requerido
                         </div>
                     </div>
 
@@ -122,14 +115,14 @@
                         <span class="input-group-text">@</span>
                         <input type="text" class="form-control" id="username" placeholder="Usuario" required="">
                         <div class="invalid-feedback">
-                            Your username is required.
+                            Tu usuario es requerido
                         </div>
                         </div>
                     </div>
 
                     <div class="col-12">
                         <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="you@email.com">
+                        <input type="email" class="form-control" id="email" placeholder="tu@email.com">
                         <div class="invalid-feedback">
                         Por favor ingrese un email para seguir su pedido.
                         </div>
@@ -145,7 +138,7 @@
 
                     <div class="col-12">
                         <label for="address2" class="form-label">Direccion 2<span class="text-muted">(Opcional)</span></label>
-                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        <input type="text" class="form-control" id="address2" placeholder="San Martin 1234">
                     </div>
 
                     <div class="col-md-5">
@@ -187,56 +180,55 @@
 
                 <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="same-address">
-                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                <label class="form-check-label" for="same-address">La direccion es la misma que la de facturacion</label>
                 </div>
 
                 <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="save-info">
-                <label class="form-check-label" for="save-info">Save this information for next time</label>
+                <label class="form-check-label" for="save-info">Guardar la informacion para el siguiente pedido</label>
                 </div>
 
                 <hr class="my-4">
 
-                <h4 class="mb-3">Payment</h4>
+                <h4 class="mb-3">Pago</h4>
 
                 <div class="my-3">
-                <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                    <label class="form-check-label" for="credit">Credit card</label>
-                </div>
-                <div class="form-check">
-                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                    <label class="form-check-label" for="debit">Debit card</label>
-                </div>
-                <div class="form-check">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                    <label class="form-check-label" for="paypal">PayPal</label>
-                </div>
+                    <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                        <label class="form-check-label " for="credit">Tarjeta Credito</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <label class="form-check-label" for="debit">Tarjeta de Debito</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <label class="form-check-label" for="efectivo">Efectivo</label>
+                    </div>
                 </div>
 
                 <div class="row gy-3">
-                <div class="col-md-6">
-                    <label for="cc-name" class="form-label">Name on card</label>
-                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                    <small class="text-muted">Full name as displayed on card</small>
-                    <div class="invalid-feedback">
-                    Name on card is required
+                    <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Tipo de Tarjeta</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <div class="invalid-feedback">
+                        El tipo de tarjeta es requerido
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="cc-number" class="form-label">Credit card number</label>
+                    <label for="cc-number" class="form-label">Numero de la Tarjeta</label>
                     <input type="text" class="form-control" id="cc-number" placeholder="" required="">
                     <div class="invalid-feedback">
-                    Credit card number is required
+                    Numero invalido
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <label for="cc-expiration" class="form-label">Vencimiento</label>
                     <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
                     <div class="invalid-feedback">
-                    Expiration date required
+                    Vencimiento requerido
                     </div>
                 </div>
 
@@ -244,19 +236,19 @@
                     <label for="cc-cvv" class="form-label">CVV</label>
                     <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
                     <div class="invalid-feedback">
-                    Security code required
+                    Codigo de seguridad requerido
                     </div>
                 </div>
                 </div>
 
                 <hr class="my-4">
 
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                <button class="w-100 btn btn-secondary btn-lg" type="submit">Pagar</button>
             </form>
             </div>
         </div>
     </section>
-    <div>
+    <div id="footer">
         <footer class="py-5 d-flex flex-column">
             <div class="row">
                 <div class="col-xl-6 mb-3">
@@ -276,7 +268,7 @@
                         <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
-                            <button class="btn btn-primary" type="button">Enviar</button>
+                            <button class="btn btn-secondary border border-dark" type="button">Enviar</button>
                         </div>
                     </form>
                     <ul class="d-flex">
