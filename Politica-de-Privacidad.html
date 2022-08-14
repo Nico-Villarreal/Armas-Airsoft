@@ -7,41 +7,42 @@
     <link rel="shortcut icon" href="./img/logo-1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Politica de Privacidad</title>
 </head>
 <body id="grid-container-policies">
-    <header id="header">
+    <header class="header">
         <section class="header__section1">
-            <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
+                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
         </section>
+<!----------------------menu con boostrap----------------------------->
         <section class="header__section2">
             <nav class="header__section2--nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="./index.html" class="menu__link">HOME</a>
-                    </li>              
-                    <li class="menu__item">
-                        <a href="./catalogo.html" class="menu__link">CATALOGO</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./contacto.html" class="menu__link">CONTACTO</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./ayuda.html" class="menu__link">AYUDA</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./donde estamos.html" class="menu__link">DONDE ESTAMOS</a>
-                    </li> 
-                </ul>
+                <ul class="nav nav-pills nav-fill text-white d-flex flex-row">
+                    <li class="nav-item me-2"> 
+                      <a class="nav-link bg-light border border-dark link-dark m-2 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item me-2">
+                      <a class="nav-link border border-dark m-2 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
+                    </li>
+                    <li class="nav-item me-2"> 
+                      <a class="nav-link border border-dark m-2 bg-light link-dark fw-semibold" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item me-2">
+                      <a class="nav-link border border-dark m-2 bg-light link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link border border-dark m-2 bg-light link-dark fw-semibold" href="./donde estamos.html">DONDE ESTAMOS</a>
+                      </li>
+                </ul>           
             </nav>
         </section>
         <section class="header__section3">
-            <div class="header__section3--div">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2"></a>
-                <a href="./catalogo.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4"></a>
+            <div class="header__section3--div d-flex flex-row align-items-end mb-1">
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
+                <a href="./catalogo.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
             </div>
         </section>
     </header>
@@ -134,32 +135,42 @@
             </div>
         </article>
     </section>
-    <footer id="footer">
-        <section class="footer__section1-text">
-            <a href="Terminos-y-condiciones.html">Terminos y Condiciones</a>
-            <a href="Politica-de-Privacidad.html">Politica de Privacidad</a>
-            <a href="Defensa-al-Consumidor.html">Defensa al Consumidor</a>
-            <a href="Pagos-y-Devoluciones.html">Pagos y Devoluciones</a>
-            <a href="Envios.html">Envios</a>
-            <a href="Ayuda.html">Ayuda</a>
-        </section>
-        <section class="footer__section2-container">
-            <h4 class="footer__section2-container--title">
-                CONTACTANOS
-            </h4>
-            <p class="footer__section2-container--text">
-                Av. Sarmiento 1009 - Salta Capital
-            </p>
-            <p class="footer__section2-container--text">
-                Telefono 0387-5548656
-            </p>
-            <picture class="footer__section2-container--img">
-                <a href="https://www.instagram.com/" class="footer_section2-container--link">
-                    <img src="./img/icono instagram.jpg" alt="icono-instagram" class="footer__section2-container">
-                </a>
-            </picture>
-        </section>
-	</footer>
+    <div class="container">
+        <footer class="py-5 d-flex flex-column">
+            <div class="row">
+                <div class="col-xl-6 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./Terminos-y-condiciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Terminos y Condiciones</a></li>
+                        <li class="nav-item mb-2"><a href="./Politica-de-Privacidad.html" class="nav-link-1 p-0 text-dark fw-bolder">Politica de Privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="./Defensa-al-Consumidor.html" class="nav-link-1 p-0 text-dark fw-bolder">Defensa al Consumidor</a></li>
+                        <li class="nav-item mb-2"><a href="./Pagos-y-Devoluciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Pagos y Devoluciones</a></li>
+                        <li class="nav-item mb-2"><a href="./Envios.html" class="nav-link-1 p-0 text-dark fw-bolder">Envios</a></li>
+                        <li class="nav-item mb-2"><a href="./ayuda.html" class="nav-link-1 p-0 text-dark fw-bolder">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <form class="d-flex flex-column">
+                        <h5 class="text-center text-dark fw-bolder">CONTACTANOS</h5>
+                        <p class="text-center text-dark fw-bolder">Av. Sarmiento 1009 - Salta Capital / Tel. +54 387-5548656</p>
+                        <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
+                            <button class="btn btn-primary" type="button">Enviar</button>
+                        </div>
+                    </form>
+                    <ul class="d-flex">
+                        <li class="d-flex">
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono instagram.jpg" alt="instagram" class="border border-dark rounded-2"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center border-top">
+                <p class="m-3">© 2022 Imitation of Weapon, S.A All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./img/logo-1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>IMITATION OF WEAPON</title>
 </head>
@@ -16,121 +16,163 @@
         <section class="header__section1">
                 <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
         </section>
+<!----------------------menu con boostrap------------------------------>
         <section class="header__section2">
             <nav class="header__section2--nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="./index.html" class="menu__link menu__link--active">HOME</a>
-                    </li>              
-                    <li class="menu__item">
-                        <a href="./catalogo.html" class="menu__link">CATALOGO</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./contacto.html" class="menu__link">CONTACTO</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./ayuda.html" class="menu__link">AYUDA</a>
-                    </li> 
-                    <li class="menu__item">
-                        <a href="./donde estamos.html" class="menu__link">DONDE ESTAMOS</a>
-                    </li> 
-                </ul>
+                <ul class="nav nav-pills text-white d-flex flex-row">
+                    <li class="nav-item"> 
+                      <a class="nav-link active bg-secondary border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
+                    </li>
+                    <li class="nav-item"> 
+                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./donde estamos.html">DONDE ESTAMOS</a>
+                    </li>
+                </ul>           
             </nav>
+
         </section>
         <section class="header__section3">
-            <div class="header__section3--div">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2"></a>
-                <a href="./catalogo.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4"></a>
+            <div class="header__section3--div d-flex flex-row align-items-end mb-1">
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
+                <a href="./catalogo.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
             </div>
         </section>
     </header>
-        <section id="section0">
-            <img src="./img/imagen 1.jpg" alt="imagen" class="section0__img-0"  data-aos="fade-up" data-aos-duration="3000">
-        </section>
-        <section id="section1">
-            <h1 class="section1__h1">DESTACADOS</h1>
-            <article class="section1__article" data-aos="flip-left">
-                <img src="./img/HK-USP.jpg" alt="HK-USP" class="section1__img1">
-                <span class="section1__article--span">
-                    <p><a href="./catalogo.html" class="section1__precio-1--text"> PISTOLA HK-USP - $ 6.899,99 o 12 cuotas de $ 574,99</a></p>
-                </span>
+
+    <section id="section0">
+<!-------carousel bootstrap------->
+        <div id="demo" class="carousel slide d-flex" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/campo-4.jpg" class="d-block border" alt="campo-airsoft-practica-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/campo-1.jpg" class="d-block border" alt="campo-airsoft-practica-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/imagen 1.jpg" class="d-block border" alt="imagen-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tirador-1.jpg" class="d-blo borderck" alt="sniper-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/campo-2.jpg" class="d-block border" alt="campo-airsoft-practica-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/campo-3.jpg" class="d-block border" alt="campo-airsoft-practica-2">
+                </div>
+            </div>     
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="section1">
+        <h1 class="section1__h1">DESTACADOS</h1>
+        <article class="section1__article" data-aos="flip-left">
+            <img src="./img/HK-USP.jpg" alt="HK-USP" class="section1__img1">
+            <span class="section1__article--span">
+                <p><a href="./catalogo.html#section1-catalogo" class="section1__precio-1--text"> PISTOLA HK-USP - $ 6.899,99 o 12 cuotas de $ 574,99</a></p>
+            </span>
+        </article>
+        <article class="section1__article" data-aos="flip-up">
+            <img src="./img/escopeta.jpg" alt="escopeta" class="section1__img2">
+            <span class="section1__article--span">
+                <p><a href="./catalogo.html#section5-catalogo" class="section1__precio-2--text">ESCOPETA ITHACA - $ 5.499,99 o 12 cuotas de $ 457,29</a></p>
+            </span>
+        </article>
+        <article class="section1__article" data-aos="flip-right">
+            <img src="./img/AR15.jpg" alt="AR15" class="section1__img3">
+            <span class="section1__article--span">
+                <p><a href="./catalogo.html#section3-catalogo" class="section1__precio-3--text"> FUSIL AR-15 - $ 7.799,99 o 12 cuotas de $ 649,00</a></p>
+            </span>    
+        </article>
+    </section>
+    <section id="section2">
+        <h2 class="section2__h2">OFERTAS</h2> 
+        <article class="section2__article" data-aos="zoom-in">
+            <img src="./img/oferta-1.jpg" alt="oferta-1" class="section2__article-img1">
+            <span class="section2__article--span">
+                <p><a href="./catalogo.html#section2-catalogo"> MINI-UZI - $ 6.899,99 o 12 cuotas de $ 574,99</a></p> 
+            </span>
+        </article>
+        <article class="section2__article" data-aos="zoom-in">
+            <img src="./img/oferta-2.jpg" alt="oferta-2" class="section2__article-img2">
+            <span class="section2__article--span">
+                <p><a href="./catalogo.html#section3-catalogo"> RIFLE + ARMA - $ 11.499,99 o 12 cuotas de $ 958,99</a></p> 
+            </span>
+        </article>    
+    </section>   
+    <section id="medios-de-pagos" class="justify-content-center">
+        <h2 class="section3__h3">MEDIOS DE PAGOS</h2>
+        <section class="section3__content-article w-100 justify-content-center">
+            <article class="section3__article">
+                <img src="./img/tarjeta de credito.png" alt="credito" class="section3__article1-img1">
+                <h4 class="section3__article1--h4-1"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Credito</a></h4>
             </article>
-            <article class="section1__article" data-aos="flip-up">
-                <img src="./img/escopeta.jpg" alt="escopeta" class="section1__img2">
-                <span class="section1__article--span">
-                    <p><a href="./catalogo.html" class="section1__precio-2--text">ESCOPETA ITHACA - $ 5.499,99 o 12 cuotas de $ 457,29</a></p>
-                </span>
+            <article class="section3__article">
+                <img src="./img/debito.jpg" alt="debito" class="section3__article2-img2">
+                <h4 class="section3__article2--h4-2"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Debito</a></h4>
             </article>
-            <article class="section1__article" data-aos="flip-right">
-                <img src="./img/AR15.jpg" alt="AR15" class="section1__img3">
-                <span class="section1__article--span">
-                    <p><a href="./catalogo.html" class="section1__precio-3--text"> FUSIL AR-15 - $ 7.799,99 o 12 cuotas de $ 649,00</a></p>
-                </span>    
+            <article class="section3__article">
+                <img src="./img/efectivo.png" alt="efectivo" class="section3__article3-img3">
+                <h4 class="section3__article3--h4-3"><a href="Pagos-y-Devoluciones.html#pagos">Pago en Efectivo</a></h4>
+            </article>
+            <article class="section3__article">
+                <img src="./img/ofertas.png" alt="promociones" class="section3__article4-img4">
+                <h4 class="section3__article4--h4-4"><a href="Pagos-y-Devoluciones.html#promociones">Promociones</a></h4>
             </article>
         </section>
-        <section id="section2">
-            <h2 class="section2__h2">OFERTAS</h2> 
-            <article class="section2__article" data-aos="zoom-in">
-                <img src="./img/oferta-1.jpg" alt="oferta-1" class="section2__article-img1">
-                <span class="section2__article--span">
-                    <p><a href="./catalogo.html"> MINI-UZI - $ 6.899,99 o 12 cuotas de $ 574,99</a></p> 
-                </span>
-            </article>
-            <article class="section2__article" data-aos="zoom-in">
-                <img src="./img/oferta-2.jpg" alt="oferta-2" class="section2__article-img2">
-                <span class="section2__article--span">
-                    <p><a href=""> RIFLE + ARMA - $ 11.499,99 o 12 cuotas de $ 958,99</a></p> 
-                </span>
-            </article>    
-        </section>   
-        <section id="medios-de-pagos">
-            <h2 class="section3__h3">MEDIOS DE PAGOS</h2>
-            <section class="section3__content-article">
-                <article class="section3__article">
-                    <img src="./img/tarjeta de credito.png" alt="credito" class="section3__article1-img1">
-                    <h4 class="section3__article1--h4-1"><a href="Pagos-y-Devoluciones.html">Tarjeta de Credito</a></h4>
-                </article>
-                <article class="section3__article">
-                    <img src="./img/debito.jpg" alt="debito" class="section3__article2-img2">
-                    <h4 class="section3__article2--h4-2"><a href="Pagos-y-Devoluciones.html">Tarjeta de Debito</a></h4>
-                </article>
-                <article class="section3__article">
-                    <img src="./img/efectivo.png" alt="efectivo" class="section3__article3-img3">
-                    <h4 class="section3__article3--h4-3"><a href="Pagos-y-Devoluciones.html">Pago en Efectivo</a></h4>
-                </article>
-                <article class="section3__article">
-                    <img src="./img/ofertas.png" alt="promociones" class="section3__article4-img4">
-                    <h4 class="section3__article4--h4-4"><a href="Pagos-y-Devoluciones.html">Promociones</a></h4>
-                </article>
-            </section>
-        </section>
-    <footer id="footer">
-        <section class="footer__section1-text">
-            <a href="Terminos-y-condiciones.html">Terminos y Condiciones</a>
-            <a href="Politica-de-Privacidad.html">Politica de Privacidad</a>
-            <a href="Defensa-al-Consumidor.html">Defensa al Consumidor</a>
-            <a href="Pagos-y-Devoluciones.html">Pagos y Devoluciones</a>
-            <a href="Envios.html">Envios</a>
-            <a href="Ayuda.html">Ayuda</a>
-        </section>
-        <section class="footer__section2-container">
-            <h4 class="footer__section2-container--title">
-                CONTACTANOS
-            </h4>
-            <p class="footer__section2-container--text">
-                Av. Sarmiento 1009 - Salta Capital
-            </p>
-            <p class="footer__section2-container--text">
-                Telefono 0387-5548656
-            </p>
-            <picture class="footer__section2-container--img">
-                <a href="https://www.instagram.com/" class="footer_section2-container--link">
-                    <img src="./img/icono instagram.jpg" alt="icono-instagram" class="footer__section2-container">
-                </a>
-            </picture>
-        </section>
-	</footer>
+    </section>
+    <div class="container">
+        <footer class="py-5 d-flex flex-column">
+            <div class="row">
+                <div class="col-xl-6 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./Terminos-y-condiciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Terminos y Condiciones</a></li>
+                        <li class="nav-item mb-2"><a href="./Politica-de-Privacidad.html" class="nav-link-1 p-0 text-dark fw-bolder">Politica de Privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="./Defensa-al-Consumidor.html" class="nav-link-1 p-0 text-dark fw-bolder">Defensa al Consumidor</a></li>
+                        <li class="nav-item mb-2"><a href="./Pagos-y-Devoluciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Pagos y Devoluciones</a></li>
+                        <li class="nav-item mb-2"><a href="./Envios.html" class="nav-link-1 p-0 text-dark fw-bolder">Envios</a></li>
+                        <li class="nav-item mb-2"><a href="./ayuda.html" class="nav-link-1 p-0 text-dark fw-bolder">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <form class="d-flex flex-column">
+                        <h5 class="text-center text-dark fw-bolder">CONTACTANOS</h5>
+                        <p class="text-center text-dark fw-bolder">Av. Sarmiento 1009 - Salta Capital / Tel. +54 387-5548656</p>
+                        <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
+                            <button class="btn btn-primary" type="button">Enviar</button>
+                        </div>
+                    </form>
+                    <ul class="d-flex">
+                        <li class="d-flex">
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono instagram.jpg" alt="instagram" class="border border-dark rounded-2"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center border-top">
+                <p class="m-3">© 2022 Imitation of Weapon, S.A All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
