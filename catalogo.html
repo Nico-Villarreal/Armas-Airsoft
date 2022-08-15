@@ -12,19 +12,20 @@
     <title>Catalogo</title>
 </head>
 <body id="grid-container-catalogue">
-    <header class="header">
-        <section class="header__section1">
-                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
+<!-------------header------------>
+    <header class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
+        <section class="header__section1 d-flex flex-wrap justify-content-center">
+                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3 w-75">
         </section>
-<!----------------------menu con boostrap----------------------------->
-        <section class="header__section2">
+<!-------------nav-bar------------>
+        <section class="header__section2 d-flex flex-wrap justify-content-center">
             <nav class="header__section2--nav">
                 <ul class="nav nav-pills text-white d-flex flex-row">
                     <li class="nav-item"> 
-                      <a class="nav-link bg-light border link-dark border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                      <a class="nav-link bg-light link-dark border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active border border-dark m-1 bg-secondary link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
+                      <a class="nav-link active border border-dark m-1 bg-secondary fw-semibold" href="./catalogo.html">CATALOGO</a>
                     </li>
                     <li class="nav-item"> 
                       <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./contacto.html">CONTACTO</a>
@@ -37,27 +38,30 @@
                     </li>
                 </ul>           
             </nav>
+
         </section>
-        <section class="header__section3">
+        <section class="header__section3 d-flex flex-wrap justify-content-center">
             <div class="header__section3--div d-flex flex-row align-items-end mb-1">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
-                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border-1 border-white rounded-2 border-secondary"></a>
             </div>
         </section>
     </header>
-    <h1 class="catalogo-h1">TIPOS DE ARMAS</h1>
-    <h2 class="catalogo__h2-1">ARMAS CORTAS</h2>
+    
+    <h1 class="catalogo-h1 d-flex justify-content-center p-3">TIPOS DE ARMAS</h1>
+    <h2 class="catalogo__h2-1 d-flex justify-content-center p-3">ARMAS CORTAS</h2>
+<!-------------products-grid------------>
     <section id="section1-catalogo">
-        <h3 class="section1-catalogo__h3">Pistolas y Revolveres</h3>
+        <h3 class="section1-catalogo__h3 d-flex justify-content-start pb-4">Pistolas y Revolveres</h3>
         <div class="section1__container-article div-container" data-aos="fade-up" data-aos-duration="3000">
-            <article class="section1-catalogo__article1" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section1-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section1-catalogo__article1--div1 div-article__active">
-                    <img src="./img/HK-USP.jpg" alt="HK-USP" class="section1-catalogo__article1--div1-img">
+                    <img src="./img/HK-USP.jpg" alt="HK-USP" class="section1-catalogo__article1 article1__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section1-catalogo__article1--div2">
+                <div class="section1-catalogo__article1--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section1-catalogo__article1--div2--text">
-                        <h4 class="section1-catalogo__article1--div2--text--h4">HK-USP</h4>
+                        <h4 class="section1-catalogo__article1--div2--text--h4 text-center mx-0 my-2">HK-USP</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 9 mm</li>
@@ -67,13 +71,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section1-catalogo__article2" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section1-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section1-catalogo__article2--div1 div-article__active">
-                    <img src="./img/DESERT-EAGLE.jpg" alt="DESERT-EAGLE" class="section1-catalogo__article2--div1-img">
+                    <img src="./img/DESERT-EAGLE.jpg" alt="DESERT-EAGLE" class="section1-catalogo__article2 article2__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section1-catalogo__article2--div2">
+                <div class="section1-catalogo__article2--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section1-catalogo__article2--div2--text">
-                        <h4 class="section1-catalogo__article2--div2--text--h4">DESERT EAGLE</h4>
+                        <h4 class="section1-catalogo__article2--div2--text--h4 text-center mx-0 my-2">DESERT EAGLE</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre .45 mm</li>
@@ -83,13 +87,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section1-catalogo__article3" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section1-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section1-catalogo__article3--div1 div-article__active">
-                    <img src="./img/MAGNUM-44.jpg" alt="MAGNUM-44"  class="section1-catalogo__article3--div1-img">
+                    <img src="./img/MAGNUM-44.jpg" alt="MAGNUM-44"  class="section1-catalogo__article3 article3__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section1-catalogo__article3--div2">
+                <div class="section1-catalogo__article3--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section1-catalogo__article3--div2--text">
-                        <h4 class="section1-catalogo__article3--div2--text--h4">MAGNUM .44</h4>
+                        <h4 class="section1-catalogo__article3--div2--text--h4 text-center mx-0 my-2">MAGNUM .44</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre .44 mm</li>
@@ -99,13 +103,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section1-catalogo__article4" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section1-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section1-catalogo__article4--div1 div-article__active">
-                    <img src="./img/GLOCK-17.jpg" alt="GLOCK-17" class="section1-catalogo__article4--div1-img">
+                    <img src="./img/GLOCK-17.jpg" alt="GLOCK-17" class="section1-catalogo__article4 article4__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section1-catalogo__article4--div2">
+                <div class="section1-catalogo__article4--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p>
-                        <h4 class="section1-catalogo__article4--div2--text--h4">GLOCK 17</h4>
+                        <h4 class="section1-catalogo__article4--div2--text--h4 text-center mx-0 my-2">GLOCK 17</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 9 mm</li>
@@ -117,17 +121,18 @@
             </article>
         </div>
     </section>
+
     <section id="section2-catalogo">
-        <h2 class="catalogo__h2-2">ARMAS LARGAS</h2>
-        <h3 class="section2-catalogo__h3">Subfusiles</h3>
+        <h2 class="catalogo__h2-2 d-flex justify-content-center p-3">ARMAS LARGAS</h2>
+        <h3 class="section2-catalogo__h3 d-flex justify-content-start pb-4">Subfusiles</h3>
         <div class="section2__container-article div-container" data-aos="fade-up" data-aos-duration="3000">
-            <article class="section2-catalogo__article1" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section2-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section2-catalogo__article1--div1 div-article__active">
-                    <img src="./img/MP-5.jpg" alt="MP-5" class="section2-catalogo__article1--div1-img">
+                    <img src="./img/MP-5.jpg" alt="MP-5" class="section2-catalogo__article1 article1__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section2-catalogo__article1--div2">
+                <div class="section2-catalogo__article1--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section2-catalogo__article1--div2--text">
-                        <h4 class="section2-catalogo__article1--div2--text--h4">MP-5</h4>
+                        <h4 class="section2-catalogo__article1--div2--text--h4 text-center mx-0 my-2">MP-5</h4>
                         <ul>
                             <li>Semiautomatica/Automtica</li>
                             <li>Calibre 9 mm</li>
@@ -138,13 +143,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section2-catalogo__article2" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section2-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section2-catalogo__article2--div1 div-article__active">
-                    <img src="./img/P-90.jpg" alt="P-90" class="section2-catalogo__article2--div1-img">
+                    <img src="./img/P-90.jpg" alt="P-90" class="section2-catalogo__article2 article2__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section2-catalogo__article2--div2">
+                <div class="section2-catalogo__article2--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section2-catalogo__article2--div2--text">
-                        <h4 class="section2-catalogo__article2--div2--text--h4">P-90</h4>
+                        <h4 class="section2-catalogo__article2--div2--text--h4 text-center mx-0 my-2">P-90</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 5.7 mm</li>
@@ -155,13 +160,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section2-catalogo__article3" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section2-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section2-catalogo__article3--div1 div-article__active">
-                    <img src="./img/UZI.jpg" alt="UZI" class="section2-catalogo__article3--div1-img">
+                    <img src="./img/UZI.jpg" alt="UZI" class="section2-catalogo__article3 article3__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section2-catalogo__article3--div2">
+                <div class="section2-catalogo__article3--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section2-catalogo__article3--div2--text">
-                        <h4 class="section2-catalogo__article3--div2--text--h4">UZI</h4>
+                        <h4 class="section2-catalogo__article3--div2--text--h4 text-center mx-0 my-2">UZI</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 9 mm</li>
@@ -172,13 +177,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section2-catalogo__article4" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section2-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section2-catalogo__article4--div1 div-article__active">
-                    <img src="./img/VZ61-Scorpion.jpg" alt="VZ61-SCORPION" class="section2-catalogo__article4--div1-img">
+                    <img src="./img/VZ61-Scorpion.jpg" alt="VZ61-SCORPION" class="section2-catalogo__article4 article4__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section2-catalogo__article4--div2">
+                <div class="section2-catalogo__article4--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section2-catalogo__article4--div2--text">
-                        <h4 class="section2-catalogo__article4--div2--text--h4">VZ61-SCORPION</h4>
+                        <h4 class="section2-catalogo__article4--div2--text--h4 text-center mx-0 my-2">VZ61-SCORPION</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 9 mm</li>
@@ -191,16 +196,17 @@
             </article>
         </div>
     </section>
+
     <section id="section3-catalogo">
-        <h3 class="section3-catalogo__h3">Fusiles</h3>
+        <h3 class="section3-catalogo__h3 d-flex justify-content-start pb-4">Fusiles</h3>
         <div class="section3__container-article div-container" data-aos="fade-up" data-aos-duration="3000">
-            <article class="section3-catalogo__article1" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section3-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section3-catalogo__article1--div1 div-article__active">
-                    <td><img src="./img/AR15.jpg" alt="AR-15" class="section3-catalogo__article1--div1-img"></td>
+                    <img src="./img/AR15.jpg" alt="AR-15" class="section3-catalogo__article1 article1__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section3-catalogo__article1--div2">
+                <div class="section3-catalogo__article1--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section3-catalogo__article1--div2--text">
-                        <h4 class="section3-catalogo__article1--div2--text--h4">AR-15</h4>
+                        <h4 class="section3-catalogo__article1--div2--text--h4 text-center mx-0 my-2">AR-15</h4>
                         <ul>
                             <li>Semiautomatica/Automtica</li>
                             <li>Calibre 5,56 mm</li>
@@ -211,13 +217,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section3-catalogo__article2" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section3-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section3-catalogo__article2--div1 div-article__active">
-                    <img src="./img/AK-47.jpg" alt="AK-47" class="section3-catalogo__article2--div1-img">
+                    <img src="./img/AK-47.jpg" alt="AK-47" class="section3-catalogo__article2 article2__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section3-catalogo__article2--div2">
+                <div class="section3-catalogo__article2--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section3-catalogo__article2--div2--text">
-                        <h4 class="section3-catalogo__article2--div2--text--h4">AK-47</h4>
+                        <h4 class="section3-catalogo__article2--div2--text--h4 text-center mx-0 my-2">AK-47</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 7,62 mm</li>
@@ -228,13 +234,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section3-catalogo__article3" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section3-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section3-catalogo__article3--div1 div-article__active">
-                    <img src="./img/STEYR-AUG.jpg" alt="STEYR-AUG" class="section3-catalogo__article3--div1-img">
+                    <img src="./img/STEYR-AUG.jpg" alt="STEYR-AUG" class="section3-catalogo__article3 article3__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section3-catalogo__article3--div2">
+                <div class="section3-catalogo__article3--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section3-catalogo__article3--div2--text">
-                        <h4 class="section3-catalogo__article3--div2--text--h4">STEYR AUG</h4>
+                        <h4 class="section3-catalogo__article3--div2--text--h4 text-center mx-0 my-2">STEYR AUG</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 5,56 mm</li>
@@ -245,13 +251,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section3-catalogo__article4" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section3-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section3-catalogo__article4--div1 div-article__active">
-                    <img src="./img/SCAR-L.jpg" alt="SCAR-L" class="section3-catalogo__article4--div1-img">
+                    <img src="./img/SCAR-L.jpg" alt="SCAR-L" class="section3-catalogo__article4 article4__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section3-catalogo__article4--div2">
+                <div class="section3-catalogo__article4--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section3-catalogo__article4--div2--text">
-                        <h4 class="section3-catalogo__article4--div2--text--h4">SCAR-L</h4>
+                        <h4 class="section3-catalogo__article4--div2--text--h4 text-center mx-0 my-2">SCAR-L</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 7,62 mm</li>
@@ -264,16 +270,17 @@
             </article>
         </div>
     </section>
+
     <section id="section4-catalogo">
-        <h3 class="section4-catalogo__h3">Ametralladoras</h3>
+        <h3 class="section4-catalogo__h3 d-flex justify-content-start pb-4">Ametralladoras</h3>
         <div class="section4__container-article div-container" data-aos="fade-up" data-aos-duration="3000">
-            <article class="section4-catalogo__article1">
+            <article class="section4-catalogo__article d-flex flex-column m-2">
                 <div class="section4-catalogo__article1--div1 div-article__active">
-                    <img src="./img/M249.jpg" alt="M-249" class="section4-catalogo__article1--div1-img">
+                    <img src="./img/M249.jpg" alt="M-249" class="section4-catalogo__article1 article1__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section4-catalogo__article1--div2">
+                <div class="section4-catalogo__article1--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section4-catalogo__article1--div2--text">
-                        <h4 class="section4-catalogo__article1--div2--text--h4">M-249</h4>
+                        <h4 class="section4-catalogo__article1--div2--text--h4 text-center mx-0 my-2">M-249</h4>
                         <ul>
                             <li>Semiautomatica/Automtica</li>
                             <li>Calibre 5,56 mm</li>
@@ -284,13 +291,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section4-catalogo__article2">
+            <article class="section4-catalogo__article d-flex flex-column m-2">
                 <div class="section4-catalogo__article2--div1 div-article__active">
-                    <img src="./img/HK-21.jpg" alt="HK-21" class="section4-catalogo__article2--div1-img">
+                    <img src="./img/HK-21.jpg" alt="HK-21" class="section4-catalogo__article2 article2__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section4-catalogo__article2--div2">
+                <div class="section4-catalogo__article2--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section4-catalogo__article2--div2--text">
-                        <h4 class="section4-catalogo__article2--div2--text--h4">HK-21</h4>
+                        <h4 class="section4-catalogo__article2--div2--text--h4 text-center mx-0 my-2">HK-21</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 7,62 mm</li>
@@ -301,13 +308,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section4-catalogo__article3">
+            <article class="section4-catalogo__article d-flex flex-column m-2">
                 <div class="section4-catalogo__article3--div1 div-article__active">
-                    <img src="./img/FN-MAG.jpg" alt="FN-MAG" class="section4-catalogo__article3--div1-img">
+                    <img src="./img/FN-MAG.jpg" alt="FN-MAG" class="section4-catalogo__article3 article3__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section4-catalogo__article3--div2">
+                <div class="section4-catalogo__article3--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section4-catalogo__article3--div2--text">
-                        <h4 class="section4-catalogo__article3--div2--text--h4">FN-MAG</h4>
+                        <h4 class="section4-catalogo__article3--div2--text--h4 text-center mx-0 my-2">FN-MAG</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 7,62 mm</li>
@@ -318,13 +325,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section4-catalogo__article4">
+            <article class="section4-catalogo__article d-flex flex-column m-2">
                 <div class="section4-catalogo__article4--div1 div-article__active">
-                    <img src="./img/KSP-LIGHT.jpg" alt="KSP-LIGHT" class="section4-catalogo__article4--div1-img">
+                    <img src="./img/KSP-LIGHT.jpg" alt="KSP-LIGHT" class="section4-catalogo__article4 article4__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section4-catalogo__article4--div2">
+                <div class="section4-catalogo__article4--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section4-catalogo__article4--div2--text">
-                        <h4 class="section4-catalogo__article4--div2--text--h4">KSP-LIGHT</h4>
+                        <h4 class="section4-catalogo__article4--div2--text--h4 text-center mx-0 my-2">KSP-LIGHT</h4>
                         <ul>
                             <li>Semiautomatica/Automatica</li>
                             <li>Calibre 7,62 mm</li>
@@ -337,16 +344,17 @@
             </article>
         </div>    
     </section>
+
     <section id="section5-catalogo">
-        <h3 class="section5-catalogo__h3">Escopetas</h3>
+        <h3 class="section5-catalogo__h3 d-flex justify-content-start pb-4">Escopetas</h3>
         <div class="section5__container-article div-container" data-aos="fade-up" data-aos-duration="3000">
-            <article class="section5-catalogo__article1" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section5-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section5-catalogo__article1--div1 div-article__active">
-                    <img src="./img/AKKAR.jpg" alt="AKKAR" class="section5-catalogo__article1--div1-img">
+                    <img src="./img/AKKAR.jpg" alt="AKKAR" class="section5-catalogo__article1 article1__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section5-catalogo__article1--div2">
+                <div class="section5-catalogo__article1--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section5-catalogo__article1--div2--text">
-                        <h4 class="section5-catalogo__article1--div2--text--h4">AKKAR TACTICAL</h4>
+                        <h4 class="section5-catalogo__article1--div2--text--h4 text-center mx-0 my-2">AKKAR TACTICAL</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 12</li>
@@ -357,13 +365,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section5-catalogo__article2" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section5-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section5-catalogo__article2--div1 div-article__active">
-                    <img src="./img/LEGEND-JW2005.jpg" alt="LEGEND-JW2005" class="section5-catalogo__article2--div1-img">
+                    <img src="./img/LEGEND-JW2005.jpg" alt="LEGEND-JW2005" class="section5-catalogo__article2 article2__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section5-catalogo__article2--div2">
+                <div class="section5-catalogo__article2--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section5-catalogo__article2--div2--text">
-                        <h4 class="section5-catalogo__article2--div2--text--h4">LEGEND JW-2005</h4>
+                        <h4 class="section5-catalogo__article2--div2--text--h4 text-center mx-0 my-2">LEGEND JW-2005</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 12</li>
@@ -374,13 +382,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section5-catalogo__article3" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section5-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section5-catalogo__article3--div1 div-article__active">
-                    <img src="./img/TAURUS-ST12.jpg" alt="TAURUS-ST12" class="section5-catalogo__article3--div1-img">
+                    <img src="./img/TAURUS-ST12.jpg" alt="TAURUS-ST12" class="section5-catalogo__article3 article3__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section5-catalogo__article3--div2">
+                <div class="section5-catalogo__article3--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section5-catalogo__article3--div2--text">
-                        <h4 class="section5-catalogo__article3--div2--text--h4">TAURUS ST-12</h4>
+                        <h4 class="section5-catalogo__article3--div2--text--h4 text-center mx-0 my-2">TAURUS ST-12</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 12</li>
@@ -391,13 +399,13 @@
                     </p>
                 </div>
             </article>
-            <article class="section5-catalogo__article4" data-aos="fade-up" data-aos-duration="3000">
+            <article class="section5-catalogo__article d-flex flex-column m-2" data-aos="fade-up" data-aos-duration="3000">
                 <div class="section5-catalogo__article4--div1 div-article__active">
-                    <img src="./img/ADLER-HT304.jpg" alt="ADLER" class="section5-catalogo__article4--div1-img">
+                    <img src="./img/ADLER-HT304.jpg" alt="ADLER" class="section5-catalogo__article4 article4__div1-img border border-dark rounded-3">
                 </div>
-                <div class="section5-catalogo__article4--div2">
+                <div class="section5-catalogo__article4--div2 d-flex flex-column justify-content-center border border-dark rounded-3 pb-2">
                     <p class="section5-catalogo__article4--div2--text">
-                        <h4 class="section5-catalogo__article4--div2--text--h4">ADLER HT-304</h4>
+                        <h4 class="section5-catalogo__article4--div2--text--h4 text-center mx-0 my-2">ADLER HT-304</h4>
                         <ul>
                             <li>Semiautomatica</li>
                             <li>Calibre 12</li>
@@ -410,29 +418,31 @@
             </article>
         </div>
     </section> 
-    <section id="medios-de-pagos" class="justify-content-center">
-        <h2 class="section3__h3">MEDIOS DE PAGOS</h2>
-        <section class="section3__content-article w-100 justify-content-center">
-            <article class="section3__article">
-                <img src="./img/tarjeta de credito.png" alt="credito" class="section3__article1-img1">
-                <h4 class="section3__article1--h4-1"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Credito</a></h4>
+<!-------------payment-methods------------>
+    <section id="medios-de-pagos" class="d-flex flex-wrap align-items-center mx-4 my-5">
+        <h2 class="section3__h3 text-center p-4 w-100">MEDIOS DE PAGOS</h2>
+        <section class="section3__content-article d-flex justify-content-around flex-wrap w-100 border-3 border border-dark rounded-3 mx-5">
+            <article class="section3__article d-flex align-items-center m-3">
+                <img src="./img/tarjeta de credito.png" alt="credito" class="section3__article1-img1 mx-2 border border-dark rounded-5">
+                <h4 class="section3__article--h4 ms-3 text-center fs-5"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Credito</a></h4>
             </article>
-            <article class="section3__article">
-                <img src="./img/debito.jpg" alt="debito" class="section3__article2-img2">
-                <h4 class="section3__article2--h4-2"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Debito</a></h4>
+            <article class="section3__article d-flex align-items-center m-3">
+                <img src="./img/debito.jpg" alt="debito" class="section3__article2-img2 mx-2 border border-dark rounded-5">
+                <h4 class="section3__article--h4 ms-3 text-center fs-5"><a href="Pagos-y-Devoluciones.html#pagos">Tarjeta de Debito</a></h4>
             </article>
-            <article class="section3__article">
-                <img src="./img/efectivo.png" alt="efectivo" class="section3__article3-img3">
-                <h4 class="section3__article3--h4-3"><a href="Pagos-y-Devoluciones.html#pagos">Pago en Efectivo</a></h4>
+            <article class="section3__article d-flex align-items-center m-3">
+                <img src="./img/efectivo.png" alt="efectivo" class="section3__article3-img3 mx-2 border border-dark rounded-5">
+                <h4 class="section3__article--h4 ms-3 text-center fs-5"><a href="Pagos-y-Devoluciones.html#pagos">Pago en Efectivo</a></h4>
             </article>
-            <article class="section3__article">
-                <img src="./img/ofertas.png" alt="promociones" class="section3__article4-img4">
-                <h4 class="section3__article4--h4-4"><a href="Pagos-y-Devoluciones.html#promociones">Promociones</a></h4>
+            <article class="section3__article d-flex align-items-center m-3">
+                <img src="./img/ofertas.png" alt="promociones" class="section3__article4-img4 mx-2 border border-dark rounded-5">
+                <h4 class="section3__article--h4 ms-3 text-center fs-5" ><a href="Pagos-y-Devoluciones.html#promociones">Promociones</a></h4>
             </article>
         </section>
     </section>
+<!-------------footer------------>
     <div class="container">
-        <footer class="py-5 d-flex flex-column">
+        <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
             <div class="row">
                 <div class="col-xl-6 mb-3">
                     <ul class="nav flex-column">
@@ -451,12 +461,12 @@
                         <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
-                            <button class="btnbtn-secondary border border-dark" type="button">Enviar</button>
+                            <button class="btn btn-secondary border border-dark" type="button">Enviar</button>
                         </div>
                     </form>
                     <ul class="d-flex">
                         <li class="d-flex">
-                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono instagram.jpg" alt="instagram" class="border border-dark rounded-2"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="./img/icono instagram.jpg" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
                         </li>
                     </ul>
                 </div>
@@ -467,6 +477,7 @@
             </div>
         </footer>
     </div>
+    
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

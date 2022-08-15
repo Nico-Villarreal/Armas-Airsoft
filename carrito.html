@@ -12,16 +12,16 @@
     <title>Carrito de Compra</title>
 </head>
 <body id="container-shopping">
-    <header class="header">
-        <section class="header__section1">
-                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
+<!-------------header------------>
+    <header class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
+        <section class="header__section1 d-flex flex-wrap justify-content-center">
+                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3 w-75">
         </section>
-<!----------------------menu con boostrap------------------------------>
-        <section class="header__section2">
+        <section class="header__section2 d-flex flex-wrap justify-content-center">
             <nav class="header__section2--nav">
                 <ul class="nav nav-pills text-white d-flex flex-row">
                     <li class="nav-item"> 
-                      <a class="nav-link bg-light link-dark bg-secondary border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                      <a class="nav-link bg-light link-dark border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
@@ -39,14 +39,15 @@
             </nav>
 
         </section>
-        <section class="header__section3">
+        <section class="header__section3 d-flex flex-wrap justify-content-center">
             <div class="header__section3--div d-flex flex-row align-items-end mb-1">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
-                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border-1 border-white rounded-2 border-secondary"></a>
             </div>
         </section>
     </header>
+<!-------------payment-form------------>
     <section class="container">
         <div class="row g-5 m-4 p-4 bg-light text-dark border border-dark rounded-2">
             <div class="col-md-5 col-lg-4 order-md-last">
@@ -248,8 +249,9 @@
             </div>
         </div>
     </section>
-    <div id="footer">
-        <footer class="py-5 d-flex flex-column">
+<!-------------footer----------->
+    <div class="container">
+        <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
             <div class="row">
                 <div class="col-xl-6 mb-3">
                     <ul class="nav flex-column">
@@ -273,7 +275,7 @@
                     </form>
                     <ul class="d-flex">
                         <li class="d-flex">
-                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono instagram.jpg" alt="instagram" class="border border-dark rounded-2"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="./img/icono instagram.jpg" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
                         </li>
                     </ul>
                 </div>
@@ -284,6 +286,7 @@
             </div>
         </footer>
     </div>
+    
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

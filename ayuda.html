@@ -12,16 +12,16 @@
     <title>Ayuda</title>
 </head>
 <body id="grid-container-help">
-    <header class="header">
-        <section class="header__section1">
-                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse">
+<!-------------header------------>
+    <header class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
+        <section class="header__section1 d-flex flex-wrap justify-content-center">
+                <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3 w-75">
         </section>
-<!----------------------menu con boostrap----------------------------->
-        <section class="header__section2">
+        <section class="header__section2 d-flex flex-wrap justify-content-center">
             <nav class="header__section2--nav">
                 <ul class="nav nav-pills text-white d-flex flex-row">
                     <li class="nav-item"> 
-                      <a class="nav-link bg-light border border-dark link-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                      <a class="nav-link bg-light link-dark border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
@@ -30,24 +30,27 @@
                       <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./contacto.html">CONTACTO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active border border-1ark m-2 bg-secondary  link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
+                      <a class="nav-link active border border-dark m-1 bg-secondary fw-semibold" href="./ayuda.html">AYUDA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link border border-dark 1-2 bg-light link-dark fw-semibold" href="./donde estamos.html">DONDE ESTAMOS</a>
-                      </li>
+                        <a class="nav-link border border-dark m-1 bg-light link-dark  fw-semibold" href="./donde estamos.html">DONDE ESTAMOS</a>
+                    </li>
                 </ul>           
             </nav>
+
         </section>
-        <section class="header__section3">
+        <section class="header__section3 d-flex flex-wrap justify-content-center">
             <div class="header__section3--div d-flex flex-row align-items-end mb-1">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border border-white rounded-2"></a>
-                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border border-white rounded-2"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border border-white rounded-2"></a>
+                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="./carrito.html"><img src="./img/carrito.png" alt="carito" class="header__section3--div--img3 border-1 border-white rounded-2 bg-white border-secondary"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono instagram.jpg" alt="instagram" class="header__section3--div--img4 border-1 border-white rounded-2 border-secondary"></a>
             </div>
         </section>
     </header>
-    <h1 id="h1-ayuda">Formulario de Ayuda</h1>
-    <section class="section1-ayuda">
+
+    <h1 id="h1-ayuda" class="d-flex justify-content-center p-3">Formulario de Ayuda</h1>
+<!-------------text-help------------>
+    <section class="section1-ayuda d-flex p-3 m-2">
         <article class="section1-ayuda__article1">
             <p class="section1-ayuda__article1--text">
                 Para una mejor atencion, por favor completar el sigueinte formualario y un representante de nuestro equipo de post-venta de comunicara
@@ -55,9 +58,10 @@
             </p>
         </article>
     </section>
-    <section id="section2-ayuda">
-        <article class="section2-ayuda__article1">
-            <form method="get" class="section2-contacto__article1--form" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
+<!-------------fomrm-help------------>
+    <section id="section2-ayuda" class="d-flex flex-column">
+        <article class="section2-ayuda__article1 d-flex justify-content-center border-2 border border-dark rounded-4 py-3 px-4 my-2">
+            <form method="get" class="section2-contacto__article1--form d-flex flex-column align-items-center border-2 border border-dark rounded-3 p-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
                 <div class="mb-1 w-75">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                     <input type="text" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="name...">
@@ -83,7 +87,7 @@
                     <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div>
-                    <input type="submit" class="section2-contacto__article1--form--submit button-submit__active p-1">
+                    <input type="submit" class="section2-contacto__article1--form--submit button-submit__active border-2 border border-dark rounded-2 m-2 p-1">
                 </div>
             </form>  
 <!------------------------SIN BOOTSTRAP--------  
@@ -100,15 +104,17 @@
 
         </article>
     </section>
-    <section class="section3-ayuda">
+
+    <section class="section3-ayuda p-3 m-3">
         <article class="section3-ayuda__article1">
             <p class="section3-ayuda__article1--text1">
                 *Campo requerido.
             </p>
         </article>
     </section>
+<!-------------footer------------>
     <div class="container">
-        <footer class="py-5 d-flex flex-column">
+        <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
             <div class="row">
                 <div class="col-xl-6 mb-3">
                     <ul class="nav flex-column">
@@ -132,7 +138,7 @@
                     </form>
                     <ul class="d-flex">
                         <li class="d-flex">
-                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono instagram.jpg" alt="instagram" class="border border-dark rounded-2"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="./img/icono instagram.jpg" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
                         </li>
                     </ul>
                 </div>
@@ -143,6 +149,7 @@
             </div>
         </footer>
     </div>
+    
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
