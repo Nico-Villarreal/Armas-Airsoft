@@ -1,0 +1,125 @@
+/*-----------------------CONTACTO HTML-----------------------*/
+/*---------------GRID AREA--------------*/
+#grid-container-contact{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "section1"
+    "section2"
+    "section3"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+.h1-contacto{
+    grid-area: h1;
+}
+#section1-contacto{
+    grid-area: section1;
+}
+#section2-contacto{
+    grid-area: section2;
+}
+#section3-contacto{
+    grid-area: section3;
+}
+footer{
+    grid-area: footer;
+}
+
+/*-------------SECTION2-FORM-----------------*/
+.section2-contacto__article1{
+    box-shadow: 2px 3px 8px 0 rgb(100, 100, 100);
+    background-color: rgba(185, 182, 182, 0.278);
+    margin: 0px 150px;
+
+    &--form{
+        box-shadow: 2px 3px 8px 0 #000;
+        background-color: rgb(151, 151, 151);
+        width: 50%;
+
+        &--submit{
+            width: 100%;
+            box-shadow: 2px 3px 8px 0 #000;
+
+            .button-submit__active:hover{
+                background-color: rgb(205, 204, 204);
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+
+
+/*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 1024px){
+/*------------SECTION 2------------------*/  
+    .section1__texto{
+        text-align: justify;
+    }  
+    .section2-contacto__article1 {
+        margin: 10px 60px;
+    }
+    .p-3 {
+        padding: 0.5rem!important;
+    }
+}
+
+@media (max-width: 768px){
+/*------------SECTION 2------------------*/    
+    header section nav ul{
+        justify-content: center;
+    }
+    .section1__texto{
+        text-align: justify;
+    }
+    .section2-contacto__article1 {
+        margin: 10px 70px;
+
+        &--form {
+            width: 70%;
+        }
+    }
+
+}
+
+@media (max-width: 480px){
+    .w-75 {
+        width: 100%!important;
+    }
+    .section1__texto{
+        text-align: justify;
+    }
+    .section2-contacto__article1 {
+        margin: 10px 30px;
+
+        &--form {
+            width: 80%;
+        }
+    }
+
+    .p-3 {
+    padding: 1rem!important;
+}
+}
+
+@media (max-width: 320px){
+    #h1-contacto{
+        font-size: x-large;
+    }
+    .section2-contacto__article1 {
+        margin: 10px 15px;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+
+        &--form {
+            padding: 15px;
+        }
+    }
+
+}
+

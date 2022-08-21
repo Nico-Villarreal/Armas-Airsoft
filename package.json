@@ -1,0 +1,31 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nico-Villarreal/Armas-Airsoft.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "BOOTSTRAP"
+  ],
+  "author": "Nicolas Villarreal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nico-Villarreal/Armas-Airsoft/issues"
+  },
+  "homepage": "https://github.com/Nico-Villarreal/Armas-Airsoft#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

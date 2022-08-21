@@ -1,0 +1,45 @@
+/*-----HEADER  FLEX - HTML-------*/
+header{
+    background: linear-gradient(30deg, rgba(223,223,223,1) 0%, rgba(157,157,157,1) 24%, rgba(124,124,128,1) 49%, rgba(48,48,49,1) 79%, rgba(0,0,0,1) 100%);
+
+    .header__section1--img-1{
+        box-shadow: 2px 2px 4px black;
+    }  
+    
+    /*----------NAV-----------------*/
+    .nav-link{
+        transition: 0.5s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    .active{
+        border: 2px solid black;
+        box-shadow: 1px 1px 4px white;
+        transform: scale(1.05);
+    }
+    /*-------------ICONS-------------------*/
+    .header__section3--div--img2, .header__section3--div--img3, .header__section3--div--img4{
+    width: 90%;
+    box-shadow: 2px 2px 4px black;
+}
+
+}
+
+@media (max-width: 480px){
+    /*-----------------HEADER ----------------*/
+        .header__section2--nav {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: small;
+        } 
+    } 
+
+@media (max-width: 320px){
+    /*-----------------HEADER ----------------*/
+        .header__section3--div {
+             max-width: 120px;
+        }
+    }             

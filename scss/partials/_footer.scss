@@ -1,0 +1,27 @@
+
+ /*---------------FOOTER---------------*/
+ footer{
+    background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
+}
+
+@media (max-width: 768px){
+    /*----------FOOTER - INDEX------------*/
+    footer{
+        font-size: smaller;  
+        margin: 10px 30px;
+
+        .footer__icon-instagram{
+            width: 75%;
+        }
+    }
+
+}
+@media (max-width: 320px){
+/*-----------------FOOTER----------------*/
+    footer {
+        font-size: x-small;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin: 10px 0px;
+    }
+}  

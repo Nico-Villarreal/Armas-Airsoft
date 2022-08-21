@@ -1,0 +1,79 @@
+/*-----------------------DONDE ESTAMOS HTML-----------------------*/
+/*---------------GRID AREA--------------*/
+#grid-container_dondeEstamos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "section1"
+    "footer";
+
+    header{
+        grid-area: header;
+    }
+    #h1-ubicacion{
+        grid-area: h1;
+    }
+    #section1-maps{
+        grid-area: section1;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+}
+
+/*---------------SECTION 1--------------*/
+.section1-maps__link{
+    width: 70vw;
+    height: 80vh;
+    box-shadow: 2px 2px 4px black;
+}
+.section1-maps__text{
+    background-color: rgb(211, 211, 211)!important;
+
+    &--li{
+        font-size: x-large;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 768px){
+/*------------SECTION 1------------------*/    
+    .section1-maps__link{
+        width: 90vw;
+        height: 70vh;
+    }
+    .section1-maps_text--li {
+        font-size: large;
+    }
+}
+@media (max-width: 480px){
+/*------------SECTION 1------------------*/    
+    .section1-maps_text--li {
+        font-size: small;
+    }
+    .section1-maps__link{
+        width: 90vw;
+        height: 50vh;
+    }
+}   
+@media (max-width: 320px){
+/*------------H1------------------*/   
+    #h1-ubicacion {
+        font-size: x-large;
+    }
+/*------------SECTION 1------------------*/   
+    .section1-maps__link{
+        width: 90vw;
+        height: 30vh;
+    }
+    .section1-maps__text{
+        margin: 1rem;
+
+        &--li {
+            font-size: small;
+        }
+    }
+}

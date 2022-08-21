@@ -1,0 +1,69 @@
+/*--------------TERMINOS Y CONDICIONES--------------------*/
+/*---------------GRID AREA--------------*/
+#grid-container-conditions{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "footer";
+
+    header{
+        grid-area: header;
+    }
+    #section-terminos{
+        grid-area: section1;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+/*--------------SECTION 1--------------*/
+#section-terminos{
+    margin: 20px 50px;
+    box-shadow: 2px 2px 4px 0 rgb(100, 100, 100);
+    background-color: rgba(185, 182, 182, 0.278);
+
+    .section-terminos__article--text--p{
+        text-align: justify;
+    }
+    .section-terminos__article--text--h3{
+        font-size: x-large;
+    }
+}
+
+/*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 1024px){
+/*------------SECTION 1------------------*/  
+    .section-terminos__h1 {
+        font-size: xx-large;
+
+        .section-terminos__article--text--h3{
+            font-size: large;
+        }
+        .section-terminos__article--text--p{
+            font-size: smaller;
+            line-height: 1.5;
+        }
+    }
+
+}
+@media (max-width: 768px){
+/*------------SECTION 1------------------*/    
+    section article div p{
+        font-size: small;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 480px){
+/*------------SECTION 1------------------*/    
+    .section-terminos__h1 {
+        font-size: x-large;
+    }
+} 
+@media (max-width: 320px){
+/*------------SECTION 1------------------*/   
+    #section-terminos {
+        margin: 20px 15px;
+    }
+}

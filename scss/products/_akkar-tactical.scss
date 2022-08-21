@@ -1,0 +1,81 @@
+/*---------------------AKKAR-TACTICAL------------*/
+#grid-container-product-akkar{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1-akkar"
+    "section2-akkar"
+    "footer";
+
+    header{
+        grid-area: header;
+    }
+    #section1-akkar{
+        grid-area: section1-akkar;
+    }
+    #section2-akkar{
+        grid-area: section2-akkar;
+    }
+    #footer{
+        grid-area: footer;
+    }
+}
+
+/*--------------------AREAS------------*/
+.section1-akkar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin: 25px 80px;
+
+    &__div-info{
+        background-color: rgb(205, 204, 204)!important;
+
+        .buy-product:hover{
+            background-color: antiquewhite;
+            transition: 0.5s;
+        }
+        .shipping-product:hover{
+            background-color: antiquewhite;
+            transition: 0.5s;
+        }
+    }
+}
+
+.section2-akkar{
+    margin: 25px 80px;
+}
+
+@media (max-width: 768px){
+    .section1-akkar {
+        margin: 25px 50px;
+    }
+    .section2-akkar {
+        margin: 25px 50px;
+
+        .container-decription__text--div1--ul{
+            font-size: small;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .section1-akkar {
+        margin: 25px 40px;
+    }
+    .section2-akkar {
+        margin: 25px 40px;
+    }
+}
+
+@media (max-width: 320px){
+    .section1-akkar {
+        margin: 15px;
+    }
+    .section2-akkar {
+        margin: 15px;
+
+        .container-decription__text--div1--ul, .container-decription__text--div2--p{
+            font-size: x-small;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+/*-------------------GRID TEMPLEATE AREA----------------------*/
+#grid-container-index{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section0"
+    "section1"
+    "section2"
+    "medios-de-pagos"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+#section0{
+    grid-area: section0;
+}
+#section1{
+    grid-area: section1;
+}
+#section2{
+    grid-area: section2;
+    margin-top: 25px;
+}
+#medios-de-pagos{
+    grid-area: medios-de-pagos;
+    margin-top: 25px;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/*------SECTION 1-HTML--------*/
+#section1{
+    margin: 25px 40px 0px; 
+}
+.section1__article{
+    flex-basis: 350px;
+
+    &--img1, &--img2, &--img3{
+        box-shadow: 2px 2px 4px black; 
+    }
+
+    &--span{
+        background-color: rgb(205, 204, 204);
+        box-shadow: 2px 2px 4px black; 
+    }
+}
+
+/*------SECTION 2-HTML--------*/
+#section2{
+    margin: 25px 35px 0px; 
+}
+.section2__article{
+    flex-direction: column;
+    flex-basis: 540px;
+
+    &-img1, &-img2{
+        box-shadow: 2px 2px 4px black;     
+    }
+    &--span{
+        background-color: rgb(205, 204, 204);
+        box-shadow: 2px 2px 4px black; 
+    }
+}
+
+/*------MEDIOS DE PAGOS-HTML--------*/
+.section3__content-article{
+    background-color: rgb(237, 237, 237);
+
+    .section3__article{
+        width: 20%;
+
+        .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
+            max-width: 50px;
+            box-shadow: 2px 2px 4px black; 
+            
+        }
+    }
+}
+
+
+
+/*-----------------MEDIA QUERIES----------------*/
+@media (max-width: 1024px){
+    /*---------------SECTION 1---------------*/
+        .section1__article {
+            flex-basis: 275px;
+        }
+    /*---------------SECTION 2---------------*/
+        .section2__article{
+            flex-basis: 420px;
+        }
+    /*---------------medios de pagos---------------*/
+        .mx-5 {
+            margin-right: 0.5rem!important; 
+            margin-left: 0.5rem!important;
+        }
+    }
+@media (max-width: 768px){
+/*----------SECTION 1 - INDEX -----------*/
+    #section1{
+        margin: 0px; 
+    }    
+    .section1__article {
+        flex-basis: 190px;
+
+        &--span{
+            height: 35%;
+        }
+    }
+
+/*----------SECTION 2 - INDEX------------*/
+    #section2{
+        margin: 0px; 
+
+        .section2__article{   
+            flex-basis: 330px;
+        }
+    }
+    
+/*----------MEDIOS DE PAGO - INDEX------------*/
+    .section3__article {
+        width: 40%!important;
+
+        .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
+            margin-left: 0rem!important;
+        } 
+        &--h4{
+            font-size: 1rem!important;
+            margin-left: 0rem!important;
+        }
+    } 
+}
+@media (max-width: 480px){
+/*-----------------SECTION 1----------------*/
+    .section1__article {
+        flex-basis: 300px;
+
+        &--span {
+            height: auto;
+        }
+    }
+
+/*-----------------SECTION 2----------------*/
+    .gap-4 {
+        gap: 1.5rem!important;
+
+        .section2__article {
+            flex-basis: 400px;
+        }
+    }
+
+/*-----------------MEDIOS DE PAGO----------------*/
+    .mx-5 {
+        margin-right: 0!important;
+        margin-left: 0!important;
+
+        .section3__article {
+            width: 40%;
+    
+               
+            .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4 {
+                max-width: 45px;
+            }
+            .ms-3 {
+                margin-left: 0.5rem!important;
+            }
+            .fs-5 {
+                font-size: 1rem!important;
+            }
+        }
+    }
+
+
+}
+@media (max-width: 320px){
+/*-----------------SECTION 1----------------*/
+    .section1__article--span {
+            height: auto;
+    }
+/*-----------------SECTION 2----------------*/
+    .section2__article{
+            padding: 0px;
+    }
+/*-----------------MEDIOS DE PAGO----------------*/
+    .section3__article {
+        margin-left: 5px;
+        width: 100%;
+
+        &--h4{
+            font-size: smaller !important;
+        }
+    }
+}    
+    

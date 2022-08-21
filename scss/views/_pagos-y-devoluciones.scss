@@ -1,0 +1,72 @@
+/*--------------PAGOS Y DEVOLUVIONES--------------------*/
+/*---------------GRID AREA--------------*/
+#grid-container-payments{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "footer";
+
+    header{
+        grid-area: header;
+    }
+    #section1-payments{
+        grid-area: section1;
+    }
+    #section2-payments{
+        grid-area: section2;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+/*---------------SECTION 1--------------*/
+.section1-payments__article1--h1, .section1-payments__article2--h2{
+    font-size: x-large;
+}
+.section1-payments__article1--img, .section1-payments__article2--img{
+    box-shadow: 2px 2px 4px black;
+}
+/*------------SECTION 2---------------*/
+#section2-payments-text{
+    margin: 20px 50px;
+    box-shadow: 2px 2px 4px 0 rgb(100, 100, 100);
+    background-color: rgba(185, 182, 182, 0.278);
+
+    .section2-payments__article--h2{
+        font-size: xx-large;
+    }
+    .section2-payments__article--text{
+        text-align: justify;
+        line-height: 1.5;
+    }    
+}
+
+/*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 480px){
+/*------------SECTION 1------------------*/    
+    .section1-payments__article1--img, .section1-payments__article2--img{
+        width: 80%;
+    }
+/*------------SECTION 2------------------*/   
+    #section2-payments-text {
+        margin: 20px;
+        padding: 0.5rem!important;
+
+        .section2-payments__article--h2{
+            font-size: x-large;
+        }
+        .section2-payments__article--text{
+            font-size: small;
+        }
+    }
+}   
+
+@media (max-width: 320px){
+/*------------SECTION 1------------------*/   
+    .section2-payments__article--h2{
+        font-size: larger;
+    }
+}
