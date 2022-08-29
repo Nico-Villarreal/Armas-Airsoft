@@ -779,6 +779,24 @@ footer {
   #footer {
     margin: 0px 10px; } }
 
+.gird-container-sitemap {
+  display: grid;
+  grid-template-areas: "header-1" "section-sitemap" "footer"; }
+  .gird-container-sitemap header {
+    grid-area: header-1; }
+  .gird-container-sitemap .section-sitemap {
+    grid-area: section-sitemap; }
+  .gird-container-sitemap footer {
+    grid-area: footer; }
+
+.section-sitemap {
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px black; }
+  .section-sitemap__h1 {
+    font-size: 2rem; }
+  .section-sitemap__article--div--h2 {
+    font-size: 1.5rem; }
+
 /*---------------PRODUCTS----------------*/
 /*---------------------hk-usp------------*/
 #grid-container-product-hk-usp {

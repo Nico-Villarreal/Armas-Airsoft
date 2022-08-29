@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de contacto para que nuestro equipo de vendedores se puedan comunicar y brindarte la atencion que te mereces">
-    <meta name="keywords" content="CO2, ARMAS, AIRSOFT, CONTACTO, NOMBRE, APELLIDO, MAIL, CONSULTA, DUDAS, FORMULARIO">
+    <meta name="description" content="Armas de CO2 para competencias de Airsoft o para uso personal, tambien tenemos campos propios donde podras competir con tus amigos llevando la diversion al maximo, animate vivi la mejor experiencia">
+    <meta name="keywords" content="CAMPOS, CO2, ARMAS, AIRSOFT, OFERTAS, DESTACADOS, MEDIOS DE PAGO, PRODUCTOS, IMITACION">
     <link rel="shortcut icon" href="./img/logo-1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Contacto - Imitation of Weapons</title>
+    <title>Mapa del Sitio - Imitation of Weapon</title>
 </head>
-<body id="grid-container-contact">
-<!-------------header------------>
+<body class="gird-container-sitemap">
+
     <header class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
+    <!-------------logo------------>    
         <section class="header__section1 d-flex flex-wrap justify-content-center">
                 <img src="./img/logo-1.jpg" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3">
         </section>
+    <!-------------nav-bar------------>
         <section class="header__section2 d-flex flex-wrap justify-content-center">
             <nav class="header__section2--nav">
                 <ul class="nav nav-pills text-white d-flex flex-row">
                     <li class="nav-item"> 
-                      <a class="nav-link bg-light link-dark  border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
+                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" aria-current="page" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
+                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
                     </li>
                     <li class="nav-item"> 
-                      <a class="nav-link active border border-dark m-1 bg-secondary fw-semibold" href="./contacto.html">CONTACTO</a>
+                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./contacto.html">CONTACTO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
+                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./donde-estamos.html">ENCONTRANOS</a>
                     </li>
                 </ul>           
             </nav>
-
         </section>
+    <!-------------nav-icons------------>
         <section class="header__section3 d-flex flex-wrap justify-content-center">
             <div class="header__section3--div d-flex flex-row align-items-end mb-1">
                 <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.png" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
@@ -50,53 +52,85 @@
         </section>
     </header>
 
-    <h1 id="h1-contacto" class="d-flex justify-content-center p-3">Formulario de Contacto</h1>
-<!-------------text-contact------------>
-    <section id="section1-contacto" class="section1-contacto d-flex p-3 m-2">
-        <p class="section1__texto">
-            Para una mejor atencion por favor completar el siguiente formualrio y un representante de nuestro equipo de ventas 
-            se comunicara a la brevedad.
-        </p>
-    </section>
-<!-------------form-contact------------>
-    <section id="section2-contacto" class="section2-contacto d-flex flex-column">
-        <article class="section2-contacto__article1 d-flex justify-content-center border-2 border border-dark rounded-4 py-3 px-4 my-2"> 
-            <form method="get" class="section2-contacto__article1--form d-flex flex-column align-items-center border-2 border border-dark rounded-3 p-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
-                <div class="mb-1 w-75">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre/s</label>
-                    <input type="text" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="name...">
-                </div>
-                <div class="mb-1 w-75">
-                    <label for="exampleFormControlInput1" class="form-label">Apellido/s</label>
-                    <input type="text" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="last name...">
-                </div>
-                <div class="mb-1 w-75">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="email@email.com">
-                </div>
-                <div class="mb-1 w-75">
-                    <label for="exampleFormControlInput1" class="form-label">Numero de Contacto</label>
-                    <input type="number" class="form-control border border-dark" id="exampleFormControlInput1" placeholder="+5411.....">
-                </div>
-                <div class="mb-3 w-75">
-                    <label for="exampleFormControlTextarea1" class="form-label">Escriba su Consulta</label>
-                    <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div>
-                    <input type="submit" class="section2-contacto__article1--form--submit button-submit__active border-2 border border-dark rounded-2 m-2 p-1">
-                </div>
-            </form>               
+    <!-------------site------------>
+    <section class="section-sitemap text-dark m-5 p-5 d-flex flex-column border border-dark border-2 rounded-3">
+        <h1 class="section-sitemap__h1 p-2 mb-5 text-dark text-center fw-semibold">Mapa del Sitio</h1>
+        <article class="section-sitemap__article d-flex flex-row flex-wrap gap-3 justify-content-around">
+            <div class="section-sitemap__article--div">
+                <h2 class="section-sitemap__article--div--h2 text-dark text-center fw-semibold">Pagina de Inicio</h2>
+                <ul class="section-sitemap__pages">
+                    <li class="p-1"> 
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./catalogo.html">Catalogo</a>
+                    </li>
+                    <li class="p-1"> 
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./ayuda.html">Ayuda</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./donde-estamos.html">Encontranos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-sitemap__article--div">
+                <h2 class="section-sitemap__article--div--h2 text-dark text-center fw-semibold">Productos</h2>
+                <ul>
+                    <li class="p-1">
+                        <a href="./catalogo/armas y revorveleres/hk-usp.html">Hk-Usp</a>
+                    </li class="p-1">
+                    <li class="p-1">
+                        <a href="./catalogo/subfusiles/mp-5.html">Mp-5</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./catalogo/fusiles/ar-15.html">Ar-15</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./catalogo/ametralladoras/m-249.html">M-249</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./catalogo/escopetas/akkar-tactictal.html">Akkar-Tactictal</a>
+                    </li>
+                </ul>
+            </div>    
+            <div class="section-sitemap__article--div">
+                <h2 class="section-sitemap__article--div--h2 text-dark text-center fw-semibold">Pie de Pagina</h2>
+                <ul>
+                    <li class="p-1">
+                        <a href="./Terminos-y-condiciones.html">Terminos y Condiciones</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./Politica-de-Privacidad.html">Politica de Privacidad</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./Defensa-al-Consumidor.html">Defensa al Consumidor</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./Pagos-y-Devoluciones.html">Pagos y Devoluciones</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./Envios.html">Envios</a>
+                    </li>
+                    <li class="p-1">
+                        <a href="./ayuda.html">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-sitemap__article--div">
+                <h2 class="section-sitemap__article--div--h2 text-dark text-center fw-semibold">Carrito</h2>
+                <ul>
+                    <li class="p-1">
+                        <a href="./carrito.html">Finaliza tu Compra</a>
+                    </li>
+                </ul>
+            </div>    
         </article>
     </section>
 
-    <section id="section3-contacto" class="section3-contacto p-3 m-3">
-        <article class="section3-contacto__article1">
-            <p class="section3-contacto__article1--text1">
-                *Campo requerido.
-            </p>
-        </article>
-    </section>
-<!-------------footer------------>
+    <!-------------footer------------>
     <div class="container">
         <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
             <div class="row">
@@ -135,11 +169,11 @@
         </footer>
     </div>
 
-
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
 </html>

@@ -1,0 +1,31 @@
+.gird-container-sitemap{
+    display: grid;
+    grid-template-areas: 
+    "header-1"
+    "section-sitemap"
+    "footer";
+
+    header{
+        grid-area: header-1;
+    }
+    .section-sitemap{
+        grid-area: section-sitemap;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+.section-sitemap{
+    @include box-style(rgb(240, 240, 240), 2px 2px 4px black);
+    
+    &__h1 {
+        font-size: map-get($font-size, txt-lg);
+
+    }
+            
+    &__article--div--h2{
+        font-size: map-get($font-size, txt-md);
+    }
+
+}
