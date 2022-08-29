@@ -50,54 +50,64 @@
         </section>
     </header>
 <!-------------product------------> 
-    <section id="section1-AR-15" class="section1-AR-15 bg-light text-dark border-1 gap-2 p-3 rounded-2">
+    <section id="section1-AR-15" class="section1-AR-15 d-flex flex-column bg-light text-dark border-1 gap-2 p-3 rounded-2">
+
+        <!-------------breadcrumb------------>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../catalogo.html">Catalogo</a></li>
+                <li class="breadcrumb-item"><a href="../../catalogo.html#section3-catalogo">Fusiles</a></li>
+                <li class="breadcrumb-item active" aria-current="page">AR-15</li>
+            </ol>
+        </nav>
 
         <!-------------imagenes carrousel------------>
-        <div class="d-flex flex-column w-100">
-            <article class="d-flex flex-column w-100">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner w-100">
-                        <div class="carousel-item active">
-                            <img src="../../img/AR15.jpg" class="d-block w-100" alt="arma-1">
+        <div class="d-flex flex-row">
+            <div class="d-flex flex-column w-100">
+                <article class="d-flex flex-column w-100">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner w-100">
+                            <div class="carousel-item active">
+                                <img src="../../img/AR15.jpg" class="d-block w-100" alt="arma-1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/AR15-1.jpg" class="d-block w-100" alt="arma-2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/AR15-2.jpg" class="d-block w-100" alt="arma-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../img/AR15-3.jpg" class="d-block w-100" alt="arma-4">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../../img/AR15-1.jpg" class="d-block w-100" alt="arma-2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../img/AR15-2.jpg" class="d-block w-100" alt="arma-3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../img/AR15-3.jpg" class="d-block w-100" alt="arma-4">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </article>
-        </div>
+                </article>
+            </div>
 
-        <!-------------informacion precio y compra------------>
-        <div class="section1-AR-15__div-info d-flex flex-column w-100 bg-light text-dark">
-            <article class="d-flex flex-column text-center border border-dark h-100 p-4 rounded-2">
-                <h1 class="text-dark p-1 fw-bold"> FUSIL AR-15 </h1>
-                <h2 class="text-dark p-1 fw-semibold">$ 7.800,00</h2>
-                <h3 class="text-dark p-1 fw-semibold">o 12 Cuotas de $ 700,00</h3>
-                <h3 class="text-success fs-5 p-1 fw-semibold">en Stock</h3>
-                <a href="../../Pagos-y-Devoluciones.html#promociones" class="text-dark p-1 fw-semibold">Ver mas promociones</a>
-                <a href="../../Envios.html" class="p-1"><button class="shipping-product w-50 p-1 rounded-2 fw-semibold">Envio</button></a> 
-                
-                <div>
-                    <a href="../../carrito.html" class="p-1"><button class="buy-product w-50 p-1 rounded-2 fw-semibold">Comprar</button></a> 
-                </div>
-            </article>
+            <!-------------informacion precio y compra------------>
+            <div class="section1-AR-15__div-info d-flex flex-column w-100 bg-light text-dark">
+                <article class="d-flex flex-column text-center border border-dark h-100 p-4 rounded-2">
+                    <h1 class="text-dark p-1 fw-bold"> FUSIL AR-15 </h1>
+                    <h2 class="text-dark p-1 fw-semibold">$ 7.800,00</h2>
+                    <h3 class="text-dark p-1 fw-semibold">o 12 Cuotas de $ 700,00</h3>
+                    <h3 class="text-success fs-5 p-1 fw-semibold">en Stock</h3>
+                    <a href="../../Pagos-y-Devoluciones.html#promociones" class="text-dark p-1 fw-semibold">Ver mas promociones</a>
+                    <a href="../../Envios.html" class="p-1"><button class="shipping-product w-50 p-1 rounded-2 fw-semibold">Envio</button></a> 
+                    
+                    <div>
+                        <a href="../../carrito.html" class="p-1"><button class="buy-product w-50 p-1 rounded-2 fw-semibold">Comprar</button></a> 
+                    </div>
+                </article>
+            </div>
         </div>
-
     </section>
 
     <section id="section2-AR-15" class="section2-AR-15 container-decription bg-light text-dark rounded-2">
