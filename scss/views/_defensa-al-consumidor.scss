@@ -19,13 +19,12 @@
 }
 
 /*---------------SECTION 1--------------*/
-#section-defensaConsumidor{
+.section-defensaConsumidor{
+    @include box-style (rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
     margin: 20px 50px;
-    box-shadow: 2px 2px 4px 0 rgb(100, 100, 100);
-    background-color: rgba(185, 182, 182, 0.278);
 
-    .section-defensaConsumidor__h1{
-        font-size: xx-large;
+    &__h1{
+        font-size: map-get($font-size, txt-lg);
     }
 }
 
@@ -33,11 +32,11 @@
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 480px){
 /*------------SECTION 1------------------*/    
-    #section-defensaConsumidor {
+    .section-defensaConsumidor {
         margin: 20px;
 
-        .section-defensaConsumidor__h1 {
-            font-size: x-large;
+        &__h1 {
+            font-size: map-get($font-size, txt-xl);
         }
     }
 }   

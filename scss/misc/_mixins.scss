@@ -1,0 +1,10 @@
+@mixin box-style($backcol, $shadow) {
+    background-color: $backcol;
+    box-shadow: $shadow;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+

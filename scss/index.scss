@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap');
 
 /* -----MISC------*/
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/extend';
 @import './misc/normalize';
 
 /*-------PARTIALS---------*/
@@ -22,11 +25,11 @@
 @import './views/carrito';
 
 /*---------------PRODUCTS----------------*/
-@import './products/hk-usp';
-@import './products/mp-5';
-@import './products/ar-15';
-@import './products/m-249';
-@import './products/akkar-tactical';
+@import './catalogo/pistolas-y-revolveres/hk-usp';
+@import './catalogo/subfusiles/mp-5';
+@import './catalogo/fusiles/ar-15';
+@import './catalogo/ametralladoras/m-249';
+@import './catalogo/escopetas/akkar-tactical';
 
 
 

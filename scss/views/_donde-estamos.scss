@@ -25,15 +25,14 @@
 
 /*---------------SECTION 1--------------*/
 .section1-maps__link{
-    width: 70vw;
-    height: 80vh;
+    @include size (70vw, 80vh);
     box-shadow: 2px 2px 4px black;
 }
 .section1-maps__text{
     background-color: rgb(211, 211, 211)!important;
 
     &--li{
-        font-size: x-large;
+        font-size: map-get($font-size, txt-lg);
         color: rgb(255, 255, 255);
     }
 }
@@ -42,8 +41,7 @@
 @media (max-width: 768px){
 /*------------SECTION 1------------------*/    
     .section1-maps__link{
-        width: 90vw;
-        height: 70vh;
+        @include size (90vw, 70vh);
     }
     .section1-maps_text--li {
         font-size: large;
@@ -52,28 +50,26 @@
 @media (max-width: 480px){
 /*------------SECTION 1------------------*/    
     .section1-maps_text--li {
-        font-size: small;
+        font-size: map-get($font-size, txt-sm);
     }
     .section1-maps__link{
-        width: 90vw;
-        height: 50vh;
+        @include size (90vw, 50vh);
     }
 }   
 @media (max-width: 320px){
 /*------------H1------------------*/   
     #h1-ubicacion {
-        font-size: x-large;
+        font-size: map-get($font-size, txt-lg);
     }
 /*------------SECTION 1------------------*/   
     .section1-maps__link{
-        width: 90vw;
-        height: 30vh;
+        @include size (90vw, 30vh);
     }
     .section1-maps__text{
         margin: 1rem;
 
         &--li {
-            font-size: small;
+            font-size: map-get($font-size, txt-sm);
         }
     }
 }

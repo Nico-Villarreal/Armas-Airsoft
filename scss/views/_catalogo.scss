@@ -25,23 +25,18 @@ header{
 }
 #section1-catalogo{
     grid-area: section1-catalogo;
-    padding: 25px 75px 0px 75px; 
 }
 #section2-catalogo{
     grid-area: section2-catalogo;
-    padding: 25px 75px 0px 75px; 
 }
 #section3-catalogo{
     grid-area: section3-catalogo;
-    padding: 25px 75px 0px 75px; 
 }
 #section4-catalogo{
     grid-area: section4-catalogo;
-    padding: 25px 75px 0px 75px; 
 }
 #section5-catalogo{
     grid-area: section5-catalogo;
-    padding: 25px 75px 0px 75px; 
 }
 #medios-de-pagos{
     grid-area: medios-de-pagos;
@@ -54,72 +49,93 @@ footer{
 .div-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-    gap: 20px;
+    gap: .2rem;
 }
 section div article div img{
-    width: 100%;
+    @include size(100%, auto);
+    
 }
 .div-article__active:hover{
     transition: .5s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 /*------------imagenes de articuloes-----------------*/
 .article1__div1-img, .article2__div1-img, .article3__div1-img, .article4__div1-img{
     box-shadow: 2px 2px 4px black; 
 }
 /*------------SECTION ARTICLE------------------*/
-.section1-catalogo__article{
-    flex: 1 1 250px;
+.section1-catalogo{
+    padding: 0px 75px; 
 
-    .section1-catalogo__article1--div2, .section1-catalogo__article2--div2, .section1-catalogo__article3--div2, .section1-catalogo__article4--div2{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex: 1 1 250px;
+
+        &-1--div2, &-2--div2, &-3--div2, &-4--div2{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black)
+        }
     }
 }
+
 
 /*--------------SECTION 2-----------*/
-.section2-catalogo__article{
-    flex: 1 1 250px;
+.section2-catalogo{
+    padding: 0px 75px; 
 
-    .section2-catalogo__article1--div2, .section2-catalogo__article2--div2, .section2-catalogo__article3--div2, .section2-catalogo__article4--div2{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex: 1 1 250px;
+    
+        &-1--div2, &-2--div2, &-3--div2, &-4--div2{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black)
+        }
     }
 }
+
 
 /*--------------SECTION 3-----------*/
-.section3-catalogo__article{
-    flex: 1 1 250px;
+.section3-catalogo{
+    padding: 0px 75px; 
 
-    .section3-catalogo__article1--div2, .section3-catalogo__article2--div2, .section3-catalogo__article3--div2, .section3-catalogo__article4--div2{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex: 1 1 250px;
+    
+        &-1--div2, &-2--div2, &-3--div2, &-4--div2{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black)
+        }
     }
 }
+
 
 /*--------------SECTION 4-----------*/
-.section4-catalogo__article{
-    flex: 1 1 250px;
+.section4-catalogo{
+    padding: 0px 75px; 
 
-    .section4-catalogo__article1--div2, .section4-catalogo__article2--div2, .section4-catalogo__article3--div2, .section4-catalogo__article4--div2{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex: 1 1 250px;
+    
+        &-1--div2, &-2--div2, &-3--div2, &-4--div2{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black)
+        }
     }
 }
+
 
 /*--------------SECTION 5-----------*/
-.section5-catalogo__article{
-    flex: 1 1 250px;
+.section5-catalogo{
+    padding: 0px 75px; 
 
-    .section5-catalogo__article1--div2, .section5-catalogo__article2--div2, .section5-catalogo__article3--div2, .section5-catalogo__article4--div2{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex: 1 1 250px;
+    
+        &-1--div2, &-2--div2, &-3--div2, &-4--div2{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black)
+        }
     }
 }
+
 
 /*--------------------MEDIA QUERIES-------------------*/
 @media (max-width: 320px){
     #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
-        padding: 0px 10px;
+        padding: 0px 10px !important;
     }
 }

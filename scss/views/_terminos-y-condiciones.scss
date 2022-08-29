@@ -19,51 +19,49 @@
 }
 
 /*--------------SECTION 1--------------*/
-#section-terminos{
+.section-terminos{
     margin: 20px 50px;
-    box-shadow: 2px 2px 4px 0 rgb(100, 100, 100);
-    background-color: rgba(185, 182, 182, 0.278);
+    @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
 
-    .section-terminos__article--text--p{
-        text-align: justify;
-    }
-    .section-terminos__article--text--h3{
-        font-size: x-large;
-    }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__article--text--p{
+            line-height: 1.5;
+            text-align: justify;
+        }
+
 }
 
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1024px){
 /*------------SECTION 1------------------*/  
     .section-terminos__h1 {
-        font-size: xx-large;
-
-        .section-terminos__article--text--h3{
-            font-size: large;
-        }
-        .section-terminos__article--text--p{
-            font-size: smaller;
-            line-height: 1.5;
-        }
+        font-size: map-get($font-size, txt-xxl);
+    }
+    .section-terminos__article--text--h3{
+        font-size: map-get($font-size, txt-xl);
+    }
+    .section-terminos__article--text--p{
+        font-size: map-get($font-size, txt-lg);
     }
 
 }
 @media (max-width: 768px){
 /*------------SECTION 1------------------*/    
     section article div p{
-        font-size: small;
-        line-height: 1.5;
+        font-size: map-get($font-size, txt-sm);
     }
 }
 @media (max-width: 480px){
 /*------------SECTION 1------------------*/    
     .section-terminos__h1 {
-        font-size: x-large;
+        font-size: map-get($font-size, txt-xl);
     }
 } 
 @media (max-width: 320px){
 /*------------SECTION 1------------------*/   
-    #section-terminos {
+    .section-terminos {
         margin: 20px 15px;
     }
 }

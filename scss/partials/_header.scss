@@ -22,24 +22,29 @@ header{
     }
     /*-------------ICONS-------------------*/
     .header__section3--div--img2, .header__section3--div--img3, .header__section3--div--img4{
-    width: 90%;
-    box-shadow: 2px 2px 4px black;
+        @include size(90%, auto);
+        box-shadow: 2px 2px 4px black;
+    }
 }
 
+@media (max-width: 768px){ 
+    header section nav ul{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px){
-    /*-----------------HEADER ----------------*/
-        .header__section2--nav {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: small;
-        } 
+/*-----------------HEADER ----------------*/
+    .header__section2--nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: map-get($font-size, txt-sm);
     } 
+} 
 
 @media (max-width: 320px){
-    /*-----------------HEADER ----------------*/
-        .header__section3--div {
-             max-width: 120px;
-        }
-    }             
+/*-----------------HEADER ----------------*/
+    .header__section3--div {
+            max-width: 120px;
+    }
+}             

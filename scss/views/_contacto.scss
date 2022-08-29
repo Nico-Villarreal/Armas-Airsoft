@@ -32,17 +32,15 @@ footer{
 
 /*-------------SECTION2-FORM-----------------*/
 .section2-contacto__article1{
-    box-shadow: 2px 3px 8px 0 rgb(100, 100, 100);
-    background-color: rgba(185, 182, 182, 0.278);
+    @include box-style(rgba(185, 182, 182, 0.311), 2px 3px 8px 0 gray);
     margin: 0px 150px;
 
     &--form{
-        box-shadow: 2px 3px 8px 0 #000;
-        background-color: rgb(151, 151, 151);
-        width: 50%;
+        @include box-style(rgb(151, 151, 151), 2px 3px 8px 0 #000);
+        @include size(50%, auto);
 
         &--submit{
-            width: 100%;
+            @include size(100%, auto);
             box-shadow: 2px 3px 8px 0 #000;
 
             .button-submit__active:hover{
@@ -71,9 +69,6 @@ footer{
 
 @media (max-width: 768px){
 /*------------SECTION 2------------------*/    
-    header section nav ul{
-        justify-content: center;
-    }
     .section1__texto{
         text-align: justify;
     }
@@ -81,7 +76,7 @@ footer{
         margin: 10px 70px;
 
         &--form {
-            width: 70%;
+            @include size(70%, auto);
         }
     }
 
@@ -89,7 +84,7 @@ footer{
 
 @media (max-width: 480px){
     .w-75 {
-        width: 100%!important;
+        @include size(100%!important, auto);
     }
     .section1__texto{
         text-align: justify;
@@ -98,7 +93,7 @@ footer{
         margin: 10px 30px;
 
         &--form {
-            width: 80%;
+            @include size(80%, auto);
         }
     }
 
@@ -109,8 +104,9 @@ footer{
 
 @media (max-width: 320px){
     #h1-contacto{
-        font-size: x-large;
+        font-size: map-get($font-size, txt-lg);
     }
+    
     .section2-contacto__article1 {
         margin: 10px 15px;
         padding-left: 0px!important;

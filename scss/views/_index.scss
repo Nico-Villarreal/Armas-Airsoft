@@ -20,11 +20,9 @@ header{
 }
 #section2{
     grid-area: section2;
-    margin-top: 25px;
 }
 #medios-de-pagos{
     grid-area: medios-de-pagos;
-    margin-top: 25px;
 }
 footer{
     grid-area: footer;
@@ -32,45 +30,49 @@ footer{
 
 
 /*------SECTION 1-HTML--------*/
-#section1{
+.section1{
     margin: 25px 40px 0px; 
-}
-.section1__article{
-    flex-basis: 350px;
 
-    &--img1, &--img2, &--img3{
-        box-shadow: 2px 2px 4px black; 
-    }
-
-    &--span{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex-basis: 350px;
+    
+        &--img1, &--img2, &--img3{
+            box-shadow: 2px 2px 4px black; 
+        }
+    
+        &--span{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black);
+        }
     }
 }
 
 /*------SECTION 2-HTML--------*/
-#section2{
+.section2{
     margin: 25px 35px 0px; 
-}
-.section2__article{
-    flex-direction: column;
-    flex-basis: 540px;
 
-    &-img1, &-img2{
-        box-shadow: 2px 2px 4px black;     
-    }
-    &--span{
-        background-color: rgb(205, 204, 204);
-        box-shadow: 2px 2px 4px black; 
+    &__article{
+        flex-direction: column;
+        flex-basis: 540px;
+    
+        &-img1, &-img2{
+            box-shadow: 2px 2px 4px black;     
+        }
+        &--span{
+            @include box-style(rgb(205, 204, 204), 2px 2px 4px black);
+        }
     }
 }
 
 /*------MEDIOS DE PAGOS-HTML--------*/
+#medios-de-pagos{
+    margin-top: 25px;
+}
 .section3__content-article{
     background-color: rgb(237, 237, 237);
 
     .section3__article{
-        width: 20%;
+        @extend .section3__content-article;
+        @include size(20%, auto);
 
         .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
             max-width: 50px;
@@ -100,35 +102,37 @@ footer{
     }
 @media (max-width: 768px){
 /*----------SECTION 1 - INDEX -----------*/
-    #section1{
+    .section1{
         margin: 0px; 
-    }    
-    .section1__article {
-        flex-basis: 190px;
 
-        &--span{
-            height: 35%;
+        &__article {
+            flex-basis: 190px;
+    
+            &--span{
+                height: 35%;
+            }
         }
-    }
+    }    
+
 
 /*----------SECTION 2 - INDEX------------*/
-    #section2{
+    .section2{
         margin: 0px; 
 
-        .section2__article{   
+        &__article{   
             flex-basis: 330px;
         }
     }
     
 /*----------MEDIOS DE PAGO - INDEX------------*/
     .section3__article {
-        width: 40%!important;
+        @include size(40%!important, auto);
 
         .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
             margin-left: 0rem!important;
         } 
         &--h4{
-            font-size: 1rem!important;
+            font-size: map-get($font-size, txt-sm !important);
             margin-left: 0rem!important;
         }
     } 
@@ -158,9 +162,8 @@ footer{
         margin-left: 0!important;
 
         .section3__article {
-            width: 40%;
-    
-               
+            @include size(40%, auto);
+
             .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4 {
                 max-width: 45px;
             }
@@ -168,7 +171,7 @@ footer{
                 margin-left: 0.5rem!important;
             }
             .fs-5 {
-                font-size: 1rem!important;
+                font-size: map-get($font-size, txt-sm !important);
             }
         }
     }
@@ -187,11 +190,10 @@ footer{
 /*-----------------MEDIOS DE PAGO----------------*/
     .section3__article {
         margin-left: 5px;
-        width: 100%;
-
-        &--h4{
-            font-size: smaller !important;
-        }
+        @include size(100%, auto);
     }
+    .fs-5 {
+        font-size: map-get($font-size, txt-xs !important);
+    }  
 }    
     

@@ -23,22 +23,24 @@
 }
 
 /*---------------SECTION 1--------------*/
-.section1-payments__article1--h1, .section1-payments__article2--h2{
-    font-size: x-large;
+.section1-payments__h1 {
+    font-size: map-get($font-size, txt-lg);
+}
+.section1-payments__article1--h2, .section1-payments__article2--h2{
+    font-size: map-get($font-size, txt-md);
 }
 .section1-payments__article1--img, .section1-payments__article2--img{
     box-shadow: 2px 2px 4px black;
 }
 /*------------SECTION 2---------------*/
-#section2-payments-text{
+.section2-payments{
     margin: 20px 50px;
-    box-shadow: 2px 2px 4px 0 rgb(100, 100, 100);
-    background-color: rgba(185, 182, 182, 0.278);
+    @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
 
-    .section2-payments__article--h2{
-        font-size: xx-large;
+    &__article--h2{
+        font-size: map-get($font-size, txt-lg);
     }
-    .section2-payments__article--text{
+    &__article--text{
         text-align: justify;
         line-height: 1.5;
     }    
@@ -48,18 +50,19 @@
 @media (max-width: 480px){
 /*------------SECTION 1------------------*/    
     .section1-payments__article1--img, .section1-payments__article2--img{
-        width: 80%;
+        @include size(80%, auto);
+
     }
 /*------------SECTION 2------------------*/   
-    #section2-payments-text {
+    .section2-payments-text {
         margin: 20px;
         padding: 0.5rem!important;
 
-        .section2-payments__article--h2{
-            font-size: x-large;
+        &__article--h2{
+            font-size: map-get($font-size, txt-md);
         }
-        .section2-payments__article--text{
-            font-size: small;
+        &__article--text{
+            font-size: map-get($font-size, txt-sm);
         }
     }
 }   
@@ -67,6 +70,6 @@
 @media (max-width: 320px){
 /*------------SECTION 1------------------*/   
     .section2-payments__article--h2{
-        font-size: larger;
+        font-size: map-get($font-size, txt-lg);
     }
 }
