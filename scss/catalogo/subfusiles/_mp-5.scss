@@ -31,11 +31,11 @@
         background-color: rgb(205, 204, 204)!important;
 
         .buy-product:hover{
-            background-color: antiquewhite;
+            background-color: rgb(159, 159, 159);
             transition: 0.5s;
         }
         .shipping-product:hover{
-            background-color: antiquewhite;
+            background-color: rgb(159, 159, 159);
             transition: 0.5s;
         }
     }
@@ -48,6 +48,11 @@
 @media (max-width: 768px){
     .section1-mp-5 {
         margin: 25px 50px;
+
+        &__article{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     .section2-mp-5 {
         margin: 25px 50px;

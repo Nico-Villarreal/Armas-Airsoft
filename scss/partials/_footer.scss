@@ -3,18 +3,15 @@
 footer{
     background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
 }
-#footer{
-    padding: 30px 0px;
-    margin: 0px 100px;
+.footer{
+    padding: 0px;
+    margin: 0px 10px;
 }
 
 @media (max-width: 768px){
-    #footer {
-        margin: 0px 50px;
-       }
     footer{
         font-size: map-get($font-size, txt-sm);
-        margin: 10px 30px;
+        margin: 10px;
 
         .footer__icon-instagram{
             @include size(75%, auto);        
@@ -22,17 +19,10 @@ footer{
     }
 }
 
-@media (max-width: 480px){
-    #footer {
-    margin: 0px 10px;
-    }
-}  
-
 @media (max-width: 320px){
     footer {
         font-size: map-get($font-size, txt-xs);
         padding: 15px;
-        margin-bottom: 20px;
         margin: 10px 0px;
     }
 }  

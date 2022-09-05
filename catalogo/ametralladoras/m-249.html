@@ -15,45 +15,55 @@
 </head>
 <body id="grid-container-product-AR-15">
 <!-------------header------------>
-    <header id="header" class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
-        <section class="header__section1 d-flex flex-wrap justify-content-center">
-                <img src="../../img/logo-1.webp" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3 w-75">
-        </section>
-        <section class="header__section2 d-flex flex-wrap justify-content-center">
-            <nav class="header__section2--nav">
-                <ul class="nav nav-pills text-white d-flex flex-row">
-                    <li class="nav-item"> 
-                      <a class="nav-link bg-light link-dark border border-dark m-1 fw-semibold" aria-current="page" href="../../index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="../../catalogo.html">CATALOGO</a>
-                    </li>
-                    <li class="nav-item"> 
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="../../contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="../../ayuda.html">AYUDA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="../../donde-estamos.html">ENCONTRANOS</a>
-                    </li>
-                </ul>           
-            </nav>
+    <header class="header d-flex flex-wrap justify-content-between align-items-end border-bottom border-dark p-2 gap-3 border-2">
+    <!-------------nav-bar------------> 
+        <nav class="header__nav navbar navbar-expand-lg navbar-dark w-100">
+            <div class="header__nav--container container-fluid">
+            <!-------------logo------------> 
+                <div class="header__nav--container--section1 d-flex me-5">
+                    <a href="../../index.html"><img src="../../img/logo-1.webp" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3"></a>
+                </div>
 
-        </section>
-        <section class="header__section3 d-flex flex-wrap justify-content-center">
-            <div class="header__section3--div d-flex flex-row align-items-end mb-1">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="../../img/busqueda.webp" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
-                <a href="./carrito.html"><img src="../../img/carrito.webp" alt="carito" class="header__section3--div--img3 border-1 border-white rounded-2 bg-white border-secondary"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../../img/icono_instagram.webp" alt="instagram" class="header__section3--div--img4 border-1 border-white rounded-2 border-secondary"></a>
+            <!-------------button-menu-hamburger------------>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-------------menu-elements------------>    
+                <div class="header__nav--container--section2 navbar-collapse collapse justify-content-end" id="navbarsExample05">
+                    <ul class=" navbar-nav p-2 ms-5 me-5">
+                        <li class="nav-item"> 
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" aria-current="page" href="../../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="../../catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="../../contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="../../ayuda.html">AYUDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="../../donde-estamos.html">ENCONTRANOS</a>
+                        </li>
+                    </ul>
+                    <form role="search" class="d-flex gap-2 justify-content-center">
+                        <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+                        <div class="d-flex gap-3">
+                            <a href="https://www.google.com/"><img src="../../img/busqueda.webp" alt="icono-busqueda" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
+                            <a href="../../carrito.html"><img src="../../img/carrito.webp" alt="carito" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </nav>
+
     </header>
 <!-------------product------------> 
     <section id="section1-M-249" class="section1-M-249 d-flex flex-column  bg-light text-dark border-1 gap-2 p-3 rounded-2">
 
         <!-------------breadcrumb------------>
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="section1-M-249__breascrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../catalogo.html">Catalogo</a></li>
                 <li class="breadcrumb-item"><a href="../../catalogo.html#section4-catalogo">Ametralladoras</a></li>
@@ -62,7 +72,7 @@
         </nav>
       
         <!-------------imagenes carrousel------------>
-        <div class="d-flex flex-row">
+        <div class="section1-M-249__article d-flex flex-row">
             <div class="d-flex flex-column w-100">
                 <article class="d-flex flex-column w-100">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -95,7 +105,7 @@
             <!-------------informacion precio y compra------------>
             <div class="section1-M-249__div-info d-flex flex-column w-100 bg-light text-dark">
                 <article class="d-flex flex-column text-center border border-dark h-100 p-4 rounded-2">
-                    <h1 class="text-dark p-1 fw-bold">AMETRALALDORA M-249</h1>
+                    <h1 class="text-dark p-1 fw-bold">Ametralladora M-249</h1>
                     <h2 class="text-dark p-1 fw-semibold">$ 8.500,00</h2>
                     <h3 class="text-dark p-1 fw-semibold">o 12 Cuotas de $ 800,00</h3>
                     <h3 class="text-success fs-5 p-1 fw-semibold">en Stock</h3>
@@ -112,7 +122,7 @@
 
     <section id="section2-M-249" class="section2-M-249 container-decription bg-light text-dark rounded-2">
         <div class="container-decription__text p-3">
-            <h2 class="container-decription__text--h2 text-dark"> Caracteristicas</h2>
+            <h2 class="container-decription__text--h2 text-dark fw-bolder"> Caracteristicas</h2>
             <div class="container-decription__text--div1 d-flex flex-wrap border-2 border-bottom border-dark pb-3">
                 <ul class="container-decription__text--div1--ul d-flex align-items-start txt-dark p-2 w-50">
                     <li class="container-decription__text--div1--ul--li border-1 border border-dark rounded-2 w-100 p-2 m-1 fw-semibold">Munición: 5,56 mm (0.9 mm CO2)</li>
@@ -128,7 +138,7 @@
                 </ul>
             </div>
             <div class="container-decription__text--div2">
-                <h2 class="container-decription__text--div2--h2 pt-3 text-dark"> Descripcion</h2>
+                <h2 class="container-decription__text--div2--h2 pt-3 text-dark fw-bolder"> Descripcion</h2>
                 <p class="container-decription__text--div2--p text-dark p-2">
                     La ametralladora ligera M249 (formalmente Ametralladora Ligera, 5,56 mm, M249; también conocida como arma automática 
                     de pelotón M249, en inglés: M249 Squad Automatic Weapon) es la versión estadounidense de la ametralladora ligera belga 
@@ -143,42 +153,44 @@
     </section>
 
 <!-------------footer------------>
-<div class="container">
-    <footer class="p-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
-        <div class="row">
-            <div class="col-xl-6 mb-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="../../Terminos-y-condiciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Terminos y Condiciones</a></li>
-                    <li class="nav-item mb-2"><a href="../../Politica-de-Privacidad.html" class="nav-link-1 p-0 text-dark fw-bolder">Politica de Privacidad</a></li>
-                    <li class="nav-item mb-2"><a href="../../Defensa-al-Consumidor.html" class="nav-link-1 p-0 text-dark fw-bolder">Defensa al Consumidor</a></li>
-                    <li class="nav-item mb-2"><a href="../../Pagos-y-Devoluciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Pagos y Devoluciones</a></li>
-                    <li class="nav-item mb-2"><a href="../../Envios.html" class="nav-link-1 p-0 text-dark fw-bolder">Envios</a></li>
-                    <li class="nav-item mb-2"><a href="../../ayuda.html" class="nav-link-1 p-0 text-dark fw-bolder">Ayuda</a></li>
-                </ul>
+    <div class="footer">
+        <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
+            <div class="row">
+                <div class="col-xl-6 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../../Terminos-y-condiciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Terminos y Condiciones</a></li>
+                        <li class="nav-item mb-2"><a href="../../Politica-de-Privacidad.html" class="nav-link-1 p-0 text-dark fw-bolder">Politica de Privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="../../Defensa-al-Consumidor.html" class="nav-link-1 p-0 text-dark fw-bolder">Defensa al Consumidor</a></li>
+                        <li class="nav-item mb-2"><a href="../../Pagos-y-Devoluciones.html" class="nav-link-1 p-0 text-dark fw-bolder">Pagos y Devoluciones</a></li>
+                        <li class="nav-item mb-2"><a href="../../sitemap.html" class="nav-link-1 p-0 text-dark fw-bolder">Mapa del Sitio</a></li>
+                        <li class="nav-item mb-2"><a href="../../Envios.html" class="nav-link-1 p-0 text-dark fw-bolder">Envios</a></li>
+                        <li class="nav-item mb-2"><a href="../../ayuda.html" class="nav-link-1 p-0 text-dark fw-bolder">Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 mb-3">
+                    <form class="d-flex flex-column">
+                        <h5 class="text-center text-dark fw-bolder">CONTACTANOS</h5>
+                        <p class="text-center text-dark fw-bolder">Av. Sarmiento 1009 - Salta Capital / Tel. +54 387-5548656</p>
+                        <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
+                            <button class="btn btn-secondary border border-dark" type="button">Enviar</button>
+                        </div>
+                    </form>
+                    <ul class="d-flex">
+                        <li class="d-flex">
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="../../img/icono_instagram.webp" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xl-6 mb-3">
-                <form class="d-flex flex-column">
-                    <h5 class="text-center text-dark fw-bolder">CONTACTANOS</h5>
-                    <p class="text-center text-dark fw-bolder">Av. Sarmiento 1009 - Salta Capital / Tel. +54 387-5548656</p>
-                    <div class="d-flex flex-row flex-sm-row gap-2 justify-content-center">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control w-50" placeholder="Escribenos">
-                        <button class="btn btn-secondary border border-dark" type="button">Enviar</button>
-                    </div>
-                </form>
-                <ul class="d-flex">
-                    <li class="d-flex">
-                        <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="../../img/icono_instagram.webp" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="d-flex justify-content-center align-items-center border-top">
-            <p class="m-3">© 2022 Imitation of Weapon, S.A All rights reserved.</p>
-        </div>
-    </footer>
-</div>
+            <div class="d-flex justify-content-center align-items-center border-top">
+                <p class="m-3">© 2022 Imitation of Weapon, S.A All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
     <script src="../../js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -39,3 +39,22 @@ h1, h2, h3, footer{
     color: rgb(255, 255, 255);
 }
 
+@media (max-width:1920px){
+    ul{
+        font-size: map-get($font-size, txt-md);
+    }
+}
+
+@media (max-width:1440px){
+    ul{
+        font-size: map-get($font-size, txt-xmd);
+    }
+}
+
+@media (max-width:1366px){
+    ul{
+        font-size: map-get($font-size, txt-sm);
+    }
+}
+
+

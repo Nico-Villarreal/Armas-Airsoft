@@ -20,31 +20,28 @@ header{
         box-shadow: 1px 1px 4px white;
         transform: scale(1.05);
     }
-    /*-------------ICONS-------------------*/
-    .header__section3--div--img2, .header__section3--div--img3, .header__section3--div--img4{
-        @include size(90%, auto);
-        box-shadow: 2px 2px 4px black;
+}
+/*-----------------MEDIA QUERIES----------------*/
+@media (max-width: 1920px){ 
+    .me-5 {
+        margin-right: 15rem!important;
     }
 }
 
-@media (max-width: 768px){ 
-    header section nav ul{
-        justify-content: center;
+@media (max-width: 1440px){ 
+    .me-5 {
+        margin-right: 5rem!important;
     }
 }
 
-@media (max-width: 480px){
-/*-----------------HEADER ----------------*/
-    .header__section2--nav {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: map-get($font-size, txt-sm);
-    } 
-} 
-
-@media (max-width: 320px){
-/*-----------------HEADER ----------------*/
-    .header__section3--div {
-            max-width: 120px;
+@media (max-width: 1366px){ 
+    .me-5 {
+        margin-right: 4rem!important;
     }
-}             
+}
+
+@media (max-width: 1024px){ 
+    .me-5 {
+        margin-right: 0rem!important;
+    }
+}           

@@ -17,15 +17,70 @@
 }
 
 .section-sitemap{
-    @include box-style(rgb(240, 240, 240), 2px 2px 4px black);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        gap: .2rem;
+
+        @include box-style(rgb(240, 240, 240), 2px 2px 4px black);
     
-    &__h1 {
-        font-size: map-get($font-size, txt-lg);
-
+        &__h1 {
+            font-size: map-get($font-size, txt-lg);
+        }
+                
+        &__article--div--h2{
+            font-size: map-get($font-size, txt-md);
+        }
     }
-            
-    &__article--div--h2{
-        font-size: map-get($font-size, txt-md);
+
+@media (max-width: 1920px){
+    .section-sitemap{
+        margin: 1.25rem 20rem;
+
+        &__h1 {
+            font-size: map-get($font-size, txt-xlg);
+        }
+                
+        &__article--div--h2{
+            font-size: map-get($font-size, txt-md);
+        }
+        &__pages--li{
+            font-size: map-get($font-size, txt-sm);
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .section-sitemap{
+        margin: 1.25rem 10rem;
     }
 
+}
+
+@media (max-width: 1366px){
+    .section-sitemap{
+        margin: 1.25rem 7rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-sitemap{
+        margin: 1.25rem 5rem;
+    }
+}
+
+@media (max-width: 480px){
+    .section-sitemap{
+        margin: 1.25rem 2rem;
+
+        &__h1 {
+            font-size: map-get($font-size, txt-md);
+        }
+                
+        &__article--div--h2{
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__pages--li{
+            font-size: map-get($font-size, txt-xsm);
+        }
+    }
 }

@@ -27,8 +27,8 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     margin: 25px 80px;
 
-    &__div-info{
-        background-color: rgb(205, 204, 204)!important;
+    &__info{
+        background-color: rgb(221, 221, 221)!important;
 
         
         .buy-product:hover{
@@ -41,20 +41,52 @@
         }
     }
 }
+/*-----------------SECTION 1------------*/
+
+.section1-hk-usp-article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
 .container-decription__text--div1--ul--li{
     background-color: rgb(221, 221, 221)!important;
 }
+
+/*-----------------SECTION 2------------*/
 
 .section2-hk-usp{
     margin: 25px 80px;
 }
 
+/*--------------------MEDIAS QUEARY------------*/
+@media (max-width: 1920px){
+    .container-decription__text--div2--h2, .container-decription__text--h2{
+        font-size: map-get($font-size, txt-xl);
+    }
+    .container-decription__text--div2--p{
+        font-size: map-get($font-size, txt-lg);
+        text-align: justify;
+    }
+}
 
-
+@media (max-width: 1366px){
+    .container-decription__text--div2--h2, .container-decription__text--h2{
+        font-size: map-get($font-size, txt-lg);
+    }
+    .container-decription__text--div2--p{
+        font-size: map-get($font-size, txt-xmd);
+        text-align: justify;
+    }
+}
 @media (max-width: 768px){
     #section1-hk-usp {
         margin: 25px 50px;
+
+        .section1-hk-usp__article{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
+    
     #section2-hk-usp {
         margin: 25px 50px;
 
@@ -83,7 +115,7 @@
         margin: 15px;
 
         .container-decription__text--div1--ul, .container-decription__text--div2--p{
-            font-size: x-small;
+            font-size: map-get($font-size, txt-xsm);
         }
     }
 }

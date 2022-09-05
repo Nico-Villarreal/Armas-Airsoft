@@ -52,21 +52,116 @@
 }
 
 /*--------------------MEDIA QUERIES----------------------*/
-@media (max-width: 1024px){
-/*------------SECTION 2------------------*/  
-    .section1-ayuda__article1--text{
-        text-align: justify;
-    }  
-    .section2-ayuda__article1 {
-        margin: 10px 60px;
+@media (max-width: 1920px){
+    .section1-ayuda{
+        margin: 0rem 15rem !important;
+
+        #h1-ayuda{
+            font-size: map-get($font-size, txt-xlg);
+        }
+
+        &__article1--text {
+            font-size: map-get($font-size, txt-md);
+            text-align: justify;
+        }
+    }
+
+    .section2-ayuda{
+        margin: 0rem 15rem !important;
+    }
+
+    .section3-ayuda{
+        margin: 0rem 15rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-md);
+        }
+    }
+
+}
+
+@media (max-width: 1440px){
+    .section1-ayuda{
+        margin: 0rem 7rem !important;
+
+        #h1-ayuda{
+            font-size: map-get($font-size, txt-md);
+        }
+
+        &__article1--text {
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+
+    .section2-ayuda{
+        margin: 0rem 6rem !important;
+    }
+
+    .section3-ayuda{
+        margin: 0rem 7rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+
+}
+
+@media (max-width: 1366px){
+    .section1-ayuda{
+        margin: 0rem 3rem !important;
+    }
+    .section2-ayuda{
+        margin: 0rem 4rem !important;
+    }
+
+    .section3-ayuda{
+        margin: 0rem 3rem !important;
     }
 }
+
+@media (max-width: 1024px){
+    .section1-ayuda{
+        margin: 0rem 2rem !important;
+
+        #h1-ayuda{
+            font-size: map-get($font-size, txt-xl);
+        }
+
+        .section1__texto{
+            text-align: justify;
+        }
+    }
+
+    .section2-ayuda{
+        margin: 0rem 0rem !important;
+
+        &__article1 {
+            margin: 0rem 3.75rem;
+        }
+
+        .p-3 {
+            padding: 0.5rem!important;
+        }
+    }
+
+    .section3-ayuda{
+        margin: 0rem 2rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+
+}
+
 @media (max-width: 768px){
 /*------------SECTION 2------------------*/    
     .section2-ayuda__article1--form {
         @include size(70%, auto);
     }
 }
+
 @media (max-width: 480px){
     .section2-ayuda__article1 {
         margin: 10px 30px;
@@ -75,7 +170,8 @@
             @include size(80%, auto);
         }
     }
-}  
+}
+  
 @media (max-width: 320px){
     #h1-ayuda{
         font-size: map-get($font-size, txt-lg);

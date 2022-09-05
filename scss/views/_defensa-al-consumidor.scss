@@ -21,7 +21,7 @@
 /*---------------SECTION 1--------------*/
 .section-defensaConsumidor{
     @include box-style (rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
-    margin: 20px 50px;
+    margin: 1.25rem 3.5rem;
 
     &__h1{
         font-size: map-get($font-size, txt-lg);
@@ -30,10 +30,44 @@
 
 
 /*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 1920px){
+    .section-defensaConsumidor{
+        margin: 1.25rem 20rem;
+
+        &__h1{
+            font-size: map-get($font-size, txt-xl);
+        }
+        &__article--text--h2{
+            font-size: map-get($font-size, txt-md);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-sm);
+            text-align: justify;
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .section-defensaConsumidor{
+        margin: 1.25rem 8rem;
+    }
+}
+
+@media (max-width: 1366px){
+    .section-defensaConsumidor{
+        margin: 1.25rem 5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-defensaConsumidor{
+        margin: 1.25rem 4rem;
+    }
+}
+
 @media (max-width: 480px){
-/*------------SECTION 1------------------*/    
-    .section-defensaConsumidor {
-        margin: 20px;
+    .section-defensaConsumidor{
+        margin: 1rem;
 
         &__h1 {
             font-size: map-get($font-size, txt-xl);

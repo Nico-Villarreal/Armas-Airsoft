@@ -15,39 +15,49 @@
 </head>
 <body id="grid-container-contact">
 <!-------------header------------>
-    <header class="header d-flex flex-wrap justify-content-around align-items-end border-bottom border-dark p-4 gap-2 border-2">
-        <section class="header__section1 d-flex flex-wrap justify-content-center">
-                <img src="./img/logo-1.webp" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3">
-        </section>
-        <section class="header__section2 d-flex flex-wrap justify-content-center">
-            <nav class="header__section2--nav">
-                <ul class="nav nav-pills text-white d-flex flex-row">
-                    <li class="nav-item"> 
-                      <a class="nav-link bg-light link-dark  border border-dark m-1 fw-semibold" aria-current="page" href="./index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./catalogo.html">CATALOGO</a>
-                    </li>
-                    <li class="nav-item"> 
-                      <a class="nav-link active border border-dark m-1 bg-secondary fw-semibold" href="./contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./ayuda.html">AYUDA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold" href="./donde-estamos.html">ENCONTRANOS</a>
-                    </li>
-                </ul>           
-            </nav>
+    <header class="header d-flex flex-wrap justify-content-between align-items-end border-bottom border-dark p-2 gap-3 border-2">
+    <!-------------nav-bar------------> 
+        <nav class="header__nav navbar navbar-expand-lg navbar-dark w-100">
+            <div class="header__nav--container container-fluid">
+            <!-------------logo------------> 
+                <div class="header__nav--container--section1 d-flex me-5">
+                    <a href="./index.html"><img src="./img/logo-1.webp" alt="logo-1" class="header__section1--img-1 animate__animated animate__pulse border border-light border-3 rounded-3"></a>
+                </div>
 
-        </section>
-        <section class="header__section3 d-flex flex-wrap justify-content-center">
-            <div class="header__section3--div d-flex flex-row align-items-end mb-1">
-                <a href="https://www.google.com.ar/?hl=es" target="_blank"><img src="./img/busqueda.webp" alt="buscador" class="header__section3--div--img2 border-1 border-white rounded-2 bg-white border-secondary"></a>
-                <a href="./carrito.html"><img src="./img/carrito.webp" alt="carito" class="header__section3--div--img3 border-1 border-white rounded-2 bg-white border-secondary"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono_instagram.webp" alt="instagram" class="header__section3--div--img4 border-1 border-white rounded-2 border-secondary"></a>
+            <!-------------button-menu-hamburger------------>
+                <button class="navbar-toggler collapsed bg-secondary border border-light border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-------------menu-elements------------>    
+                <div class="header__nav--container--section2 navbar-collapse collapse justify-content-end" id="navbarsExample05">
+                    <ul class=" navbar-nav p-2 ms-5 me-5">
+                        <li class="nav-item"> 
+                            <a class="nav-link bg-light link-dark  border border-dark m-1 fw-semibold rounded-2 p-2" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="./catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link active border border-dark m-1 bg-secondary fw-semibold rounded-2 p-2" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="./ayuda.html">AYUDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-dark m-1 bg-light link-dark fw-semibold rounded-2 p-2" href="./donde-estamos.html">ENCONTRANOS</a>
+                        </li>
+                    </ul>
+                    <form role="search" class="d-flex gap-2 justify-content-center">
+                        <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
+                        <div class="d-flex gap-3">
+                            <a href="https://www.google.com/"><img src="./img/busqueda.webp" alt="icono-busqueda" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
+                            <a href="./carrito.html"><img src="./img/carrito.webp" alt="carito" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </nav>
+
     </header>
 
     <h1 id="h1-contacto" class="d-flex justify-content-center p-3">Formulario de Contacto</h1>
@@ -97,7 +107,7 @@
         </article>
     </section>
 <!-------------footer------------>
-    <div class="container">
+    <div class="footer">
         <footer class="py-4 my-4 d-flex flex-column border-3 border border-light rounded-3">
             <div class="row">
                 <div class="col-xl-6 mb-3">

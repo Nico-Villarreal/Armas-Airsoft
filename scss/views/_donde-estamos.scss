@@ -33,43 +33,87 @@
 
     &--li{
         font-size: map-get($font-size, txt-lg);
-        color: rgb(255, 255, 255);
+        color: black;
     }
 }
 
 /*--------------------MEDIA QUERIES----------------------*/
-@media (max-width: 768px){
-/*------------SECTION 1------------------*/    
-    .section1-maps__link{
-        @include size (90vw, 70vh);
-    }
-    .section1-maps_text--li {
-        font-size: large;
+@media (max-width: 1920px){
+    .section1-maps{
+        margin: 2.5rem 12rem;
+
+        &__link{
+            @include size (50vw, 70vh);
+        }
     }
 }
-@media (max-width: 480px){
-/*------------SECTION 1------------------*/    
-    .section1-maps_text--li {
-        font-size: map-get($font-size, txt-sm);
-    }
-    .section1-maps__link{
-        @include size (90vw, 50vh);
-    }
-}   
-@media (max-width: 320px){
-/*------------H1------------------*/   
-    #h1-ubicacion {
-        font-size: map-get($font-size, txt-lg);
-    }
-/*------------SECTION 1------------------*/   
-    .section1-maps__link{
-        @include size (90vw, 30vh);
-    }
-    .section1-maps__text{
-        margin: 1rem;
 
-        &--li {
+@media (max-width: 1440px){
+    .section1-maps__link{
+        @include size (60vw, 70vh);
+    }
+}
+
+@media (max-width: 1024px){
+    .section1-maps{
+        margin: 1.5rem 8rem;
+
+        &__link{
+            @include size (70vw, 70vh);
+        }
+        &__text--li{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .section1-maps{
+        margin: 0.5rem 1rem; 
+
+        &__link{
+            @include size (80vw, 70vh);
+        }
+        &__text--li {
             font-size: map-get($font-size, txt-sm);
         }
     }
+}
+
+@media (max-width: 480px){
+/*------------SECTION 1------------------*/    
+.section1-maps{
+    margin: 0rem .5rem;
+
+        &__text--li {
+            font-size: map-get($font-size, txt-sm);
+        }
+        &__link{
+            @include size (90vw, 50vh);
+        }
+    }
+}   
+
+@media (max-width: 320px){
+/*------------H1------------------*/   
+    #h1-ubicacion {
+        font-size: map-get($font-size, txt-xmd);
+    }
+/*------------SECTION 1------------------*/   
+.section1-maps {
+    margin: 0rem 0rem;
+
+        &__link{
+            @include size (85vw, 40vh);
+        }
+        &__text{
+            margin: 0.5rem;
+
+            &--li {
+                font-size: map-get($font-size, txt-sm);
+                text-align: center;
+                }
+
+            }
+        }
 }

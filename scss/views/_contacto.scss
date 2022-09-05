@@ -33,11 +33,11 @@ footer{
 /*-------------SECTION2-FORM-----------------*/
 .section2-contacto__article1{
     @include box-style(rgba(185, 182, 182, 0.311), 2px 3px 8px 0 gray);
-    margin: 0px 150px;
+    margin: 0px 140px;
 
     &--form{
         @include box-style(rgb(151, 151, 151), 2px 3px 8px 0 #000);
-        @include size(50%, auto);
+        @include size(50%, 100%);
 
         &--submit{
             @include size(100%, auto);
@@ -52,28 +52,109 @@ footer{
 }
 
 
-
 /*--------------------MEDIA QUERIES----------------------*/
-@media (max-width: 1024px){
-/*------------SECTION 2------------------*/  
-    .section1__texto{
-        text-align: justify;
-    }  
-    .section2-contacto__article1 {
-        margin: 10px 60px;
+@media (max-width: 1920px){
+    .section1-contacto{
+        margin: 0rem 15rem !important;
+
+        #h1-contacto{
+            font-size: map-get($font-size, txt-xxl);
+        }
+
+        .section1__texto{
+            font-size: map-get($font-size, txt-md);
+        }
     }
-    .p-3 {
-        padding: 0.5rem!important;
+
+    .section2-contacto, .section3-contacto{
+        margin: 0rem 15rem !important;
+    }
+
+    .section3-contacto{
+        margin: 0rem 15rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-md);
+        }
+    }
+}
+
+@media (max-width: 1440px){
+    .section1-contacto{
+        margin: 0rem 7rem !important;
+
+        #h1-contacto{
+            font-size: map-get($font-size, txt-xl);
+        }
+
+        .section1__texto{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+
+    .section2-contacto{
+        margin: 0rem 7rem !important;
+    }
+
+    .section3-contacto{
+        margin: 0rem 6rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+}
+
+@media (max-width: 1366px){
+    .section1-contacto{
+           margin: 0rem 3rem !important;
+    }
+    .section2-contacto{
+        margin: 0rem 4rem !important;
+    }
+    .section3-contacto{
+        margin: 0rem 3rem !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .section1-contacto{
+        margin: 0rem 2rem !important;
+
+        #h1-contacto{
+            font-size: map-get($font-size, txt-xl);
+        }
+
+        .section1__texto{
+            text-align: justify;
+        }
+    }
+
+    .section2-contacto{
+        margin: 0rem 0rem !important;
+
+        &__article1 {
+            margin: 0rem 3.75rem;
+        }
+
+        .p-3 {
+            padding: 0.5rem!important;
+        }
+    }
+
+    .section3-contacto{
+        margin: 0rem 2rem !important;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-xmd);
+        }
     }
 }
 
 @media (max-width: 768px){
 /*------------SECTION 2------------------*/    
-    .section1__texto{
-        text-align: justify;
-    }
     .section2-contacto__article1 {
-        margin: 10px 70px;
+        margin: 1rem 4.25rem;
 
         &--form {
             @include size(70%, auto);
@@ -84,13 +165,10 @@ footer{
 
 @media (max-width: 480px){
     .w-75 {
-        @include size(100%!important, auto);
-    }
-    .section1__texto{
-        text-align: justify;
+        @include size(90%!important, auto);
     }
     .section2-contacto__article1 {
-        margin: 10px 30px;
+        margin: .5rem 2rem;
 
         &--form {
             @include size(80%, auto);
@@ -103,19 +181,26 @@ footer{
 }
 
 @media (max-width: 320px){
-    #h1-contacto{
-        font-size: map-get($font-size, txt-lg);
+    .section1-contacto {
+        margin: 0rem 0rem !important;
+
+        #h1-contacto{
+            font-size: map-get($font-size, txt-lg);
+        }    
     }
-    
+
     .section2-contacto__article1 {
-        margin: 10px 15px;
+        margin: 0.5rem 1rem;
         padding-left: 0px!important;
         padding-right: 0px!important;
 
         &--form {
-            padding: 15px;
+            padding: 1rem;
         }
     }
+    .section3-contacto{
+        margin: 0rem 0rem !important;
 
+    }
 }
 

@@ -20,7 +20,6 @@
 
 /*------------SECTION 1------------------*/   
 .section-shipments{
-    margin: 20px 50px;
     @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
     
     &__article--h1{
@@ -34,29 +33,56 @@
 
 
 /*--------------------MEDIA QUERIES----------------------*/
-@media (max-width: 768px){
-/*------------SECTION 1------------------*/    
-    .section-shipments__article--text{
-        font-size: map-get($font-size, txt-sm);
-    }
-}  
-@media (max-width: 480px){
-/*------------SECTION 1------------------*/   
+@media (max-width: 1920px){
     .section-shipments{
-        margin: 20px;
-    
+        margin: 1.25rem 20rem;
+
         &__article--h1{
             font-size: map-get($font-size, txt-lg);
         }
         &__article--text{
             font-size: map-get($font-size, txt-sm);
         }
+    }
+
+}
+
+@media (max-width: 1440px){
+    .section-shipments{
+        margin: 1.25rem 10rem;
+    }
+}
+
+@media (max-width: 1366px){
+    .section-shipments{
+        margin: 1.25rem 7rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-shipments{
+        margin: 1.25rem 5rem;
+    }
+}
+
+@media (max-width: 480px){
+/*------------SECTION 1------------------*/   
+    .section-shipments{
+        margin: 1.25rem 2rem;
+    
+        &__article--h1{
+            font-size: map-get($font-size, txt-xlg);
+        }
+        &__article--text{
+            font-size: map-get($font-size, txt-xsm);
+        }
 
     }
-}     
+}    
+
 @media (max-width: 320px){
 /*------------SECTION 1------------------*/   
-    .section-shipments__article--text{
-        font-size: map-get($font-size, txt-xs);
-    }
+.section-shipments{
+    margin: 1rem;
+}
 }  

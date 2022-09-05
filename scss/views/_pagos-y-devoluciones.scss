@@ -34,7 +34,6 @@
 }
 /*------------SECTION 2---------------*/
 .section2-payments{
-    margin: 20px 50px;
     @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
 
     &__article--h2{
@@ -47,29 +46,92 @@
 }
 
 /*--------------------MEDIA QUERIES----------------------*/
+@media (max-width: 1920px){
+    /*------------SECTION 1------------------*/
+        .section1-payments__h1{
+            font-size: map-get($font-size, txt-xl);
+        }    
+        .section1-payments__article2--h2, .section1-payments__article1--h2{
+            font-size: map-get($font-size, txt-xlg);
+        }
+
+    /*------------SECTION 2------------------*/ 
+    .section2-payments{
+        margin: 1.25rem 20rem;
+
+        &__article--h2{
+            font-size: map-get($font-size, txt-xlg);
+        }
+        &__article--text{
+            font-size: map-get($font-size, txt-sm);
+        }
+    } 
+}
+
+@media (max-width: 1440px){
+    .section2-payments{
+        margin: 1.25rem 8rem;
+    }
+}
+
+@media (max-width: 1366px){
+    .section2-payments{
+        margin: 1.25rem 5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section2-payments{
+        margin: 1.25rem 3rem;
+    }
+}
+
 @media (max-width: 480px){
-/*------------SECTION 1------------------*/    
+/*------------SECTION 1------------------*/
+    .section1-payments__h1{
+        font-size: map-get($font-size, txt-lg);
+    }    
+    .section1-payments__article2--h2, .section1-payments__article1--h2{
+        font-size: map-get($font-size, txt-md);
+    }
     .section1-payments__article1--img, .section1-payments__article2--img{
         @include size(80%, auto);
-
     }
+
 /*------------SECTION 2------------------*/   
-    .section2-payments-text {
-        margin: 20px;
-        padding: 0.5rem!important;
+    .section2-payments{
+        margin: 1rem;
+
+        &-text {
+            margin: 1.25rem 2rem;
+            padding: 0.5rem!important;
+    
+            &__article--h2{
+                font-size: map-get($font-size, txt-md);
+            }
+            &__article--text{
+                font-size: map-get($font-size, txt-sm);
+            }
+        }
+    }
+
+}   
+
+@media (max-width: 320px){
+/*------------SECTION 1------------------*/
+    .section1-payments__h1{
+        font-size: map-get($font-size, txt-xlg);
+    }    
+
+/*------------SECTION 2------------------*/  
+    .section2-payments{
+        margin: 0.5rem; 
 
         &__article--h2{
             font-size: map-get($font-size, txt-md);
         }
         &__article--text{
-            font-size: map-get($font-size, txt-sm);
+            font-size: map-get($font-size, txt-xsm);
         }
-    }
-}   
-
-@media (max-width: 320px){
-/*------------SECTION 1------------------*/   
-    .section2-payments__article--h2{
-        font-size: map-get($font-size, txt-lg);
     }
 }

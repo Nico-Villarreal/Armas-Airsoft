@@ -20,7 +20,6 @@
 
 /*--------------SECTION 1--------------*/
 .section-terminos{
-    margin: 20px 50px;
     @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
 
         &__article--text--h3{
@@ -34,34 +33,93 @@
 }
 
 /*--------------------MEDIA QUERIES----------------------*/
-@media (max-width: 1024px){
-/*------------SECTION 1------------------*/  
-    .section-terminos__h1 {
-        font-size: map-get($font-size, txt-xxl);
-    }
-    .section-terminos__article--text--h3{
-        font-size: map-get($font-size, txt-xl);
-    }
-    .section-terminos__article--text--p{
-        font-size: map-get($font-size, txt-lg);
-    }
+@media (max-width: 1920px){
+    .section-terminos{
+        margin: 1.25rem 21rem;
 
+        &__h1 {
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-md);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
 }
+
+@media (max-width: 1440px){
+    .section-terminos{
+        margin: 1.25rem 12rem;
+        &__h1 {
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-sm);
+        }
+    }
+}
+
+@media (max-width: 1366px){
+    .section-terminos{
+        margin: 1.25rem 7rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-terminos{
+        margin: 1.25rem 5rem;
+
+        &__h1 {
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-sm);
+        }
+    }
+}
+
 @media (max-width: 768px){
-/*------------SECTION 1------------------*/    
-    section article div p{
-        font-size: map-get($font-size, txt-sm);
+    .section-terminos{
+        margin: 1.25rem 3rem;
     }
 }
+
 @media (max-width: 480px){
-/*------------SECTION 1------------------*/    
-    .section-terminos__h1 {
-        font-size: map-get($font-size, txt-xl);
-    }
+    .section-terminos{
+        margin: 1.25rem 1rem;
+
+        &__h1 {
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-sm);
+        }
+    } 
 } 
+
 @media (max-width: 320px){
-/*------------SECTION 1------------------*/   
     .section-terminos {
-        margin: 20px 15px;
+        margin: 1rem 0.5rem;
+
+        &__h1 {
+            font-size: map-get($font-size, txt-sm);
+        }
+        &__article--text--h3{
+            font-size: map-get($font-size, txt-sm);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-xsm);
+        }
     }
 }
