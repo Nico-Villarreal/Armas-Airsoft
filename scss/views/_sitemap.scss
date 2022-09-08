@@ -21,7 +21,7 @@
         grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
         gap: .2rem;
 
-        @include box-style(rgb(240, 240, 240), 2px 2px 4px black);
+        @include box-style(rgba(240, 240, 240, 0.811), 2px 2px 4px black);
     
         &__h1 {
             font-size: map-get($font-size, txt-lg);
@@ -68,9 +68,15 @@
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
     .section-sitemap{
         margin: 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px){
+    .section-sitemap{
+        margin: 1.25rem .5rem;
 
         &__h1 {
             font-size: map-get($font-size, txt-md);

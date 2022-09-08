@@ -25,7 +25,7 @@
 .section1-hk-usp{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    margin: 25px 80px;
+
 
     &__info{
         background-color: rgb(221, 221, 221)!important;
@@ -43,79 +43,115 @@
 }
 /*-----------------SECTION 1------------*/
 
-.section1-hk-usp-article{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-.container-decription__text--div1--ul--li{
+.section2-hk-usp__container-decription--text--div1--ul--li{
     background-color: rgb(221, 221, 221)!important;
 }
 
-/*-----------------SECTION 2------------*/
-
-.section2-hk-usp{
-    margin: 25px 80px;
-}
 
 /*--------------------MEDIAS QUEARY------------*/
 @media (max-width: 1920px){
-    .container-decription__text--div2--h2, .container-decription__text--h2{
-        font-size: map-get($font-size, txt-xl);
+    .section1-hk-usp{
+        margin: 1.5rem 20rem;
     }
-    .container-decription__text--div2--p{
-        font-size: map-get($font-size, txt-lg);
-        text-align: justify;
+
+    .section2-hk-usp{
+        margin: 1.5rem 20rem;
+
+        &__container-decription--text--h2, &__container-decription--text--div2--h2{
+            font-size: map-get($font-size, txt-lg);
+        }
+        &__container-decription--text--div2--p{
+            font-size: map-get($font-size, txt-xmd);
+            text-align: justify;
+        }
+
+        &__container-decription--text--div1--ul{
+            font-size: map-get($font-size, txt-xmd);
+        }
+    }
+
+
+}
+
+@media (max-width: 1440px){
+    .section1-hk-usp, .section2-hk-usp{
+        margin: 1.5rem 12rem;
     }
 }
 
 @media (max-width: 1366px){
-    .container-decription__text--div2--h2, .container-decription__text--h2{
-        font-size: map-get($font-size, txt-lg);
-    }
-    .container-decription__text--div2--p{
-        font-size: map-get($font-size, txt-xmd);
-        text-align: justify;
+    .section1-hk-usp, .section2-hk-usp{
+        margin: 1.5rem 8rem;
     }
 }
-@media (max-width: 768px){
-    #section1-hk-usp {
-        margin: 25px 50px;
 
-        .section1-hk-usp__article{
-            display: flex;
-            flex-wrap: wrap;
-        }
+@media (max-width: 1024px){
+    .section1-hk-usp, .section2-hk-usp{
+        margin: 1.5rem 5rem;
     }
-    
-    #section2-hk-usp {
-        margin: 25px 50px;
+}
 
-        .container-decription__text--div1--ul{
-            font-size: small;
+@media (max-width: 768px){
+
+    .section1-hk-usp{
+        margin: 1.25rem 2rem;
+    }
+
+    .section2-hk-usp{
+        margin: 1.25rem 2rem;
+
+        &__container-decription--text--h2, &__container-decription--text--div2--h2{
+            font-size: map-get($font-size, txt-xlg);
+        }
+        &__container-decription--text--div2--p{
+            font-size: map-get($font-size, txt-sm);
+        }
+
+        &__container-decription--text--div1--ul{
+            font-size: map-get($font-size, txt-sm);
         }
     }
 }
 
 @media (max-width: 480px){
-    #section1-hk-usp {
-        margin: 25px 40px;
-    }
-    #section2-hk-usp {
-        margin: 25px 40px;
+    .section1-hk-usp {
+        margin: 1.25rem .5rem;
+
+        &__article{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
+    .section2-hk-usp {
+        margin: 1.25rem .5rem;
 
+        &__container-decription--text--h2, &__container-decription--text--div2--h2{
+            font-size: map-get($font-size, txt-md);
+        }
+        &__container-decription--text--div2--p{
+            font-size: map-get($font-size, txt-xsm);
+        }
+
+        &__container-decription--text--div1--ul{
+            font-size: map-get($font-size, txt-xsm);
+
+        }
+
+        .p-3 {
+            padding: 0.5rem !important;
+        }
+        .p-2 {
+            padding: 0.25rem!important;
+        }
+    }
 }
 
 @media (max-width: 320px){
-    #section1-hk-usp {
-        margin: 15px;
+    .section1-hk-usp {
+        margin: 1rem .5rem;
     }
-    #section2-hk-usp {
-        margin: 15px;
-
-        .container-decription__text--div1--ul, .container-decription__text--div2--p{
-            font-size: map-get($font-size, txt-xsm);
-        }
+    .section2-hk-usp {
+        margin: 1rem .5rem;
     }
 }

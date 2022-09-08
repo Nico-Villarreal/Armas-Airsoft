@@ -158,16 +158,20 @@
 @media (max-width: 768px){
 /*------------SECTION 2------------------*/    
     .section2-ayuda__article1--form {
-        @include size(70%, auto);
+        @include size(80%, auto);
     }
 }
 
 @media (max-width: 480px){
+    .section1-ayuda{
+        margin: 0rem .5rem !important;
+    }
+
     .section2-ayuda__article1 {
-        margin: 10px 30px;
+        margin: 0rem .5rem;
 
         &--form {
-            @include size(80%, auto);
+            @include size(90%, auto);
         }
     }
 }

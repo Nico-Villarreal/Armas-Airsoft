@@ -23,18 +23,25 @@ header{
 }
 /*-----------------MEDIA QUERIES----------------*/
 @media (max-width: 1920px){ 
+    .navbar-nav{
+        font-size: map-get($font-size, txt-xmd);
+    }
     .me-5 {
-        margin-right: 15rem!important;
+        margin-right: 19rem!important;
     }
 }
 
 @media (max-width: 1440px){ 
+
     .me-5 {
         margin-right: 5rem!important;
     }
 }
 
 @media (max-width: 1366px){ 
+    .navbar-nav{
+        font-size: map-get($font-size, txt-sm);
+    }
     .me-5 {
         margin-right: 4rem!important;
     }

@@ -20,7 +20,7 @@
 
 /*--------------SECTION 1--------------*/
 .section-privacity{
-    @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
+    @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
 
     &__h1{
         font-size: map-get($font-size, txt-xl);

@@ -21,7 +21,7 @@ header{
 #section2{
     grid-area: section2;
 }
-#medios-de-pagos{
+#section3-medios-de-pagos{
     grid-area: medios-de-pagos;
 }
 footer{
@@ -36,7 +36,7 @@ footer{
     &__article{
         flex-basis: 350px;
     
-        &--img1, &--img2, &--img3{
+        &--img{
             box-shadow: 2px 2px 4px black; 
         }
     
@@ -54,7 +54,7 @@ footer{
         flex-direction: column;
         flex-basis: 545px;
     
-        &-img1, &-img2{
+        &--img{
             box-shadow: 2px 2px 4px black;     
         }
         &--div{
@@ -64,24 +64,24 @@ footer{
 }
 
 /*------MEDIOS DE PAGOS-HTML--------*/
-#medios-de-pagos{
+.section3{
     margin-top: 1.5rem;
-}
-.section3__content-article{
-    background-color: rgb(237, 237, 237);
 
-    .section3__article{
-        @extend .section3__content-article;
-        @include size(20%, auto);
-
-        .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
-            max-width: 50px;
-            box-shadow: 2px 2px 4px black; 
-            
+    &__content{
+        background-color: rgb(237, 237, 237);
+    
+        &--article{
+            @extend .section3__content;
+            @include size(20%, auto);
+    
+            &--img{
+                max-width: 50px;
+                box-shadow: 2px 2px 4px black; 
+                
+            }
         }
     }
 }
-
 
 
 /*-----------------MEDIA QUERIES----------------*/
@@ -95,20 +95,19 @@ footer{
         flex-basis: 580px;
     }
 /*-----------------medios de pago----------------*/
-    .mx-4 {
-        margin-right: 10rem!important;
-        margin-left: 10rem!important;
-    }
-    .section3__content-article{
+    .section3__content{
+        margin: 0rem 14rem;
         padding: .25rem;
 
-        .fs-5 {
-            font-size: 1.75rem !important;
-        }
         .ms-3 {
             margin-left: 0.25rem!important;
         }
+
+        &--article--h4{
+            font-size: map-get($font-size, txt-md);
+        }
     }
+
 }
 
 @media (max-width:1440px){
@@ -121,12 +120,22 @@ footer{
         flex-basis: 530px;
     }
     /*-----------------medios de pagos----------------*/
-    .mx-4 {
-        margin-right: 2.5rem!important;
-        margin-left: 2.5rem!important;
+    .section3__content{
+        margin: 0rem 6rem;
+
+        &--article--h4{
+            font-size: map-get($font-size, txt-xmd);
+        }
     }
-    .section3__content-article .fs-5 {
-        font-size: 1.25rem !important;
+}
+
+@media (max-width:1366px){
+    .section2__article {
+        flex-basis: 520px;
+    }
+
+    .section3__content{
+        margin: 0rem 3.5rem;
     }
 }
 
@@ -140,14 +149,20 @@ footer{
             flex-basis: 420px;
     }
     /*---------------medios de pagos---------------*/
-    .section3__content-article{
 
-        .fs-5 {
-            font-size: 1.25rem !important;
+    .section3__content{
+        margin: 0rem 2rem;
+
+        &--article{
+            @include size(23%!important, auto);
         }
-        .mx-5 {
-            margin-right: 0.5rem!important; 
-            margin-left: 0.5rem!important;
+        &--article--h4{
+            font-size: map-get($font-size, txt-sm);
+        }
+
+        .mx-3 {
+            margin-right: 0rem!important;
+            margin-left: 0rem!important;
         }
     }
 }
@@ -174,25 +189,31 @@ footer{
             flex-basis: 310px;
         }
     }
-    
-/*----------MEDIOS DE PAGO------------*/
-    .section3__article {
-        @include size(40%!important, auto);
 
-        .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4{
-            margin-left: 0rem!important;
-        } 
-        &--h4{
-            font-size: map-get($font-size, txt-sm !important);
-            margin-left: 0rem!important;
-        }
-    } 
-}
+/*----------MEDIOS DE PAGO------------*/
+    .section3__content{
+        margin: 0rem 1rem;
+
+        &--article {
+            @include size(35%!important, auto);
+    
+            &--img{
+                margin-left: 0rem!important;
+            } 
+
+            .ms-3 {
+                margin-left: 0.25rem!important;
+           }
+        }   
+    }       
+
+
+}    
 
 @media (max-width: 480px){
 /*-----------------SECTION 1----------------*/
     .section1__article {
-        flex-basis: 300px;
+        flex-basis: 200px;
 
         &--span {
             height: auto;
@@ -202,49 +223,61 @@ footer{
 /*-----------------SECTION 2----------------*/
     .gap-4 {
         gap: 1.5rem!important;
-
-        .section2__article {
-            flex-basis: 400px;
-        }
+    }
+    
+    .section2__article {
+        flex-basis: 350px;
     }
 
 /*-----------------MEDIOS DE PAGO----------------*/
     .mx-5 {
         margin-right: 0!important;
         margin-left: 0!important;
+    }
+    
+    .section3__content--article {
+        @include size(45%!important, auto);
 
-        .section3__article {
-            @include size(40%, auto);
-
-            .section3__article1-img1, .section3__article2-img2, .section3__article3-img3, .section3__article4-img4 {
-                max-width: 45px;
-            }
-            .ms-3 {
-                margin-left: 0.5rem!important;
-            }
-            .fs-5 {
-                font-size: map-get($font-size, txt-sm !important);
-            }
+        &--img{
+            max-width: 45px;
+        }            
+        .ms-3 {
+            margin-left: 0.5rem!important;
+        }
+        &--h4{
+            font-size: map-get($font-size, txt-xsm);
         }
     }
 }
 
 @media (max-width: 320px){
-/*-----------------SECTION 1----------------*/
+    /*-----------------SECTION 1----------------*/
     .section1__article--span {
-            height: auto;
+        height: auto;
     }
-/*-----------------SECTION 2----------------*/
+    /*-----------------SECTION 2----------------*/
     .section2__article{
-            padding: 0px;
+        padding: 0px;
     }
-/*-----------------MEDIOS DE PAGO----------------*/
-    .section3__article {
-        margin-left: 5px;
-        @include size(100%, auto);
+    /*-----------------MEDIOS DE PAGO----------------*/
+    .mx-4 {
+        margin-right: 0.5rem!important;
+        margin-left: 0.5rem!important;
     }
-    .fs-5 {
-        font-size: map-get($font-size, txt-xs !important);
-    }  
-}    
     
+    .section3__content{
+        margin: 0rem .5rem;
+
+        &--article {
+            @include size(100%!important, auto);
+    
+            &--img {
+                max-width: 40px !important;
+            }
+        }
+    } 
+
+    .section3__content .mx-3, .section3__content--article .mx-3 {
+        margin-left: 3rem !important;
+    }
+}       

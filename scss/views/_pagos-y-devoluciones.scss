@@ -34,7 +34,7 @@
 }
 /*------------SECTION 2---------------*/
 .section2-payments{
-    @include box-style(rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
+    @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
 
     &__article--h2{
         font-size: map-get($font-size, txt-lg);
@@ -86,6 +86,12 @@
     }
 }
 
+@media (max-width: 768px){
+    .section2-payments{
+        margin: 1.25rem 2rem;
+    }
+}
+
 @media (max-width: 480px){
 /*------------SECTION 1------------------*/
     .section1-payments__h1{
@@ -100,7 +106,7 @@
 
 /*------------SECTION 2------------------*/   
     .section2-payments{
-        margin: 1rem;
+        margin: 1rem 0.5rem;
 
         &-text {
             margin: 1.25rem 2rem;

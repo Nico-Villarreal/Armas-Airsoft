@@ -20,7 +20,7 @@
 
 /*---------------SECTION 1--------------*/
 .section-defensaConsumidor{
-    @include box-style (rgba(185, 182, 182, 0.278), 2px 2px 4px 0 rgb(100, 100, 100));
+    @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
     margin: 1.25rem 3.5rem;
 
     &__h1{
@@ -65,9 +65,15 @@
     }
 }
 
+@media (max-width: 768px){
+    .section-defensaConsumidor{
+        margin: 1.25rem 2rem;
+    }
+}
+
 @media (max-width: 480px){
     .section-defensaConsumidor{
-        margin: 1rem;
+        margin: 1rem 0.5rem;
 
         &__h1 {
             font-size: map-get($font-size, txt-xl);
