@@ -31,10 +31,11 @@ footer{
 
 /*------SECTION 1-HTML--------*/
 .section1{
-    margin: 1.5rem 2.5rem 0rem; 
+   max-width: 1200px;
+
 
     &__article{
-        flex-basis: 350px;
+        flex-basis: 29%;
     
         &--img{
             box-shadow: 2px 2px 4px black; 
@@ -48,11 +49,11 @@ footer{
 
 /*------SECTION 2-HTML--------*/
 .section2{
-    margin: 1.5rem 2.5rem 0rem; 
+    max-width: 1200px;
 
     &__article{
         flex-direction: column;
-        flex-basis: 545px;
+        flex-basis: 48%;
     
         &--img{
             box-shadow: 2px 2px 4px black;     
@@ -87,13 +88,15 @@ footer{
 /*-----------------MEDIA QUERIES----------------*/
 @media (max-width:1920px){
 /*-----------------section 1----------------*/
-     .section1__article{
-        flex-basis: 370px;
+    .section1 {
+        margin: 1.5rem 22.5rem;
     }
+
 /*-----------------section 2----------------*/
-    .section2__article{
-        flex-basis: 580px;
+    .section2{
+        margin: 1.5rem 22.5rem; 
     }
+
 /*-----------------medios de pago----------------*/
     .section3__content{
         margin: 0rem 14rem;
@@ -104,7 +107,7 @@ footer{
         }
 
         &--article--h4{
-            font-size: map-get($font-size, txt-md);
+            font-size: map-get($font-size, txt-xmd);
         }
     }
 
@@ -112,42 +115,44 @@ footer{
 
 @media (max-width:1440px){
     /*-----------------section 1----------------*/
-    .section1__article{
-        flex-basis: 330px;
+    .section1 {
+        margin: 1.5rem 10rem;
     }
     /*-----------------section 2----------------*/
-    .section2__article{
-        flex-basis: 530px;
+    .section2{
+        margin: 1.5rem 7rem; 
     }
     /*-----------------medios de pagos----------------*/
     .section3__content{
         margin: 0rem 6rem;
 
         &--article--h4{
-            font-size: map-get($font-size, txt-xmd);
+            font-size: map-get($font-size, txt-sm);
         }
     }
 }
 
 @media (max-width:1366px){
-    .section2__article {
-        flex-basis: 520px;
+    .section1, .section2{
+        margin: 1.5rem 5rem; 
     }
 
     .section3__content{
         margin: 0rem 3.5rem;
+
+        &--article{
+            margin: .5rem 1rem;
+        }
+
     }
 }
 
 @media (max-width: 1024px){
-    /*---------------SECTION 1---------------*/
-    .section1__article {
-            flex-basis: 265px;
+    /*---------------SECTION 1 / SECTION 2---------------*/
+    .section1,.section2{
+        margin: 1.5rem 3.5rem;
     }
-    /*---------------SECTION 2---------------*/
-    .section2__article{
-            flex-basis: 420px;
-    }
+
     /*---------------medios de pagos---------------*/
 
     .section3__content{
@@ -156,10 +161,7 @@ footer{
         &--article{
             @include size(23%!important, auto);
         }
-        &--article--h4{
-            font-size: map-get($font-size, txt-sm);
-        }
-
+        
         .mx-3 {
             margin-right: 0rem!important;
             margin-left: 0rem!important;
@@ -170,23 +172,15 @@ footer{
 @media (max-width: 768px){
 /*----------SECTION 1 - INDEX -----------*/
     .section1{
-        margin: 0px; 
-
-        &__article {
-            flex-basis: 190px;
-    
-            &--span{
-                height: 35%;
-            }
-        }
+        margin: 1.5rem 0rem; 
     }    
 
 /*----------SECTION 2-----------*/
     .section2{
-        margin: 0px; 
+        margin: 1.5rem 0rem; 
 
-        &__article{   
-            flex-basis: 310px;
+        &__article{
+            flex-basis: 48.5%;
         }
     }
 
@@ -213,7 +207,7 @@ footer{
 @media (max-width: 480px){
 /*-----------------SECTION 1----------------*/
     .section1__article {
-        flex-basis: 200px;
+        flex-basis: 41%;
 
         &--span {
             height: auto;
@@ -226,7 +220,7 @@ footer{
     }
     
     .section2__article {
-        flex-basis: 350px;
+        flex-basis: 100%;
     }
 
 /*-----------------MEDIOS DE PAGO----------------*/

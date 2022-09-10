@@ -7,11 +7,15 @@ header{
     }  
     
     /*----------NAV-----------------*/
-    .nav-link{
-        transition: 0.5s;
+    .navbar-nav{
+        font-size: map-get($font-size, txt-sm);
 
-        &:hover{
-            transform: scale(1.05);
+        .nav-link{
+            transition: 0.5s;
+    
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -24,31 +28,24 @@ header{
 /*-----------------MEDIA QUERIES----------------*/
 @media (max-width: 1920px){ 
     .navbar-nav{
-        font-size: map-get($font-size, txt-xmd);
-    }
-    .me-5 {
-        margin-right: 19rem!important;
+        margin-right: 20rem;
     }
 }
 
 @media (max-width: 1440px){ 
-
-    .me-5 {
-        margin-right: 5rem!important;
+    .navbar-nav{
+        margin-right: 5rem;
     }
 }
 
 @media (max-width: 1366px){ 
     .navbar-nav{
-        font-size: map-get($font-size, txt-sm);
-    }
-    .me-5 {
-        margin-right: 4rem!important;
+        margin-right: 4rem;
     }
 }
 
 @media (max-width: 1024px){ 
-    .me-5 {
-        margin-right: 0rem!important;
+    .navbar-nav{
+        margin: 0rem 1rem;
     }
 }           

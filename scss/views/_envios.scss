@@ -20,12 +20,14 @@
 
 /*------------SECTION 1------------------*/   
 .section-shipments{
+    max-width: 1200px;
     @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
     
         &__article--h1{
-            font-size: map-get($font-size, txt-lg);
+            font-size: map-get($font-size, txt-xlg);
         }
         &__article--text{
+            font-size: map-get($font-size, txt-sm);
             text-align: justify;
             line-height: 1.5;
         }
@@ -35,14 +37,7 @@
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px){
     .section-shipments{
-        margin: 1.25rem 20rem;
-
-        &__article--h1{
-            font-size: map-get($font-size, txt-lg);
-        }
-        &__article--text{
-            font-size: map-get($font-size, txt-sm);
-        }
+        margin: 1.25rem 22.5rem;
     }
 
 }

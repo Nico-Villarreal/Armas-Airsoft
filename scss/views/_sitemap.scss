@@ -20,32 +20,25 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
         gap: .2rem;
+        max-width: 1200px;
 
         @include box-style(rgba(240, 240, 240, 0.811), 2px 2px 4px black);
     
         &__h1 {
-            font-size: map-get($font-size, txt-lg);
+            font-size: map-get($font-size, txt-md);
         }
                 
         &__article--div--h2{
-            font-size: map-get($font-size, txt-md);
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__pages--li{
+            font-size: map-get($font-size, txt-sm);
         }
     }
 
 @media (max-width: 1920px){
     .section-sitemap{
-        margin: 1.25rem 20rem;
-
-        &__h1 {
-            font-size: map-get($font-size, txt-xlg);
-        }
-                
-        &__article--div--h2{
-            font-size: map-get($font-size, txt-md);
-        }
-        &__pages--li{
-            font-size: map-get($font-size, txt-sm);
-        }
+        margin: 1.25rem 22.5rem;
     }
 }
 
@@ -53,7 +46,6 @@
     .section-sitemap{
         margin: 1.25rem 10rem;
     }
-
 }
 
 @media (max-width: 1366px){
@@ -76,17 +68,12 @@
 
 @media (max-width: 480px){
     .section-sitemap{
-        margin: 1.25rem .5rem;
+        margin: 1.25rem 1rem;
+    }
+}
 
-        &__h1 {
-            font-size: map-get($font-size, txt-md);
-        }
-                
-        &__article--div--h2{
-            font-size: map-get($font-size, txt-xmd);
-        }
-        &__pages--li{
-            font-size: map-get($font-size, txt-xsm);
-        }
+@media (max-width: 320px){
+    .section-sitemap{
+        margin: 1rem .5rem;
     }
 }

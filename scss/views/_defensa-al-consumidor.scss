@@ -20,11 +20,18 @@
 
 /*---------------SECTION 1--------------*/
 .section-defensaConsumidor{
+    max-width: 1200px;
     @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
-    margin: 1.25rem 3.5rem;
 
     &__h1{
-        font-size: map-get($font-size, txt-lg);
+        font-size: map-get($font-size, txt-md);
+    }
+    &__article--text--h2{
+        font-size: map-get($font-size, txt-xmd);
+    }
+    &__article--text--p{
+        font-size: map-get($font-size, txt-sm);
+        text-align: justify;
     }
 }
 
@@ -32,52 +39,58 @@
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px){
     .section-defensaConsumidor{
-        margin: 1.25rem 20rem;
-
-        &__h1{
-            font-size: map-get($font-size, txt-xl);
-        }
-        &__article--text--h2{
-            font-size: map-get($font-size, txt-md);
-        }
-        &__article--text--p{
-            font-size: map-get($font-size, txt-sm);
-            text-align: justify;
-        }
+        margin: 1.25rem 22.5rem;
     }
 }
 
 @media (max-width: 1440px){
     .section-defensaConsumidor{
-        margin: 1.25rem 8rem;
+        margin: 1.25rem 15rem;
     }
 }
 
 @media (max-width: 1366px){
     .section-defensaConsumidor{
-        margin: 1.25rem 5rem;
+        margin: 1.25rem 9rem;
     }
 }
 
 @media (max-width: 1024px){
     .section-defensaConsumidor{
-        margin: 1.25rem 4rem;
+        margin: 1.25rem 5rem;
     }
 }
 
 @media (max-width: 768px){
     .section-defensaConsumidor{
         margin: 1.25rem 2rem;
+
+        &__h1{
+            font-size: map-get($font-size, txt-xmd);
+        }
+        &__article--text--h2{
+            font-size: map-get($font-size, txt-sm);
+        }
+        &__article--text--p{
+            font-size: map-get($font-size, txt-xsm);
+        }
     }
 }
 
 @media (max-width: 480px){
     .section-defensaConsumidor{
-        margin: 1rem 0.5rem;
-
-        &__h1 {
-            font-size: map-get($font-size, txt-xl);
-        }
+        margin: 1.25rem 0.5rem;
     }
 }   
-    
+@media (max-width: 320px){
+    .section-privacity {
+        margin: .5rem;
+
+        &__h1{
+            font-size: map-get($font-size, txt-sm);
+        }
+        &__article--text--h2{
+            font-size: map-get($font-size, txt-xsm);
+        }
+    }
+}

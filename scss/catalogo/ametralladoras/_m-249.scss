@@ -1,4 +1,5 @@
 /*---------------------M-249------------*/
+/*--------------------AREAS------------*/
 #grid-container-product-M-249{
     display: grid;
     grid-template-areas: 
@@ -21,14 +22,24 @@
     }
 }
 
-/*--------------------AREAS------------*/
+/*--------------------section 1------------*/
 .section1-M-249{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    max-width: 1200px;
 
-    &__div-info{
+    &__product--info{
         background-color: rgb(221, 221, 221)!important;
 
+        &--article--h1{
+            font-size: map-get($font-size, txt-xlg);
+        }
+        &--article--h2{
+            font-size: map-get($font-size, txt-md);
+        }
+        &--article--h3{
+            font-size: map-get($font-size, txt-xmd);
+        }
         .buy-product:hover{
             background-color: rgb(159, 159, 159);
             transition: 0.5s;
@@ -39,43 +50,45 @@
         }
     }
 }
+/*--------------------section 2------------*/
+.section2-M-249{
+    max-width: 1200px;
 
-.section2-M-249__container-decription--text--div1--ul--li{
-    background-color: rgb(221, 221, 221)!important;
+    &__container-decription--text--h2, &__container-decription--text--div2--h2{
+        font-size: map-get($font-size, txt-md);
+    }
+    &__container-decription--text--div2--p{
+        font-size: map-get($font-size, txt-sm);
+        text-align: justify;
+    }
+
+    &__container-decription--text--div1--ul{
+        font-size: map-get($font-size, txt-sm);
+
+        &--li{
+            background-color: rgb(221, 221, 221)!important;
+        }
+    }
+
 }
+
 
 /*-------media queries----------*/
 @media (max-width: 1920px){
-    .section1-M-249{
-        margin: 1.5rem 20rem;
-    }
-
-    .section2-M-249{
-        margin: 1.5rem 20rem;
-
-        &__container-decription--text--h2, &__container-decription--text--div2--h2{
-            font-size: map-get($font-size, txt-lg);
-        }
-        &__container-decription--text--div2--p{
-            font-size: map-get($font-size, txt-xmd);
-            text-align: justify;
-        }
-
-        &__container-decription--text--div1--ul{
-            font-size: map-get($font-size, txt-xmd);
-        }
+    .section1-M-249, .section2-M-249{
+        margin: 1.5rem 22.5rem;
     }
 }
 
 @media (max-width: 1440px){
     .section1-M-249, .section2-M-249{
-        margin: 1.5rem 12rem;
+        margin: 1.5rem 10rem;
     }
 }
 
 @media (max-width: 1366px){
     .section1-M-249, .section2-M-249{
-        margin: 1.5rem 8rem;
+        margin: 1.5rem 7rem;
     }
 }
 
@@ -86,30 +99,14 @@
 }
 
 @media (max-width: 768px){
-
-    .section1-M-249{
-        margin: 1.25rem 2rem;
-    }
-
-    .section2-M-249{
-        margin: 1.25rem 2rem;
-
-        &__container-decription--text--h2, &__container-decription--text--div2--h2{
-            font-size: map-get($font-size, txt-xlg);
-        }
-        &__container-decription--text--div2--p{
-            font-size: map-get($font-size, txt-sm);
-        }
-
-        &__container-decription--text--div1--ul{
-            font-size: map-get($font-size, txt-sm);
-        }
+    .section1-M-249, .section2-M-249{
+        margin: 1.25rem 1rem;
     }
 }
 
 @media (max-width: 480px){
     .section1-M-249 {
-        margin: 1.25rem .5rem;
+        margin: 1rem .75rem;
 
         &__article{
             display: flex;
@@ -118,10 +115,10 @@
     }
 
     .section2-M-249 {
-        margin: 1.25rem .5rem;
+        margin: 1rem .75rem;
 
         &__container-decription--text--h2, &__container-decription--text--div2--h2{
-            font-size: map-get($font-size, txt-md);
+            font-size: map-get($font-size, txt-xmd);
         }
         &__container-decription--text--div2--p{
             font-size: map-get($font-size, txt-xsm);
@@ -131,7 +128,6 @@
             font-size: map-get($font-size, txt-xsm);
 
         }
-
         .p-3 {
             padding: 0.5rem !important;
         }
@@ -142,10 +138,7 @@
 }
 
 @media (max-width: 320px){
-    .section1-M-249 {
-        margin: 1rem .5rem;
-    }
-    .section2-M-249 {
+    .section1-M-249, .section2-M-249{
         margin: 1rem .5rem;
     }
 }

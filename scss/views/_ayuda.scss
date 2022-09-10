@@ -30,10 +30,13 @@
     }
 }
 
+.h1-ayuda, .section1-ayuda, .section2-ayuda, .section3-ayuda{
+    max-width: 1200px;
+}
 /*---------------SECTION 2-FORM--------------*/
 .section2-ayuda__article1{
     @include box-style(rgba(185, 182, 182, 0.311), 2px 3px 8px 0 gray);
-    margin: 0px 150px;
+    margin: 0rem 9rem;
 
     &--form{
         @include box-style(rgb(151, 151, 151), 2px 3px 8px 0 #000);
@@ -53,120 +56,95 @@
 
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px){
-    .section1-ayuda{
-        margin: 0rem 15rem !important;
+    #h1-ayuda{
+        font-size: map-get($font-size, txt-lg);
+    }
 
-        #h1-ayuda{
-            font-size: map-get($font-size, txt-xlg);
-        }
+    .section1-ayuda{
+        margin: 0rem 22.5rem;
 
         &__article1--text {
-            font-size: map-get($font-size, txt-md);
+            font-size: map-get($font-size, txt-xmd);
             text-align: justify;
         }
     }
 
     .section2-ayuda{
-        margin: 0rem 15rem !important;
+        margin: 0rem 22.5rem;
     }
 
     .section3-ayuda{
-        margin: 0rem 15rem !important;
+        margin: 0rem 22.5rem;
 
         &__article1--text1{
-            font-size: map-get($font-size, txt-md);
+            font-size: map-get($font-size, txt-xmd);
         }
     }
 
 }
 
 @media (max-width: 1440px){
-    .section1-ayuda{
-        margin: 0rem 7rem !important;
-
-        #h1-ayuda{
-            font-size: map-get($font-size, txt-md);
-        }
-
-        &__article1--text {
-            font-size: map-get($font-size, txt-xmd);
-        }
+    .section1-ayuda, .section2-ayuda, .section3-ayuda{
+        margin: 0rem 7.5rem;
     }
-
-    .section2-ayuda{
-        margin: 0rem 6rem !important;
-    }
-
-    .section3-ayuda{
-        margin: 0rem 7rem !important;
-
-        &__article1--text1{
-            font-size: map-get($font-size, txt-xmd);
-        }
-    }
-
 }
 
 @media (max-width: 1366px){
+    #h1-ayuda{
+        font-size: map-get($font-size, txt-md);
+    }
+
     .section1-ayuda{
-        margin: 0rem 3rem !important;
+        margin: 0rem 5.5rem;
+
+        &__article1--text {
+            font-size: map-get($font-size, txt-sm);
+
+        }
     }
     .section2-ayuda{
-        margin: 0rem 4rem !important;
+        margin: 0rem 5.5rem;
     }
 
     .section3-ayuda{
-        margin: 0rem 3rem !important;
+        margin: 0rem 5.5rem;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-sm);
+        }
     }
 }
 
 @media (max-width: 1024px){
-    .section1-ayuda{
-        margin: 0rem 2rem !important;
-
-        #h1-ayuda{
-            font-size: map-get($font-size, txt-xl);
-        }
-
-        .section1__texto{
-            text-align: justify;
-        }
+    .section1-ayuda, .section3-ayuda{
+        margin: 0rem 2rem;
     }
 
     .section2-ayuda{
-        margin: 0rem 0rem !important;
+        margin: 0rem 1rem;
 
         &__article1 {
-            margin: 0rem 3.75rem;
-        }
-
-        .p-3 {
-            padding: 0.5rem!important;
+            margin: 0rem 2.75rem;
         }
     }
-
-    .section3-ayuda{
-        margin: 0rem 2rem !important;
-
-        &__article1--text1{
-            font-size: map-get($font-size, txt-xmd);
-        }
-    }
-
 }
 
 @media (max-width: 768px){
-/*------------SECTION 2------------------*/    
-    .section2-ayuda__article1--form {
-        @include size(80%, auto);
+    .section1-ayuda,.section3-ayuda{
+        margin: .5rem 0rem;
     }
+/*------------SECTION 2------------------*/    
+    .section2-ayuda{
+        margin: .5rem 0rem;
+
+        &__article1--form {
+            @include size(70%, auto);
+        }
+    }
+
 }
 
 @media (max-width: 480px){
-    .section1-ayuda{
-        margin: 0rem .5rem !important;
-    }
-
     .section2-ayuda__article1 {
         margin: 0rem .5rem;
 
@@ -177,13 +155,10 @@
 }
   
 @media (max-width: 320px){
-    #h1-ayuda{
-        font-size: map-get($font-size, txt-lg);
-    }
     .section2-ayuda__article1 {
-        margin: 10px 15px;
-        padding-left: 0px!important;
-        padding-right: 0px!important;
+        margin: 0rem .5rem;
+        padding-left: 0rem!important;
+        padding-right: 0rem!important;
     }
 }
 

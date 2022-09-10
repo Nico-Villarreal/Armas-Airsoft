@@ -1,28 +1,31 @@
 
  /*---------------FOOTER---------------*/
-footer{
-    background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
-}
 .footer{
-    padding: 0rem;
-    margin: 0rem .75rem;
+    margin: .5rem .75rem;
+    background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
+
+    &__icon-instagram{
+        @include size(80%, auto);        
+    }
 }
 
 @media (max-width: 768px){
-    footer{
+    .footer{
+        margin: .5rem;
         font-size: map-get($font-size, txt-sm);
-        margin: .75rem;
 
-        .footer__icon-instagram{
-            @include size(75%, auto);        
+        &__icon-instagram{
+            @include size(70%, auto);        
         }
     }
 }
 
 @media (max-width: 320px){
-    footer {
+    .footer {
         font-size: map-get($font-size, txt-xs);
-        padding: 1rem;
-        margin: .75rem 0rem;
+
+        &__icon-instagram{
+            @include size(60%, auto);        
+        }
     }
 }  

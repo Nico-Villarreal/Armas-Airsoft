@@ -24,58 +24,70 @@
 }
 
 /*---------------SECTION 1--------------*/
-.section1-maps__link{
-    @include size (70vw, 80vh);
-    box-shadow: 2px 2px 4px black;
-}
-.section1-maps__text{
-    background-color: rgb(211, 211, 211)!important;
+.section1-maps{
+    max-width: 1200px;
 
-    &--li{
-        font-size: map-get($font-size, txt-lg);
-        color: black;
+    &__link{
+        @include size (70vw, 80vh);
+        box-shadow: 2px 2px 4px black;
+    }
+
+    &__text{
+        background-color: rgb(211, 211, 211)!important;
+    
+        &--li{
+            font-size: map-get($font-size, txt-sm);
+            color: black;
+        }
     }
 }
 
+
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px){
+    .h1-ubicacion{
+        font-size: map-get($font-size, txt-xlg);
+    }
     .section1-maps{
-        margin: 2.5rem 12rem;
+        margin: 0.5rem 22.5rem;
 
         &__link{
-            @include size (50vw, 70vh);
+            @include size (50vw, 85vh);
         }
     }
 }
 
 @media (max-width: 1440px){
-    .section1-maps__link{
-        @include size (60vw, 70vh);
+    .section1-maps{
+        margin: 0.5rem 16rem;
+
+        &__link{
+            @include size (60vw, 85vh);
+        }
     }
 }
 
 @media (max-width: 1024px){
-    .section1-maps{
-        margin: 1.5rem 8rem;
+    .section1-maps {
+        margin: 0.5rem 8rem;
 
         &__link{
             @include size (70vw, 70vh);
         }
-        &__text--li{
-            font-size: map-get($font-size, txt-xmd);
-        }
     }
+
 }
 
 @media (max-width: 768px){
+    .h1-ubicacion{
+        font-size: map-get($font-size, txt-md);
+    }
+
     .section1-maps{
         margin: 0.5rem 1rem; 
 
         &__link{
-            @include size (80vw, 70vh);
-        }
-        &__text--li {
-            font-size: map-get($font-size, txt-sm);
+            @include size (80vw, 75vh);
         }
     }
 }
@@ -89,7 +101,7 @@
             font-size: map-get($font-size, txt-sm);
         }
         &__link{
-            @include size (90vw, 50vh);
+            @include size (90vw, 65vh);
         }
     }
 }   
@@ -103,17 +115,15 @@
 .section1-maps {
     margin: 0rem 0rem;
 
-        &__link{
-            @include size (85vw, 40vh);
-        }
-        &__text{
-            margin: 0.5rem;
+    &__link{
+        @include size (85vw, 50vh);
+    }
+    &__text{
+        margin: 0.5rem;
 
-            &--li {
-                font-size: map-get($font-size, txt-sm);
-                text-align: center;
-                }
-
+        &--li {
+            text-align: center;
             }
         }
+    }
 }

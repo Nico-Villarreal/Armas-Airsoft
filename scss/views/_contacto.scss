@@ -30,10 +30,14 @@ footer{
     grid-area: footer;
 }
 
+.h1-contacto, .section1-contacto, .section2-contacto, .section3-contacto{
+    max-width: 1200px;
+}
+
 /*-------------SECTION2-FORM-----------------*/
 .section2-contacto__article1{
     @include box-style(rgba(185, 182, 182, 0.311), 2px 3px 8px 0 gray);
-    margin: 0px 140px;
+    margin: 0rem 9rem;
 
     &--form{
         @include box-style(rgb(151, 151, 151), 2px 3px 8px 0 #000);
@@ -54,96 +58,26 @@ footer{
 
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px){
+    #h1-contacto{
+        font-size: map-get($font-size, txt-lg);
+    }
+
     .section1-contacto{
-        margin: 0rem 15rem !important;
+        margin: 0rem 22.5rem;
 
-        #h1-contacto{
-            font-size: map-get($font-size, txt-xxl);
-        }
 
-        .section1__texto{
-            font-size: map-get($font-size, txt-md);
-        }
-    }
-
-    .section2-contacto, .section3-contacto{
-        margin: 0rem 15rem !important;
-    }
-
-    .section3-contacto{
-        margin: 0rem 15rem !important;
-
-        &__article1--text1{
-            font-size: map-get($font-size, txt-md);
-        }
-    }
-}
-
-@media (max-width: 1440px){
-    .section1-contacto{
-        margin: 0rem 7rem !important;
-
-        #h1-contacto{
-            font-size: map-get($font-size, txt-xl);
-        }
-
-        .section1__texto{
+        &__article--texto{
             font-size: map-get($font-size, txt-xmd);
-        }
-    }
-
-    .section2-contacto{
-        margin: 0rem 7rem !important;
-    }
-
-    .section3-contacto{
-        margin: 0rem 6rem !important;
-
-        &__article1--text1{
-            font-size: map-get($font-size, txt-xmd);
-        }
-    }
-}
-
-@media (max-width: 1366px){
-    .section1-contacto{
-           margin: 0rem 3rem !important;
-    }
-    .section2-contacto{
-        margin: 0rem 4rem !important;
-    }
-    .section3-contacto{
-        margin: 0rem 3rem !important;
-    }
-}
-
-@media (max-width: 1024px){
-    .section1-contacto{
-        margin: 0rem 2rem !important;
-
-        #h1-contacto{
-            font-size: map-get($font-size, txt-xl);
-        }
-
-        .section1__texto{
             text-align: justify;
         }
     }
 
     .section2-contacto{
-        margin: 0rem 0rem !important;
-
-        &__article1 {
-            margin: 0rem 3.75rem;
-        }
-
-        .p-3 {
-            padding: 0.5rem!important;
-        }
+        margin: 0rem 22.5rem;
     }
 
     .section3-contacto{
-        margin: 0rem 2rem !important;
+        margin: 0rem 22.5rem;
 
         &__article1--text1{
             font-size: map-get($font-size, txt-xmd);
@@ -151,57 +85,88 @@ footer{
     }
 }
 
-@media (max-width: 768px){
-/*------------SECTION 2------------------*/    
-    .section2-contacto__article1 {
-        margin: 1rem 4.25rem;
+@media (max-width: 1440px){
+    .section1-contacto, .section2-contacto, .section3-contacto{
+        margin: 0rem 7.5rem;
+    }
+}
 
-        &--form {
-            @include size(70%, auto);
+@media (max-width: 1366px){
+    #h1-contacto{
+        font-size: map-get($font-size, txt-md);
+    }
+
+    .section1-contacto{
+        margin: 0rem 5.5rem;
+
+        &__article--texto{
+            font-size: map-get($font-size, txt-sm);
         }
     }
 
+    .section2-contacto{
+        margin: 0rem 5.5rem;
+    }
+
+    .section3-contacto{
+        margin: 0rem 5.5rem;
+
+        &__article1--text1{
+            font-size: map-get($font-size, txt-sm);
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .section1-contacto, .section3-contacto{
+        margin: 0rem 2rem;
+    }
+
+    .section2-contacto{
+        margin: 0rem 1rem;
+
+        &__article1 {
+            margin: 0rem 2.75rem;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .section1-contacto,.section3-contacto{
+        margin: .5rem 0rem;
+ }
+/*------------SECTION 2------------------*/    
+    .section2-contacto{
+        margin: .5rem 0rem;
+
+        &__article1 {
+            margin: 1rem 4.25rem;
+    
+            &--form {
+                @include size(70%, auto);
+            }
+        }
+    }
 }
 
 @media (max-width: 480px){
-    .section1-contacto{
-        margin: 0rem .5rem !important;
-    }
-
     .w-75 {
         @include size(90%!important, auto);
     }
     .section2-contacto__article1 {
-        margin: .5rem .75rem;
-        padding-right: 0rem!important;
-        padding-left: 0rem!important;
+        margin: 0rem .5rem;
 
         &--form {
-            @include size(80%, auto);
+            @include size(90%, auto);
         }
     }
-
-    .p-3 {
-    padding: 1rem!important;
-}
 }
 
 @media (max-width: 320px){
-    .section1-contacto {
-        margin: 0rem 0rem !important;
-
-        #h1-contacto{
-            font-size: map-get($font-size, txt-lg);
-        }    
-    }
-
     .section2-contacto__article1 {
-        margin: 0.5rem;
-
-    }
-    .section3-contacto{
-        margin: 0rem 0rem !important;
-
+        margin: 0rem .5rem;
+        padding-left: 0rem!important;
+        padding-right: 0rem!important;
     }
 }
 

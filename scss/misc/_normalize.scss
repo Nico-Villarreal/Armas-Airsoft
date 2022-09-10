@@ -17,7 +17,8 @@ ul{
 }
 body{
     background-color: rgb(150, 150, 150);
-    background-image:url(../img/grunge.webp)
+    background-image:url(../img/fondo-2.webp);
+    width: 100%;
 }
 p {
     color: rgb(255, 255, 255);
@@ -40,12 +41,6 @@ h1, h2, h3, footer{
 }
 
 @media (max-width:1920px){
-    ul{
-        font-size: map-get($font-size, txt-md);
-    }
-}
-
-@media (max-width:1440px){
     ul{
         font-size: map-get($font-size, txt-xmd);
     }

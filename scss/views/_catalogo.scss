@@ -65,7 +65,7 @@ section div article div img{
 }
 /*------------SECTION ARTICLE------------------*/
 .section1-catalogo{
-    padding: auto; 
+    max-width: 1200px;
 
     &__article{
         flex: 1 1 250px;
@@ -79,7 +79,7 @@ section div article div img{
 
 /*--------------SECTION 2-----------*/
 .section2-catalogo{
-    padding: auto; 
+    max-width: 1200px;
 
     &__article{
         flex: 1 1 250px;
@@ -93,7 +93,7 @@ section div article div img{
 
 /*--------------SECTION 3-----------*/
 .section3-catalogo{
-    padding: auto; 
+    max-width: 1200px;
 
     &__article{
         flex: 1 1 250px;
@@ -107,7 +107,7 @@ section div article div img{
 
 /*--------------SECTION 4-----------*/
 .section4-catalogo{
-    padding: auto; 
+    max-width: 1200px;
 
     &__article{
         flex: 1 1 250px;
@@ -121,7 +121,7 @@ section div article div img{
 
 /*--------------SECTION 5-----------*/
 .section5-catalogo{
-    padding: auto; 
+    max-width: 1200px;
 
     &__article{
         flex: 1 1 250px;
@@ -136,19 +136,19 @@ section div article div img{
 /*--------------------MEDIA QUERIES-------------------*/
 @media (max-width: 1920px){
     #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
-        margin: 0rem 15rem;
+        margin: 0rem 22.5rem;
     }
 }
 
 @media (max-width: 1440px){
     #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
-        margin: 0rem 7rem;
+        margin: 0rem 7.5rem;
     }
 }
 
 @media (max-width: 1366px){
     #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
-        margin: 0rem 5rem;
+        margin: 0rem 5.5rem;
     }
 }
 
@@ -169,8 +169,12 @@ section div article div img{
         padding: 0rem !important;
         margin: 0rem 1rem;
     }
-}
 
+    .catalogo__h2-2{
+        margin-top: 1rem;
+    }
+}
+  
 @media (max-width: 320px){
     #section1-catalogo, #section2-catalogo, #section3-catalogo, #section4-catalogo, #section5-catalogo{
         padding: 0rem .5rem !important;
