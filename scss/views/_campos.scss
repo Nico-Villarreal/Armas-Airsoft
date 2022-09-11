@@ -1,0 +1,119 @@
+/*-----------------------CATALOGO HTML-----------------------*/
+/*---------------GRID AREA--------------*/
+#grid-container-campos{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section-campos"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+.section-campos{
+    grid-area: section-campos;
+}
+footer{
+    grid-area: footer;
+}
+
+/*---------------section campos--------------*/
+
+.section-campos{
+    max-width: 1200px;
+    @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
+    padding: 1rem 0rem;
+
+    &__title{
+        font-size: map-get($font-size, txt-lg);
+    }
+    &__article--camps{
+        margin: 0rem .5rem;
+
+        &--card{
+            height: auto;
+
+            &--img{
+                flex-basis: 50%;
+            
+                &--airsoft{
+                    height: 100%;
+                }
+            }
+            &--img:hover{
+                transform: scale(1.01);
+                transition: .5s;
+            }
+
+            &--info{
+                flex-basis: 50%;
+
+                &--h2{
+                    font-size: map-get($font-size, txt-md);
+                    margin: .5rem;
+                }
+
+                &--text{
+                    text-align: justify;
+                    font-size: map-get($font-size, txt-sm);
+                }
+            }
+        }
+    }
+}
+
+/*---------------media queries--------------*/
+@media (max-width: 1920px){
+    .section-campos{
+        margin: 1.5rem 22.5rem;
+    }
+}
+
+@media (max-width: 1440px){
+    .section-campos{
+        margin: 1.5rem 10rem;
+    }
+}
+
+@media (max-width: 1366px){
+    .section-campos{
+        margin: 1.5rem 5.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .section-campos{
+        margin: 1.5rem 3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .section-campos{
+        margin: 1.25rem 1rem;
+    }
+}
+
+@media (max-width: 480px){
+    .section-campos{
+        margin: 1.25rem .75rem;
+
+        &__title{
+            font-size: map-get($font-size, txt-xlg);
+        }
+
+        &__article--camps--card{
+            flex-direction: column !important;
+            height: 550px;
+
+            &--info--h2{
+                font-size: map-get($font-size, txt-xmd);
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .section-campos{
+        margin: 1.25rem 1rem;
+    }
+}

@@ -33,15 +33,15 @@ footer{
 .section1{
    max-width: 1200px;
 
-
     &__article{
-        flex-basis: 29%;
+        flex-basis: 30%;
     
         &--img{
             box-shadow: 2px 2px 4px black; 
         }
     
         &--div{
+            flex-basis: 100%;
             @include box-style(rgb(205, 204, 204), 2px 2px 4px black);
         }
     }
@@ -59,6 +59,7 @@ footer{
             box-shadow: 2px 2px 4px black;     
         }
         &--div{
+            flex-basis: 100%;
             @include box-style(rgb(205, 204, 204), 2px 2px 4px black);
         }
     }
@@ -114,13 +115,9 @@ footer{
 }
 
 @media (max-width:1440px){
-    /*-----------------section 1----------------*/
-    .section1 {
-        margin: 1.5rem 10rem;
-    }
-    /*-----------------section 2----------------*/
-    .section2{
-        margin: 1.5rem 7rem; 
+    /*-----------------section 1 / section 2----------------*/
+    .section1, .section2{
+        margin: 1.5rem 8rem;
     }
     /*-----------------medios de pagos----------------*/
     .section3__content{
@@ -134,7 +131,7 @@ footer{
 
 @media (max-width:1366px){
     .section1, .section2{
-        margin: 1.5rem 5rem; 
+        margin: 1.5rem 6rem; 
     }
 
     .section3__content{
@@ -148,11 +145,22 @@ footer{
 }
 
 @media (max-width: 1024px){
-    /*---------------SECTION 1 / SECTION 2---------------*/
-    .section1,.section2{
+    /*---------------SECTION 1 ---------------*/
+    .section1{
         margin: 1.5rem 3.5rem;
+
+        &__article {
+            flex-basis: 32%;
+        }
     }
 
+    .gap-5 {
+        gap: .5rem!important;
+    }
+   /*--------------SECTION 2------------------*/
+    .section2{
+        margin: 1.5rem 3.5rem;
+    }
     /*---------------medios de pagos---------------*/
 
     .section3__content{
@@ -172,12 +180,19 @@ footer{
 @media (max-width: 768px){
 /*----------SECTION 1 - INDEX -----------*/
     .section1{
-        margin: 1.5rem 0rem; 
-    }    
+        margin: 1.5rem 1rem; 
+        justify-content: center !important;
 
+        &__article {
+            flex-basis: 31%;
+        }
+    }    
+    .gap-5 {
+        gap: 1rem!important;
+    }
 /*----------SECTION 2-----------*/
     .section2{
-        margin: 1.5rem 0rem; 
+        margin: 1.5rem 1rem; 
 
         &__article{
             flex-basis: 48.5%;
@@ -207,7 +222,7 @@ footer{
 @media (max-width: 480px){
 /*-----------------SECTION 1----------------*/
     .section1__article {
-        flex-basis: 41%;
+        flex-basis: 45%;
 
         &--span {
             height: auto;
@@ -220,7 +235,7 @@ footer{
     }
     
     .section2__article {
-        flex-basis: 100%;
+        flex-basis: 90%;
     }
 
 /*-----------------MEDIOS DE PAGO----------------*/
