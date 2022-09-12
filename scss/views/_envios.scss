@@ -18,19 +18,93 @@
     }
 }
 
-/*------------SECTION 1------------------*/   
+/*------------article 1------------------*/   
 .section-shipments{
     max-width: 1200px;
     @include box-style(rgba(185, 182, 182, 0.427), 2px 2px 4px 0 rgb(100, 100, 100));
-    
-        &__article--h1{
+
+/*------------article 1------------------*/   
+    &__article{
+        margin: 1rem 0rem;
+       
+        .h1-title{
             font-size: map-get($font-size, txt-xlg);
         }
-        &__article--text{
+        .info__text{
             font-size: map-get($font-size, txt-sm);
             text-align: justify;
-            line-height: 1.5;
         }
+    }  
+
+/*------------article 2------------------*/   
+    &__article-oca{
+        gap: .5rem;
+        margin: 1.25rem 0rem;
+
+        &--h2-title{
+            font-size: map-get($font-size, txt-md);
+        }
+        &--info__text{
+            font-size: map-get($font-size, txt-sm);
+            text-align: justify;
+        }
+        &--picture{
+            gap: 1rem;
+            margin: 1rem 0rem;
+
+            &--img--taxes img{
+                @include size(500px, 440px)
+            }
+            &--img--map img{
+                @include size(300px, 440px)
+            }
+        }
+
+    }
+
+/*------------article 3------------------*/   
+    &__article-ca{
+        gap: .5rem;
+        margin: 1rem 0rem;
+
+        &--h2-title{
+            font-size: map-get($font-size, txt-md);
+        }   
+        &--info__text{
+            font-size: map-get($font-size, txt-sm);
+            text-align: justify;
+        }
+        &--picture{
+            gap: 1rem;
+            margin: 1rem 0rem;
+
+            &--img--zonas img, &--img--taxes img{
+                @include size(500px, 500px)
+            }
+        }
+    }
+
+/*------------article 4------------------*/   
+    &__article-paq{
+        gap: .5rem;
+        margin: 1.25rem 0rem;
+
+        &--h2-title{
+            font-size: map-get($font-size, txt-md);
+        }   
+        &--info--text{
+            font-size: map-get($font-size, txt-sm);
+            text-align: justify;
+        }
+        &--picture{
+            gap: 1rem;
+            margin: 1rem 0rem;
+
+            img{
+                @include size(450px, 400px)
+            }
+        }
+    }
 }
 
 
@@ -38,6 +112,10 @@
 @media (max-width: 1920px){
     .section-shipments{
         margin: 1.25rem 22.5rem;
+
+        .h3, h3 {
+            font-size: 1.5rem !important;
+        }
     }
 
 }
@@ -57,12 +135,16 @@
 @media (max-width: 1024px){
     .section-shipments{
         margin: 1.25rem 5rem;
+
+        &__article-ca--picture, &__article-oca--picture{
+            flex-wrap: wrap;
+        }
     }
 }
 
 @media (max-width: 768px){
     .section-shipments{
-        margin: 1.25rem 2rem;
+        margin: 1.25rem 1.75rem;
     }
 }
 
@@ -71,19 +153,125 @@
     .section-shipments{
         margin: 1.25rem .5rem;
     
-        &__article--h1{
-            font-size: map-get($font-size, txt-xlg);
+        /*------------article 1------------------*/   
+        .h1-title{
+            font-size: map-get($font-size, txt-md);
         }
-        &__article--text{
+        .info__text{
             font-size: map-get($font-size, txt-xsm);
         }
+        .h3, h3 {
+            font-size: 1.25rem !important;
+        }
+        /*------------article 2------------------*/   
+        &__article-oca{
+            margin: 1rem 0rem;
 
+            &--h2-title{
+                font-size: map-get($font-size, txt-xmd);
+            }
+            &--info__text{
+                font-size: map-get($font-size, txt-xsm);
+            }
+            &--picture{
+                margin: .5rem 0rem;
+
+                &--img--taxes img{
+                    @include size(400px, 340px)
+                }
+                &--img--map img{
+                    @include size(300px, 440px)
+                }
+            }
+
+        }
+
+        /*------------article 3------------------*/   
+        &__article-ca{
+            gap: .5rem;
+            margin: 1rem 0rem;
+
+            &--h2-title{
+                font-size: map-get($font-size, txt-xmd);
+            }   
+            &--info__text{
+                font-size: map-get($font-size, txt-xsm);
+            }
+            &--picture{
+                gap: .5rem;
+                margin: 1rem 0rem;
+
+                &--img--zonas img, &--img--taxes img{
+                    @include size(400px, 400px)
+                }
+            }
+        }
+
+        /*------------article 4------------------*/   
+        &__article-paq{
+            gap: .5rem;
+            margin: 1rem 0rem;
+
+            &--h2-title{
+                font-size: map-get($font-size, txt-xmd);
+            }   
+            &--info--text{
+                font-size: map-get($font-size, txt-xsm);
+            }
+            &--picture{
+                gap: .5rem;
+                margin: .5rem 0rem;
+
+                img{
+                    @include size(400px, 400px)
+                }
+            }
+        }
     }
 }    
 
 @media (max-width: 320px){
 /*------------SECTION 1------------------*/   
-.section-shipments{
-    margin: 1rem;
-}
+    .section-shipments{
+        margin: 1rem;
+
+        /*------------article 2------------------*/   
+        &__article-oca{
+            margin: .5rem 0rem;
+
+            &--picture{
+                margin: .5rem 0rem;
+
+                &--img--taxes img{
+                    @include size(240px, 240px)
+                }
+                &--img--map img{
+                    @include size(240px, 350px)
+                }
+            }
+
+        }
+
+        /*------------article 3------------------*/   
+        &__article-ca{
+            margin: .5rem 0rem;
+
+            &--picture{
+                margin: .5rem 0rem;
+
+                &--img--zonas img, &--img--taxes img{
+                    @include size(240px, 300px)
+                }
+            }
+        }
+
+        /*------------article 4------------------*/   
+        &__article-paq{
+            margin: .5rem 0rem;
+
+            &--picture img{
+                @include size(240px, 240px)
+            }
+        }
+    }
 }  

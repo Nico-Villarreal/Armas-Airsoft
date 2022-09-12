@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Te ofrecemos una amplia gama de opciones de envios, todos ellos con seguro contra daños, si no recibis el producto como corresponde te lo cambiamos sin cargo alguno">
-    <meta name="keywords" content="CO2, ARMAS, AIRSOFT, CLIENTE, PROTECCION, ENVIOS, SEGURO, CORREO ARGENTINO, DELIVERY, OCA, ANDREANI, ENCOMIENDAS, CAMBIOS">
+    <meta name="description" content="Dentro de nuestro shop podes elegir el emtodo de envio que se adapte a tu presupeusto, manteniendo la confianza y seriedad">
+    <meta name="keywords" content="CO2, ARMAS, AIRSOFT, CLIENTE, PROTECCION, ENVIOS, SEGURO, CORREO ARGENTINO, DELIVERY, OCA, ENCOMIENDAS">
     <link rel="shortcut icon" href="./img/logo-1.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                         <form role="search" class="d-flex gap-2 justify-content-center">
                             <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search">
                             <div class="d-flex gap-3">
-                                <a href="https://www.google.com/"><img src="./img/busqueda.webp" alt="icono-busqueda" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
+                                <a href="https://www.google.com/" target="_blank" ><img src="./img/busqueda.webp" alt="icono-busqueda" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
                                 <a href="./carrito.html"><img src="./img/carrito.webp" alt="carito" class="border-1 border-white rounded-2 bg-white border-secondary"></a>
                             </div>
                         </form>
@@ -60,28 +60,76 @@
 
     </header>   
 <!-------------text------------>
-    <section id="section-shipments" class="section-shipments d-flex border-2 border border-dark rounded-3 p-3">
+    <section id="section-shipments" class="section-shipments d-flex flex-column border-2 border border-dark rounded-3 p-3">
         <article class="section-shipments__article d-flex flex-column">
-            <h1 class="section-shipments__article--h1 text-center m-4">Envios</h1>
-            <p class="section-shipments__article--text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum numquam aliquid fugiat 
-                facere vero hic dolorem provident accusantium aperiam sint dolores cum doloribus fuga, 
-                nesciunt commodi, quo totam perferendis. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum numquam aliquid fugiat 
-                facere vero hic dolorem provident accusantium aperiam sint dolores cum doloribus fuga, 
-                nesciunt commodi, quo totam perferendis. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum numquam aliquid fugiat 
-                facere vero hic dolorem provident accusantium aperiam sint dolores cum doloribus fuga, 
-                nesciunt commodi, quo totam perferendis. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum numquam aliquid fugiat 
-                facere vero hic dolorem provident accusantium aperiam sint dolores cum doloribus fuga, 
-                nesciunt commodi, quo totam perferendis. 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum numquam aliquid fugiat 
-                facere vero hic dolorem provident accusantium aperiam sint dolores cum doloribus fuga, 
-                nesciunt commodi, quo totam perferendis. 
-            </p>
+            <h1 class="h1-title text-center">Envios</h1>
+            <div class="info">
+                <p class="info__text">
+                    Podes elegir entre las diferentes opciones que ofrecemos para el envio de tu compra, adaptandose a tus necesidades
+                    y condiciones economicas. 
+                </p>
+                <h3 class="info__h3">A TENER EN CUENTA!</h3>
+                <p class="info__text">
+                    Los dias de lluvia se cobrara un cargo extra de $ 200 pesos, a la hora de despacahar el paquete. Si tu compra supera 
+                    los $ 6.000 pesos no se te tendras ningun cargo en cualquier tipo de envio que elijas.
+                </p>
+            </div>
         </article>
+
+        <article class="section-shipments__article-oca d-flex flex-column">
+            <h2 class="section-shipments__article-oca--h2-title">OCA</h2>
+            <div class="section-shipments__article-oca--info">
+                <p class="section-shipments__article-oca--info__text">
+                    Podes elegir el metodo de envio de OCA, comparando los precios acorde a tu zona. Si queres calcular el 
+                    valor de tu envio <a href="https://www6.oca.com.ar/plataformaenvios/" target="_blank" >Haz click aqui</a>
+                </p>
+            </div>
+            <div class="section-shipments__article-oca--picture d-flex justify-content-center">
+                <picture class="section-shipments__article-oca--picture--img--taxes">
+                    <img src="./img/precios-oca.webp" alt="precios-oca" class="border border-dark border-2 rounded-3">
+                </picture>
+                <picture class="section-shipments__article-oca--picture--img--map">
+                    <img src="./img/oca-mapa.webp" alt="mapa-precios-oca" class="border border-dark border-2 rounded-3">
+                </picture>
+            </div>
+        </article>
+
+        <article class="section-shipments__article-ca d-flex flex-column">
+            <h2 class="section-shipments__article-ca--h2-title">CORREO ARGENTINO</h2>
+            <div class="section-shipments__article-ca--info">
+                <p class="section-shipments__article-ca--info__text">
+                    Podes elegir el metodo de envio de CORREO ARGENTINO, comparando los precios acorde a tu zona. Si queres calcular el 
+                    valor de tu envio <a href="https://www.correoargentino.com.ar/servicios/paqueteria/encomienda-correo-clasica" target="_blank" >Haz click aqui</a>
+                </p>
+            </div>
+            <div class="section-shipments__article-ca--picture d-flex justify-content-center">
+                <picture class="section-shipments__article-ca--picture--img--zonas">
+                    <img src="./img/zonas-correo-argentino.webp" alt="zonas-correo-argentino" class="border border-dark border-2 rounded-3">
+                </picture>
+                <picture class="section-shipments__article-ca--picture--img--taxes">
+                    <img src="./img/precios-correo-argentino.webp" alt="precios-correo-argentino" class="border border-dark border-2 rounded-3">
+                </picture>
+            </div>
+        </article>
+
+        <article class="section-shipments__article-paq d-flex flex-column">
+            <h2 class="section-shipments__article-paq--h2-title">ENCOMIENDA VIA MICRO</h2>
+            <div class="section-shipments__article-paq--info">
+                <p class="section-shipments__article-paq--info--text">
+                    Si deseas optar por el envio de encomienda por micro, por favor hazos saber la empresa para poder despachar el paquete,
+                    abonando en destino el costo del envio, solamente deberas abonar previamente $ 250 pesos, en concepto de embalaje y traslado
+                    hasta la empresa de micros. <a href="./contacto.html#section2-contacto">Haz click aqui</a>
+                </p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <picture class="section-shipments__article-paq--picture">
+                    <img src="./img/paquete-encomienda.webp" alt="paquete-encomienda" class="border border-dark border-2 rounded-3">
+                </picture>
+            </div>
+        </article>
+
     </section>
+
 <!-------------footer----------->
     <footer class="footer py-4 d-flex flex-column border-3 border border-light rounded-3">
         <div class="row">
@@ -108,8 +156,11 @@
                     </div>
                 </form>
                 <ul class="d-flex">
-                    <li class="d-flex">
-                        <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3 "><img src="./img/icono_instagram.webp" alt="instagram" class="footer__icon-instagram border border-dark rounded-3"></a>
+                    <li class="d-flex align-items-center">
+                        <a href="https://www.instagram.com/" target="_blank" class="d-flex m-3"><img src="./img/icono_instagram.webp" alt="instagram" class="footer__icon-instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="d-flex m-3"><img src="./img/facebook-icon.webp" alt="instagram" class="footer__icon-facebook"></a>
+                        <a href="https://twitter.com/home?lang=es" target="_blank" class="d-flex m-3"><img src="./img/twitter-icon.webp" alt="instagram" class="footer__icon-twitter"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank" class="d-flex m-3"><img src="./img/whatsapp-icon.webp" alt="instagram" class="footer__icon-whatsapp"></a>
                     </li>
                 </ul>
             </div>

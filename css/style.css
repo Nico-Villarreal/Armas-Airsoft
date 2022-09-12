@@ -90,24 +90,33 @@ header {
 .footer {
   margin: .5rem .75rem;
   background: linear-gradient(180deg, #dfdfdf 5%, #8a8989 46%, #58585c 80%); }
-  .footer__icon-instagram {
-    width: 80%;
-    height: auto; }
+  .footer__icon-instagram, .footer__icon-whatsapp {
+    width: 40px;
+    height: 40px; }
+  .footer__icon-facebook, .footer__icon-twitter {
+    width: 45px;
+    height: 45px; }
 
 @media (max-width: 768px) {
   .footer {
     margin: .5rem;
     font-size: 1rem; }
-    .footer__icon-instagram {
-      width: 70%;
-      height: auto; } }
+    .footer__icon-instagram, .footer__icon-whatsapp {
+      width: 35px;
+      height: 35px; }
+    .footer__icon-facebook, .footer__icon-twitter {
+      width: 40px;
+      height: 40px; } }
 
 @media (max-width: 320px) {
   .footer {
     font-size: 0.5rem; }
-    .footer__icon-instagram {
-      width: 60%;
-      height: auto; } }
+    .footer__icon-instagram, .footer__icon-whatsapp {
+      width: 30px;
+      height: 30px; }
+    .footer__icon-facebook, .footer__icon-twitter {
+      width: 35px;
+      height: 35px; } }
 
 /*----------VIEWS--------------*/
 /*-------------------GRID TEMPLEATE AREA----------------------*/
@@ -1024,22 +1033,74 @@ footer {
   #grid-container-shipments footer {
     grid-area: footer; }
 
-/*------------SECTION 1------------------*/
+/*------------article 1------------------*/
 .section-shipments {
   max-width: 1200px;
   background-color: rgba(185, 182, 182, 0.427);
-  box-shadow: 2px 2px 4px 0 #646464; }
-  .section-shipments__article--h1 {
-    font-size: 1.75rem; }
-  .section-shipments__article--text {
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.5; }
+  box-shadow: 2px 2px 4px 0 #646464;
+  /*------------article 1------------------*/
+  /*------------article 2------------------*/
+  /*------------article 3------------------*/
+  /*------------article 4------------------*/ }
+  .section-shipments__article {
+    margin: 1rem 0rem; }
+    .section-shipments__article .h1-title {
+      font-size: 1.75rem; }
+    .section-shipments__article .info__text {
+      font-size: 1rem;
+      text-align: justify; }
+  .section-shipments__article-oca {
+    gap: .5rem;
+    margin: 1.25rem 0rem; }
+    .section-shipments__article-oca--h2-title {
+      font-size: 1.5rem; }
+    .section-shipments__article-oca--info__text {
+      font-size: 1rem;
+      text-align: justify; }
+    .section-shipments__article-oca--picture {
+      gap: 1rem;
+      margin: 1rem 0rem; }
+      .section-shipments__article-oca--picture--img--taxes img {
+        width: 500px;
+        height: 440px; }
+      .section-shipments__article-oca--picture--img--map img {
+        width: 300px;
+        height: 440px; }
+  .section-shipments__article-ca {
+    gap: .5rem;
+    margin: 1rem 0rem; }
+    .section-shipments__article-ca--h2-title {
+      font-size: 1.5rem; }
+    .section-shipments__article-ca--info__text {
+      font-size: 1rem;
+      text-align: justify; }
+    .section-shipments__article-ca--picture {
+      gap: 1rem;
+      margin: 1rem 0rem; }
+      .section-shipments__article-ca--picture--img--zonas img, .section-shipments__article-ca--picture--img--taxes img {
+        width: 500px;
+        height: 500px; }
+  .section-shipments__article-paq {
+    gap: .5rem;
+    margin: 1.25rem 0rem; }
+    .section-shipments__article-paq--h2-title {
+      font-size: 1.5rem; }
+    .section-shipments__article-paq--info--text {
+      font-size: 1rem;
+      text-align: justify; }
+    .section-shipments__article-paq--picture {
+      gap: 1rem;
+      margin: 1rem 0rem; }
+      .section-shipments__article-paq--picture img {
+        width: 450px;
+        height: 400px; }
 
 /*--------------------MEDIA QUERIES----------------------*/
 @media (max-width: 1920px) {
   .section-shipments {
-    margin: 1.25rem 22.5rem; } }
+    margin: 1.25rem 22.5rem; }
+    .section-shipments .h3, .section-shipments h3 {
+      font-size: 1.5rem !important; } }
 
 @media (max-width: 1440px) {
   .section-shipments {
@@ -1051,25 +1112,98 @@ footer {
 
 @media (max-width: 1024px) {
   .section-shipments {
-    margin: 1.25rem 5rem; } }
+    margin: 1.25rem 5rem; }
+    .section-shipments__article-ca--picture, .section-shipments__article-oca--picture {
+      flex-wrap: wrap; } }
 
 @media (max-width: 768px) {
   .section-shipments {
-    margin: 1.25rem 2rem; } }
+    margin: 1.25rem 1.75rem; } }
 
 @media (max-width: 480px) {
   /*------------SECTION 1------------------*/
   .section-shipments {
-    margin: 1.25rem .5rem; }
-    .section-shipments__article--h1 {
-      font-size: 1.75rem; }
-    .section-shipments__article--text {
-      font-size: 0.75rem; } }
+    margin: 1.25rem .5rem;
+    /*------------article 1------------------*/
+    /*------------article 2------------------*/
+    /*------------article 3------------------*/
+    /*------------article 4------------------*/ }
+    .section-shipments .h1-title {
+      font-size: 1.5rem; }
+    .section-shipments .info__text {
+      font-size: 0.75rem; }
+    .section-shipments .h3, .section-shipments h3 {
+      font-size: 1.25rem !important; }
+    .section-shipments__article-oca {
+      margin: 1rem 0rem; }
+      .section-shipments__article-oca--h2-title {
+        font-size: 1.25rem; }
+      .section-shipments__article-oca--info__text {
+        font-size: 0.75rem; }
+      .section-shipments__article-oca--picture {
+        margin: .5rem 0rem; }
+        .section-shipments__article-oca--picture--img--taxes img {
+          width: 400px;
+          height: 340px; }
+        .section-shipments__article-oca--picture--img--map img {
+          width: 300px;
+          height: 440px; }
+    .section-shipments__article-ca {
+      gap: .5rem;
+      margin: 1rem 0rem; }
+      .section-shipments__article-ca--h2-title {
+        font-size: 1.25rem; }
+      .section-shipments__article-ca--info__text {
+        font-size: 0.75rem; }
+      .section-shipments__article-ca--picture {
+        gap: .5rem;
+        margin: 1rem 0rem; }
+        .section-shipments__article-ca--picture--img--zonas img, .section-shipments__article-ca--picture--img--taxes img {
+          width: 400px;
+          height: 400px; }
+    .section-shipments__article-paq {
+      gap: .5rem;
+      margin: 1rem 0rem; }
+      .section-shipments__article-paq--h2-title {
+        font-size: 1.25rem; }
+      .section-shipments__article-paq--info--text {
+        font-size: 0.75rem; }
+      .section-shipments__article-paq--picture {
+        gap: .5rem;
+        margin: .5rem 0rem; }
+        .section-shipments__article-paq--picture img {
+          width: 400px;
+          height: 400px; } }
 
 @media (max-width: 320px) {
   /*------------SECTION 1------------------*/
   .section-shipments {
-    margin: 1rem; } }
+    margin: 1rem;
+    /*------------article 2------------------*/
+    /*------------article 3------------------*/
+    /*------------article 4------------------*/ }
+    .section-shipments__article-oca {
+      margin: .5rem 0rem; }
+      .section-shipments__article-oca--picture {
+        margin: .5rem 0rem; }
+        .section-shipments__article-oca--picture--img--taxes img {
+          width: 240px;
+          height: 240px; }
+        .section-shipments__article-oca--picture--img--map img {
+          width: 240px;
+          height: 350px; }
+    .section-shipments__article-ca {
+      margin: .5rem 0rem; }
+      .section-shipments__article-ca--picture {
+        margin: .5rem 0rem; }
+        .section-shipments__article-ca--picture--img--zonas img, .section-shipments__article-ca--picture--img--taxes img {
+          width: 240px;
+          height: 300px; }
+    .section-shipments__article-paq {
+      margin: .5rem 0rem; }
+      .section-shipments__article-paq--picture img {
+        width: 240px;
+        height: 240px; } }
 
 .gird-container-sitemap {
   display: grid;

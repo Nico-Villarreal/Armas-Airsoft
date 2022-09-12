@@ -4,8 +4,11 @@
     margin: .5rem .75rem;
     background: linear-gradient(180deg, rgba(223,223,223,1) 5%, rgba(138,137,137,1) 46%, rgba(88,88,92,1) 80%);
 
-    &__icon-instagram{
-        @include size(80%, auto);        
+    &__icon-instagram, &__icon-whatsapp{
+        @include size(40px, 40px);        
+    }
+    &__icon-facebook, &__icon-twitter{
+        @include size(45px, 45px);        
     }
 }
 
@@ -14,8 +17,11 @@
         margin: .5rem;
         font-size: map-get($font-size, txt-sm);
 
-        &__icon-instagram{
-            @include size(70%, auto);        
+        &__icon-instagram, &__icon-whatsapp{
+            @include size(35px, 35px);        
+        }
+        &__icon-facebook, &__icon-twitter{
+            @include size(40px, 40px);        
         }
     }
 }
@@ -24,8 +30,11 @@
     .footer {
         font-size: map-get($font-size, txt-xs);
 
-        &__icon-instagram{
-            @include size(60%, auto);        
+        &__icon-instagram, &__icon-whatsapp{
+            @include size(30px, 30px);        
+        }
+        &__icon-facebook, &__icon-twitter{
+            @include size(35px, 35px);        
         }
     }
 }  
